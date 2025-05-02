@@ -1,57 +1,41 @@
-# flexoki-neovim
-Neovim adaptation of [Flexoki](stephango.com/flexoki) by Steph Ango
+# flexoki.nvim
 
-Currently still **work in progress** and missing support for even the most
-common plugins. This will be fixed shortly. If you are using a plugin that
-isn't supported please create an issue, or upvote an existing one, we will use
-this to prioritize them.
+Neovim port of the [Flexoki color scheme](stephango.com/flexoki) by Steph Ango.
 
-> These aren't currently up to date
-
-![Flexoki Dark for Neovim](screenshots/flexoki-neovim-dark.png)
-
-![Flexoki Light for Neovim](screenshots/flexoki-neovim-light.png)
-
+Currently still a **work in progress**. Screenshots to come.
 
 ## Installation
-To install simply add via your plugin manager and call the theme
+
+Install plugin with your preferred package manager.
 
 **[lazy.nvim](https://github.com/folke/lazy.nvim)**
 
 ```lua
-require("lazy").setup({
-  { 'kepano/flexoki-neovim', name = 'flexoki' }
-})
-```
-
-**[packer.nvim](https://github.com/wbthomason/packer.nvim)**
-
-```lua
-require('packer').startup(function(use)
-  use({ 'kepano/flexoki-neovim', as = 'flexoki' })
-end)
-```
-
-**[Paq](https://github.com/savq/paq-nvim)**
-
-```lua
-require('paq')({
-  { 'kepano/flexoki-neovim', as = 'flexoki' }
-})
+{
+  "cpplain/flexoki.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+}
 ```
 
 ## Usage
 
-* Dark
+- Dark
 
 ```lua
 -- Set colorscheme after options
-vim.cmd('colorscheme flexoki-dark')
+vim.cmd.colorscheme("flexoki-dark")
 ```
 
-* Light
+- Light
 
 ```lua
 -- Set colorscheme after options
-vim.cmd('colorscheme flexoki-light')
+vim.cmd.colorscheme("flexoki-light")
 ```
+
+## Acknowledgements
+
+- Steph Ango for [Flexoki color scheme](https://stephango.com/flexoki) and original [Neovim port](https://github.com/kepano/flexoki-neovim).
+- [Rosé Pine Neovim color scheme](https://github.com/rose-pine/neovim) for Neovim port inspiration.
