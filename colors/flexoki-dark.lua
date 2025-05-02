@@ -1,2 +1,2 @@
-local flexoki = require('flexoki')
-flexoki.colorscheme({ variant = 'dark' })
+local flexoki = require("flexoki")
+flexoki.colorscheme({ variant = "dark" })
