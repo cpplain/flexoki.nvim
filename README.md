@@ -1,6 +1,6 @@
 # flexoki.nvim
 
-Neovim port of the [Flexoki color scheme](stephango.com/flexoki) by Steph Ango.
+Neovim port of the [Flexoki color scheme](https://stephango.com/flexoki) by Steph Ango.
 
 Currently still a **work in progress**. Screenshots to come.
 
