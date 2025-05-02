@@ -139,6 +139,10 @@ M.groups = function()
         ["TermCursorNC"] = { fg = c["bg"], bg = c["tx-3"] },
         ["Visual"] = { fg = "NONE", bg = c["ui"] },
         ["VisualNOS"] = { fg = "NONE", bg = c["ui-2"] },
+
+        --- Treesitter
+        --- |:help treesitter-highlight-groups|
+        ["@variable"] = { link = "Identifier" },
     }
 end
 
