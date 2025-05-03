@@ -2,7 +2,7 @@
 
 Neovim port of the [Flexoki color scheme](https://stephango.com/flexoki) by Steph Ango.
 
-Currently still a **work in progress**. Screenshots to come.
+Currently a **work in progress**. Screenshots to come.
 
 ## Installation
 
@@ -20,6 +20,15 @@ Install plugin with your preferred package manager.
 ```
 
 ## Usage
+
+- Auto
+
+Automatically loads light or dark color scheme based on `vim.o.background` setting.
+
+```lua
+-- Set colorscheme after options
+vim.cmd.colorscheme("flexoki")
+```
 
 - Dark
 

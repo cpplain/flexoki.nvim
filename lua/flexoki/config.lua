@@ -1,32 +1,19 @@
----@alias Variant 'dark' | 'light'
-
 local M = {}
 
----@class FlexokiOptions
+---@class flexoki.Config
+---@field variant? "auto" | "dark" | "light"
+---@field highlight_groups? table<string, vim.api.keyset.highlight>
 M.options = {
-    ---Set the desired variant: 'auto' will follow the vim background,
-    ---defaulting to 'main' for dark and 'dawn' for light. To change the dark
-    ---variant, use `options.dark_variant = 'moon'`.
-    ---@type 'auto' | Variant
+    ---Set the desired variant: "auto" will follow the vim background,
     variant = "auto",
 
-    ---Set the desired dark variant: applies when `options.variant` is set to
-    ---'auto' to match `vim.o.background`.
-    ---@type Variant
-    dark_variant = "dark",
-
-    ---Set the desired light variant: applies when `options.variant` is set to
-    ---'auto' to match `vim.o.background`
-    ---@type Variant
-    light_variant = "light",
-
-    ---@type table<string, vim.api.keyset.highlight>
+    ---Add or override highlight groups.
     highlight_groups = {},
 }
 
----@param options FlexokiOptions|nil
-function M.extend(options)
-    M.options = vim.tbl_deep_extend("force", M.options, options or {})
+---@param opts flexoki.Config | nil
+function M.extend(opts)
+    M.options = vim.tbl_deep_extend("force", M.options, opts or {})
 end
 
 return M

@@ -1,7 +1,3 @@
-local config = require("flexoki.config")
-
-local M = {}
-
 local colors = {
     none = "NONE",
 
@@ -119,14 +115,17 @@ local variants = {
     },
 }
 
-M.palette = function()
+local M = {}
+
+function M.palette()
+    local config = require("flexoki.config")
     local variant = {}
 
     if config.options.variant == "auto" then
         if vim.o.background == "dark" then
-            variant = variants[config.options.dark_variant]
+            variant = variants.dark
         else
-            variant = variants[config.options.light_variant]
+            variant = variants.light
         end
     else
         variant = variants[config.options.variant]
