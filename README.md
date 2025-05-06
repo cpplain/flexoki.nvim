@@ -1,8 +1,19 @@
 # flexoki.nvim
 
-Neovim port of the [Flexoki color scheme](https://stephango.com/flexoki) by Steph Ango.
+A Neovim colorscheme based on [Flexoki](https://stephango.com/flexoki) by Steph Ango. Flexoki is an inky color scheme for prose and code, designed for reading and writing on digital screens. It is inspired by analog inks and warm shades of paper.
 
-Currently a **work in progress**. Screenshots to come.
+This plugin implements Flexoki for Neovim with both light and dark themes.
+
+![Flexoki Dark](https://stephango.com/assets/flexoki-code-dark.png)
+![Flexoki Light](https://stephango.com/assets/flexoki-code-light.png)
+
+## Features
+
+- Complete light and dark themes that follow Flexoki color guidelines
+- Support for popular Neovim plugins (gitsigns.nvim, lualine.nvim) (others in progress)
+- Diagnostic colors
+- Treesitter support
+- LSP support
 
 ## Installation
 
@@ -21,30 +32,23 @@ Install plugin with your preferred package manager.
 
 ## Usage
 
-- Auto
-
-Automatically loads light or dark color scheme based on `vim.o.background` setting.
+### Enabling the color scheme
 
 ```lua
 -- Set colorscheme after options
 vim.cmd.colorscheme("flexoki")
 ```
 
-- Dark
+### Switching between light and dark themes
 
 ```lua
--- Set colorscheme after options
-vim.cmd.colorscheme("flexoki-dark")
-```
+-- Switch to light theme
+vim.o.background = 'light'
 
-- Light
-
-```lua
--- Set colorscheme after options
-vim.cmd.colorscheme("flexoki-light")
+-- Switch to dark theme
+vim.o.background = 'dark'
 ```
 
 ## Acknowledgements
 
-- Steph Ango for [Flexoki color scheme](https://stephango.com/flexoki) and original [Neovim port](https://github.com/kepano/flexoki-neovim).
-- [Rosé Pine Neovim color scheme](https://github.com/rose-pine/neovim) for Neovim port inspiration.
+[Steph Ango](https://stephango.com/) for creating the original Flexoki color scheme and the [Neovim port by kepano](https://github.com/kepano/flexoki-neovim).

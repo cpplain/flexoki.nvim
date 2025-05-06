@@ -1,30 +1,37 @@
-local config = require("flexoki.config")
+-- Flexoki - An inky color scheme for Neovim
+-- Author: Steph Ango (color scheme), Christopher Plain (Neovim port)
+-- URL: https://stephango.com/flexoki
+-- License: MIT
 
-local M = {}
+local M = {
+    colors = {},
+    config = {
+        plugins = {
+            gitsigns = false,
+        },
+    },
+}
 
----Load the Flexoki colorscheme
----@param opts flexoki.Config | nil
-function M.load(opts)
-    opts = opts or {}
-    config.extend(opts)
-
-    vim.o.termguicolors = true
-
-    if vim.g.colors_name then
-        vim.cmd("hi clear")
+-- Load color scheme
+function M.load()
+    if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
     end
-
+    vim.cmd.highlight("clear")
+    vim.o.termguicolors = true
     vim.g.colors_name = "flexoki"
 
-    require("flexoki.theme").set_highlights(opts)
+    M.colors = require("flexoki.palette")(vim.o.background)
+
+    local groups = require("flexoki.groups")(M.colors, M.config)
+    for name, val in pairs(groups) do
+        vim.api.nvim_set_hl(0, name, val)
+    end
 end
 
----Set up the Flexoki colorscheme
----@param opts flexoki.Config
+-- Update default config with user overrides
 function M.setup(opts)
-    opts = opts or {}
-    config.extend(opts)
+    vim.tbl_deep_extend("force", M.config, opts or {})
 end
 
 return M
