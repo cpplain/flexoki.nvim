@@ -6,9 +6,7 @@
 local M = {
     colors = {},
     config = {
-        plugins = {
-            gitsigns = false,
-        },
+        plugins = {},
     },
 }
 
@@ -31,7 +29,7 @@ end
 
 -- Update default config with user overrides
 function M.setup(opts)
-    vim.tbl_deep_extend("force", M.config, opts or {})
+    M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 end
 
 return M

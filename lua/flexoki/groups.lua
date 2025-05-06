@@ -1,5 +1,5 @@
-return function(colors, opts)
-    local base = {
+return function(colors, config)
+    local groups = {
         --
         -- Editor highlights
         --
@@ -261,25 +261,10 @@ return function(colors, opts)
         ["@lsp.type.class"] = { link = "@type" },
     }
 
-    -- Plugin-specific highlights
-    local plugins = {
-        --
-        -- gitsigns.nvim
-        --
-        gitsigns = {
-            GitSignsAdd = { fg = colors.green },
-            GitSignsChange = { fg = colors.yellow },
-            GitSignsDelete = { fg = colors.red },
-        },
-    }
-
-    local groups = base
-
-    -- Set base highlight groups
-    for plugin, enabled in pairs(opts.plugins) do
-        if enabled then
-            vim.tbl_extend("force", groups, plugins[plugin])
-        end
+    -- Add plugin-specific groups
+    for _, plugin in ipairs(config.plugins) do
+        local plugin_groups = require("flexoki.plugins." .. plugin)(colors)
+        groups = vim.tbl_extend("force", groups, plugin_groups)
     end
 
     return groups
