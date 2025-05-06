@@ -6,7 +6,9 @@
 local M = {
     colors = {},
     config = {
-        plugins = {},
+        plugins = {
+            -- "lazy", -- Add lazy.nvim to default plugins list
+        },
     },
 }
 

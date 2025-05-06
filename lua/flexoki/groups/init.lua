@@ -263,7 +263,7 @@ return function(colors, config)
 
     -- Add plugin-specific groups
     for _, plugin in ipairs(config.plugins) do
-        local plugin_groups = require("flexoki.plugins." .. plugin)(colors)
+        local plugin_groups = require("flexoki.groups." .. plugin)(colors)
         groups = vim.tbl_extend("force", groups, plugin_groups)
     end
 
