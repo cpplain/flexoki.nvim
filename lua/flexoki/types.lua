@@ -1,8 +1,9 @@
 ---@alias flexoki.HighlightGroups table<string, vim.api.keyset.highlight>
 ---@alias flexoki.Theme "light" | "dark"
+---@alias flexoki.Plugin "gitsigns" | "lazy"
 
 ---@class flexoki.Config
----@field plugins string[] List of plugin names to enable
+---@field plugins flexoki.Plugin[] List of plugin names to enable
 
 ---@class flexoki.Colors
 ---@field black string Light tx, Dark bg color
