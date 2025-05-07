@@ -38,7 +38,6 @@ Install plugin with your preferred package manager.
 require("flexoki").setup({
   plugins = {
     "gitsigns", -- gitsigns.nvim
-    "treesitter_context", -- nvim-treesitter-context
     "which_key", -- which-key.nvim
   }
 })
@@ -59,7 +58,7 @@ vim.cmd.colorscheme("flexoki")
 
 ### Switch between light and dark themes
 
-The color scheme will automatically switch between light and dark themes based on the value of background (|:help background|).
+The color scheme will automatically switch between light and dark themes based on the value of background (:help background).
 
 ```lua
 -- Switch to light theme
