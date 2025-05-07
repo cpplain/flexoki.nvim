@@ -1,6 +1,9 @@
----@param config flexoki.Config
+---@param colors flexoki.ThemeColors The color palette to use for highlighting groups
+---@param config flexoki.Config The user configuration
+---@return flexoki.HighlightGroups # Highlight groups for Neovim
 return function(colors, config)
     -- Define neovim default groups
+    ---@type flexoki.HighlightGroups
     local groups = {
         --
         -- Editor highlights

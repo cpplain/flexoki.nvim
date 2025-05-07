@@ -35,6 +35,12 @@ Install plugin with your preferred package manager.
 ### Enabling the color scheme
 
 ```lua
+-- Enable plugins as needed
+require("flexoki").setup({
+  plugins = {
+    "gitsigns"
+  }
+})
 -- Set colorscheme after options
 vim.cmd.colorscheme("flexoki")
 ```
@@ -48,7 +54,3 @@ vim.o.background = 'light'
 -- Switch to dark theme
 vim.o.background = 'dark'
 ```
-
-## Acknowledgements
-
-[Steph Ango](https://stephango.com/) for creating the original Flexoki color scheme and the [Neovim port by kepano](https://github.com/kepano/flexoki-neovim).

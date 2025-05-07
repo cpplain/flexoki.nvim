@@ -1,56 +1,60 @@
+---@param theme flexoki.Theme
+---@return flexoki.ThemeColors
 return function(theme)
     -- Base color values
+    ---@type flexoki.Colors
     local colors = {
         -- Base colors
-        black = "#100F0F", -- Light tx, Dark bg
-        base950 = "#1C1B1A", -- Dark bg-2
-        base900 = "#282726", -- Dark ui
-        base850 = "#343331", -- Dark ui-2
-        base800 = "#403E3C", -- Dark ui-3
-        base700 = "#575653", -- Dark tx-3
-        base600 = "#6F6E69", -- Light tx-2
-        base500 = "#878580", -- Dark tx-2
-        base300 = "#B7B5AC", -- Light tx-3
-        base200 = "#CECDC3", -- Light ui-3, Dark tx
-        base150 = "#DAD8CE", -- Light ui-2
-        base100 = "#E6E4D9", -- Light ui
-        base50 = "#F2F0E5", -- Light bg-2
-        paper = "#FFFCF0", -- Light bg
+        black = "#100F0F",
+        base950 = "#1C1B1A",
+        base900 = "#282726",
+        base850 = "#343331",
+        base800 = "#403E3C",
+        base700 = "#575653",
+        base600 = "#6F6E69",
+        base500 = "#878580",
+        base300 = "#B7B5AC",
+        base200 = "#CECDC3",
+        base150 = "#DAD8CE",
+        base100 = "#E6E4D9",
+        base50 = "#F2F0E5",
+        paper = "#FFFCF0",
 
         -- Red
-        red600 = "#AF3029", -- Light re, Dark re-2
-        red400 = "#D14D41", -- Light re-2, Dark re
+        red600 = "#AF3029",
+        red400 = "#D14D41",
 
         -- Orange
-        orange600 = "#BC5215", -- Light or, Dark or-2
-        orange400 = "#DA702C", -- Light or-2, Dark or
+        orange600 = "#BC5215",
+        orange400 = "#DA702C",
 
         -- Yellow
-        yellow600 = "#AD8301", -- Light ye, Dark ye-2
-        yellow400 = "#D0A215", -- Light ye-2, Dark ye
+        yellow600 = "#AD8301",
+        yellow400 = "#D0A215",
 
         -- Green
-        green600 = "#66800B", -- Light gr, Dark gr-2
-        green400 = "#879A39", -- Light gr-2, Dark gr
+        green600 = "#66800B",
+        green400 = "#879A39",
 
         -- Cyan
-        cyan600 = "#24837B", -- Light cy, Dark cy-2
-        cyan400 = "#3AA99F", -- Light cy-2, Dark cy
+        cyan600 = "#24837B",
+        cyan400 = "#3AA99F",
 
         -- Blue
-        blue600 = "#205EA6", -- Light bl, Dark bl-2
-        blue400 = "#4385BE", -- Light bl-2, Dark bl
+        blue600 = "#205EA6",
+        blue400 = "#4385BE",
 
         -- Purple
-        purple600 = "#5E409D", -- Light pu, Dark pu-2
-        purple400 = "#8B7EC8", -- Light pu-2, Dark pu
+        purple600 = "#5E409D",
+        purple400 = "#8B7EC8",
 
         -- Magenta
-        magenta600 = "#A02F6F", -- Light ma, Dark ma-2
-        magenta400 = "#CE5D97", -- Light ma-2, Dark ma
+        magenta600 = "#A02F6F",
+        magenta400 = "#CE5D97",
     }
 
     -- Light theme palette
+    ---@type flexoki.ThemeColors
     local light = {
         bg = colors.paper,
         bg2 = colors.base50,
@@ -81,6 +85,7 @@ return function(theme)
     }
 
     -- Dark theme palette
+    ---@type flexoki.ThemeColors
     local dark = {
         bg = colors.black,
         bg2 = colors.base950,

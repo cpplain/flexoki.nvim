@@ -3,15 +3,19 @@
 -- URL: https://stephango.com/flexoki
 -- License: MIT
 
+---@class flexoki.Module
+---@field colors flexoki.ThemeColors The current theme's color palette
+---@field config flexoki.Config The current configuration
 local M = {
+    ---@diagnostic disable-next-line: missing-fields
     colors = {},
-    ---@type flexoki.Config
     config = {
         plugins = {},
     },
 }
 
----Load color scheme
+---Load the Flexoki color scheme based on vim.o.background
+---@return nil
 function M.load()
     if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
@@ -29,7 +33,8 @@ function M.load()
 end
 
 ---Update default config with user overrides
----@param opts flexoki.Options
+---@param opts? flexoki.Config Optional user configuration
+---@return nil
 function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 end

@@ -1,5 +1,63 @@
----@class flexoki.Config
----@field plugins string[]
+---@alias flexoki.HighlightGroups table<string, vim.api.keyset.highlight>
+---@alias flexoki.Theme "light" | "dark"
 
----@class flexoki.Options
----@field plugins? string[]
+---@class flexoki.Config
+---@field plugins string[] List of plugin names to enable
+
+---@class flexoki.Colors
+---@field black string Light tx, Dark bg color
+---@field base950 string Dark bg-2 color
+---@field base900 string Dark ui color
+---@field base850 string Dark ui-2 color
+---@field base800 string Dark ui-3 color
+---@field base700 string Dark tx-3 color
+---@field base600 string Light tx-2 color
+---@field base500 string Dark tx-2 color
+---@field base300 string Light tx-3 color
+---@field base200 string Light ui-3, Dark tx color
+---@field base150 string Light ui-2 color
+---@field base100 string Light ui color
+---@field base50 string Light bg-2 color
+---@field paper string Light bg color
+---@field red600 string Light re, Dark re-2 color
+---@field red400 string Light re-2, Dark re color
+---@field orange600 string Light or, Dark or-2 color
+---@field orange400 string Light or-2, Dark or color
+---@field yellow600 string Light ye, Dark ye-2 color
+---@field yellow400 string Light ye-2, Dark ye color
+---@field green600 string Light gr, Dark gr-2 color
+---@field green400 string Light gr-2, Dark gr color
+---@field cyan600 string Light cy, Dark cy-2 color
+---@field cyan400 string Light cy-2, Dark cy color
+---@field blue600 string Light bl, Dark bl-2 color
+---@field blue400 string Light bl-2, Dark bl color
+---@field purple600 string Light pu, Dark pu-2 color
+---@field purple400 string Light pu-2, Dark pu color
+---@field magenta600 string Light ma, Dark ma-2 color
+---@field magenta400 string Light ma-2, Dark ma color
+
+---@class flexoki.ThemeColors
+---@field bg string Main background color
+---@field bg2 string Secondary background color
+---@field ui string Standard UI element color (borders, etc.)
+---@field ui2 string UI hover state color
+---@field ui3 string UI active state color
+---@field tx string Primary text color
+---@field tx2 string Secondary (muted) text color
+---@field tx3 string Tertiary (faint) text color
+---@field red string Primary red accent
+---@field red2 string Secondary red accent
+---@field orange string Primary orange accent
+---@field orange2 string Secondary orange accent
+---@field yellow string Primary yellow accent
+---@field yellow2 string Secondary yellow accent
+---@field green string Primary green accent
+---@field green2 string Secondary green accent
+---@field cyan string Primary cyan accent
+---@field cyan2 string Secondary cyan accent
+---@field blue string Primary blue accent
+---@field blue2 string Secondary blue accent
+---@field purple string Primary purple accent
+---@field purple2 string Secondary purple accent
+---@field magenta string Primary magenta accent
+---@field magenta2 string Secondary magenta accent
