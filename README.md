@@ -32,20 +32,33 @@ Install plugin with your preferred package manager.
 
 ## Usage
 
-### Enabling the color scheme
+### Enable plugin highlights
 
 ```lua
--- Enable plugins as needed
 require("flexoki").setup({
   plugins = {
-    "gitsigns"
+    "gitsigns", -- gitsigns.nvim
+    "treesitter_context", -- nvim-treesitter-context
   }
 })
--- Set colorscheme after options
+
+require("lualine").setup({
+  options = {
+      theme = "flexoki",
+  },
+})
+```
+
+### Load the color scheme
+
+```lua
+-- Load color scheme after options
 vim.cmd.colorscheme("flexoki")
 ```
 
-### Switching between light and dark themes
+### Switch between light and dark themes
+
+The color scheme will automatically switch between light and dark themes based on the value of background (|:help background|).
 
 ```lua
 -- Switch to light theme
