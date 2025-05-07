@@ -1,4 +1,6 @@
+---@param config flexoki.Config
 return function(colors, config)
+    -- Define neovim default groups
     local groups = {
         --
         -- Editor highlights
@@ -236,7 +238,7 @@ return function(colors, config)
         ["@text.diff.delete"] = { link = "DiffDelete" },
 
         --
-        -- LSP Semantic Token highlights
+        -- LSP semantic token highlights
         --
         ["@lsp.type.comment"] = { link = "@comment" },
         ["@lsp.type.enum"] = { link = "@type" },

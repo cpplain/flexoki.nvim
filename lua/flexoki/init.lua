@@ -5,14 +5,13 @@
 
 local M = {
     colors = {},
+    ---@type flexoki.Config
     config = {
-        plugins = {
-            -- "lazy", -- Add lazy.nvim to default plugins list
-        },
+        plugins = {},
     },
 }
 
--- Load color scheme
+---Load color scheme
 function M.load()
     if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
@@ -29,7 +28,8 @@ function M.load()
     end
 end
 
--- Update default config with user overrides
+---Update default config with user overrides
+---@param opts flexoki.Options
 function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 end
