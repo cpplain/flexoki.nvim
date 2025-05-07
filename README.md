@@ -39,6 +39,7 @@ require("flexoki").setup({
   plugins = {
     "gitsigns", -- gitsigns.nvim
     "treesitter_context", -- nvim-treesitter-context
+    "which_key", -- which-key.nvim
   }
 })
 
