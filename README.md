@@ -2,8 +2,6 @@
 
 Flexoki, an inky color scheme for Neovim. Based on [stephango.com/flexoki](https://stephango.com/flexoki).
 
-This plugin implements Flexoki for Neovim with both light and dark themes.
-
 <img width="1582" alt="Screenshot 2025-05-06 at 9 20 36 PM" src="https://github.com/user-attachments/assets/bd758367-e106-4d0d-9236-c9db5bc5e28f" />
 <img width="1582" alt="Screenshot 2025-05-06 at 9 20 11 PM" src="https://github.com/user-attachments/assets/d4a9fdfd-bd0d-4d77-b424-12a2c27bb91a" />
 
