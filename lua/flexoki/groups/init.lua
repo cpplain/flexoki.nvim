@@ -11,7 +11,9 @@ return function(colors, config)
         -- General editor UI
         Normal = { fg = colors.tx, bg = colors.bg },
         NormalFloat = { fg = colors.tx, bg = colors.bg2 },
-        FloatBorder = { fg = colors.ui, bg = colors.bg2 },
+        FloatBorder = { fg = colors.ui3, bg = colors.bg2 },
+        FloatTitle = { link = "FloatBorder" },
+        FloatFooter = { link = "FloatTitle" },
         ColorColumn = { bg = colors.bg2 },
         Cursor = { fg = colors.bg, bg = colors.tx },
         CursorLine = { bg = colors.bg2 },
