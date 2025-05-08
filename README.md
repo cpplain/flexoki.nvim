@@ -1,6 +1,6 @@
 # flexoki.nvim
 
-A Neovim colorscheme based on [Flexoki](https://stephango.com/flexoki) by Steph Ango. Flexoki is an inky color scheme for prose and code, designed for reading and writing on digital screens. It is inspired by analog inks and warm shades of paper.
+Flexoki, an inky color scheme for Neovim. Based on [stephango.com/flexoki](https://stephango.com/flexoki).
 
 This plugin implements Flexoki for Neovim with both light and dark themes.
 
