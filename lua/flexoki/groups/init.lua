@@ -57,7 +57,7 @@ return function(colors, config)
 
         -- Folds and other UI
         Folded = { fg = colors.tx3, bg = colors.bg2 },
-        Title = { fg = colors.cyan, bold = true },
+        Title = { fg = colors.tx, bold = true },
         NonText = { fg = colors.tx3 },
         SpecialKey = { fg = colors.tx3 },
         Directory = { fg = colors.blue },
@@ -227,7 +227,7 @@ return function(colors, config)
         ["@text.emphasis"] = { fg = colors.tx, italic = true },
         ["@text.underline"] = { fg = colors.tx, underline = true },
         ["@text.strike"] = { fg = colors.tx, strikethrough = true },
-        ["@text.title"] = { fg = colors.cyan, bold = true },
+        ["@text.title"] = { link = "Title" },
         ["@text.literal"] = { fg = colors.cyan },
         ["@text.uri"] = { fg = colors.cyan, underline = true },
         ["@text.math"] = { fg = colors.purple },
