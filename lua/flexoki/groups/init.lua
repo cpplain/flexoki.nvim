@@ -18,6 +18,7 @@ return function(colors, config)
         Cursor = { fg = colors.bg, bg = colors.tx },
         CursorLine = { bg = colors.bg2 },
         CursorLineNr = { fg = colors.tx2, bg = colors.bg2 },
+        CursorLineSign = { bg = colors.bg2 },
         LineNr = { fg = colors.tx3 },
         SignColumn = { fg = colors.tx3, bg = colors.bg },
         FoldColumn = { fg = colors.tx3, bg = colors.bg },
