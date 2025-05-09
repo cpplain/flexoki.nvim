@@ -82,7 +82,7 @@ return function(colors, config)
         String = { fg = colors.cyan },
         Character = { fg = colors.cyan },
         Number = { fg = colors.purple },
-        Boolean = { fg = colors.purple },
+        Boolean = { fg = colors.yellow },
         Float = { fg = colors.purple },
 
         -- Language elements
