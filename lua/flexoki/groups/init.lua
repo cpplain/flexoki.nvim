@@ -2,77 +2,85 @@
 ---@param config flexoki.Config The user configuration
 ---@return flexoki.HighlightGroups # Highlight groups for Neovim
 return function(colors, config)
-    -- Define neovim default groups
+    ---Define neovim default groups
     ---@type flexoki.HighlightGroups
     local groups = {
-        --
-        -- Editor highlights
-        --
-        -- General editor UI
+        -- Editor highlights (:help highlight-groups)
+        ColorColumn = { bg = colors.bg2 },
+        Conceal = { fg = colors.tx3 },
+        CurSearch = { fg = colors.bg, bg = colors.yellow },
+        Cursor = { fg = colors.bg, bg = colors.tx },
+        lCursor = { link = "Cursor" },
+        CursorIM = { link = "Cursor" },
+        CursorColumn = { link = "CursorLine" },
+        CursorLine = { bg = colors.bg2 },
+        Directory = { fg = colors.blue },
+        DiffAdd = { fg = colors.green, bg = colors.bg2 },
+        DiffChange = { fg = colors.yellow, bg = colors.bg2 },
+        DiffDelete = { fg = colors.red, bg = colors.bg2 },
+        DiffText = { fg = colors.tx, bg = colors.ui2 },
+        EndOfBuffer = { link = "NonText" },
+        TermCursor = { link = "Cursor" },
+        ErrorMsg = { fg = colors.red },
+        WinSeparator = { fg = colors.ui, bg = colors.bg },
+        Folded = { fg = colors.tx3, bg = colors.bg2 },
+        FoldColumn = { link = "SignColumn" },
+        SignColumn = { fg = colors.tx3, bg = colors.bg },
+        IncSearch = { link = "CurSearch" },
+        Substitute = { link = "Search" },
+        LineNr = { fg = colors.tx3 },
+        LineNrAbove = { link = "LineNr" },
+        LineNrBelow = { link = "LineNr" },
+        CursorLineNr = { bold = true },
+        CursorLineFold = { link = "FoldColumn" },
+        CursorLineSign = { link = "SignColumn" },
+        MatchParen = { fg = colors.yellow, bold = true },
+        ModeMsg = { fg = colors.tx2 },
+        MsgArea = {},
+        MsgSeparator = { link = "StatusLine" },
+        MoreMsg = { link = "Normal" },
+        NonText = { fg = colors.tx3 },
         Normal = { fg = colors.tx, bg = colors.bg },
         NormalFloat = { fg = colors.tx, bg = colors.bg2 },
         FloatBorder = { fg = colors.ui, bg = colors.bg2 },
         FloatTitle = { fg = colors.tx2, bg = colors.bg2 },
         FloatFooter = { link = "FloatTitle" },
-        ColorColumn = { bg = colors.bg2 },
-        Cursor = { fg = colors.bg, bg = colors.tx },
-        CursorLine = { bg = colors.bg2 },
-        CursorLineNr = { fg = colors.tx2, bg = colors.bg2 },
-        CursorLineSign = { bg = colors.bg2 },
-        LineNr = { fg = colors.tx3 },
-        SignColumn = { fg = colors.tx3, bg = colors.bg },
-        FoldColumn = { fg = colors.tx3, bg = colors.bg },
-        VertSplit = { fg = colors.ui, bg = colors.bg },
-        WinSeparator = { fg = colors.ui, bg = colors.bg },
-        IndentGuide = { fg = colors.ui },
-        EndOfBuffer = { fg = colors.tx3 },
-
-        -- Status line and tabs
-        StatusLine = { fg = colors.tx, bg = colors.ui },
-        StatusLineNC = { fg = colors.tx3, bg = colors.ui },
-        TabLine = { fg = colors.tx2, bg = colors.ui },
-        TabLineFill = { fg = colors.tx, bg = colors.bg },
-        TabLineSel = { fg = colors.tx, bg = colors.bg },
-
-        -- Search and selection
-        Search = { fg = colors.bg, bg = colors.yellow },
-        IncSearch = { fg = colors.bg, bg = colors.orange },
-        Visual = { bg = colors.ui2 },
-        VisualNOS = { bg = colors.ui2 },
-        MatchParen = { fg = colors.cyan, bold = true },
-
-        -- Messages and prompts
-        ModeMsg = { fg = colors.tx },
-        MoreMsg = { fg = colors.yellow },
-        WarningMsg = { fg = colors.orange },
-        ErrorMsg = { fg = colors.red },
-        Question = { fg = colors.cyan },
-
-        -- Popups and completion
-        Pmenu = { fg = colors.tx, bg = colors.bg2 },
-        PmenuSel = { fg = colors.bg, bg = colors.blue },
-        PmenuSbar = { bg = colors.ui },
+        NormalNC = {},
+        Pmenu = { fg = colors.tx2, bg = colors.bg2 },
+        PmenuSel = { fg = colors.tx2, bg = colors.ui },
+        PmenuKind = { link = "Pmenu" },
+        PmenuKindSel = { link = "PmenuSel" },
+        PmenuExtra = { link = "Pmenu" },
+        PmenuExtraSel = { link = "PmenuSel" },
+        PmenuSbar = { link = "Pmenu" },
         PmenuThumb = { bg = colors.tx3 },
-        WildMenu = { fg = colors.bg, bg = colors.blue },
-
-        -- Folds and other UI
-        Folded = { fg = colors.tx3, bg = colors.bg2 },
-        Title = { fg = colors.tx, bold = true },
-        NonText = { fg = colors.tx3 },
+        PmenuMatch = { bold = true },
+        PmenuMatchSelect = { link = "PmenuMatch" },
+        ComplMatchIns = {},
+        Question = { fg = colors.cyan },
+        QuickFixLine = { fg = colors.cyan },
+        Search = { fg = colors.tx, bg = colors.yellow3 },
+        SnippetTabstop = { link = "Visual" },
         SpecialKey = { fg = colors.tx3 },
-        Directory = { fg = colors.blue },
-
-        -- Diff mode
-        DiffAdd = { fg = colors.green, bg = colors.bg2 },
-        DiffChange = { fg = colors.yellow, bg = colors.bg2 },
-        DiffDelete = { fg = colors.red, bg = colors.bg2 },
-        DiffText = { fg = colors.tx, bg = colors.ui2 },
-
-        -- Spelling
         SpellBad = { sp = colors.red, undercurl = true },
         SpellCap = { sp = colors.yellow, undercurl = true },
-        SpellRare = { sp = colors.purple, undercurl = true },
         SpellLocal = { sp = colors.cyan, undercurl = true },
+        SpellRare = { sp = colors.purple, undercurl = true },
+        StatusLine = { fg = colors.tx, bg = colors.ui },
+        StatusLineNC = { fg = colors.tx3, bg = colors.ui },
+        StatusLineTerm = { link = "StatusLine" },
+        StatusLineTermNC = { link = "StatusLineNC" },
+        TabLine = { link = "StatusLineNC" },
+        TabLineFill = { link = "TabLine" },
+        TabLineSel = { bold = true },
+        Title = { fg = colors.tx, bold = true },
+        Visual = { bg = colors.ui2 },
+        VisualNOS = { link = "Visual" },
+        WarningMsg = { fg = colors.orange },
+        Whitespace = { link = "NonText" },
+        WildMenu = { link = "PmenuSel" },
+        WinBar = { link = "StatusLine" },
+        WinBarNC = { link = "StatusLineNC" },
 
         --
         -- Syntax highlights
