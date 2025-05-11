@@ -82,59 +82,45 @@ return function(colors, config)
         WinBar = { link = "StatusLine" },
         WinBarNC = { link = "StatusLineNC" },
 
-        --
-        -- Syntax highlights
-        --
-        -- Basic syntax
+        -- Syntax highlights (:help group-name)
         Comment = { fg = colors.tx3 },
         Constant = { fg = colors.yellow },
         String = { fg = colors.cyan },
-        Character = { fg = colors.cyan },
+        Character = { fg = colors.orange },
         Number = { fg = colors.purple },
-        Boolean = { fg = colors.yellow },
-        Float = { fg = colors.purple },
-
-        -- Language elements
+        Boolean = { link = "Constant" },
+        Float = { link = "Number" },
         Identifier = { fg = colors.blue },
         Function = { fg = colors.orange },
-        Statement = { fg = colors.green },
-        Conditional = { fg = colors.green },
-        Repeat = { fg = colors.green },
-        Label = { fg = colors.green },
+        Statement = { link = "Keyword" },
+        Conditional = { link = "Keyword" },
+        Repeat = { link = "Keyword" },
+        Label = { link = "Keyword" },
         Operator = { fg = colors.tx2 },
         Keyword = { fg = colors.green },
-        Exception = { fg = colors.green },
-
-        -- Pre-processor
-        PreProc = { fg = colors.magenta },
+        Exception = { link = "Keyword" },
+        PreProc = { fg = colors.orange },
         Include = { fg = colors.red },
-        Define = { fg = colors.magenta },
-        Macro = { fg = colors.magenta },
-        PreCondit = { fg = colors.magenta },
-
-        -- Types
-        Type = { fg = colors.yellow },
-        StorageClass = { fg = colors.yellow },
-        Structure = { fg = colors.yellow },
-        Typedef = { fg = colors.yellow },
-
-        -- Special
+        Define = { fg = colors.orange },
+        Macro = { link = "PreProc" },
+        PreCondit = { link = "PreProc" },
+        Type = { fg = colors.blue },
+        StorageClass = { link = "Type" },
+        Structure = { link = "Type" },
+        Typedef = { link = "Type" },
         Special = { fg = colors.orange },
         SpecialChar = { fg = colors.orange },
         Tag = { fg = colors.orange },
         Delimiter = { fg = colors.tx2 },
         SpecialComment = { fg = colors.tx3, italic = true },
         Debug = { fg = colors.orange },
-
-        -- Text states
         Underlined = { underline = true },
-        Bold = { bold = true },
-        Italic = { italic = true },
-
-        -- Misc
         Ignore = { fg = colors.tx3 },
         Error = { fg = colors.red },
-        Todo = { fg = colors.yellow, bold = true },
+        Todo = { fg = colors.cyan, bold = true },
+        Added = { fg = colors.green },
+        Changed = { fg = colors.yellow },
+        Removed = { fg = colors.red },
 
         --
         -- Diagnostic highlights
