@@ -108,7 +108,7 @@ return function(colors, config)
         StorageClass = { link = "Type" },
         Structure = { link = "Type" },
         Typedef = { link = "Type" },
-        Special = { fg = colors.red },
+        Special = { fg = colors.orange },
         SpecialChar = { link = "Special" },
         Tag = { link = "Special" },
         Delimiter = { link = "Special" },
@@ -151,96 +151,121 @@ return function(colors, config)
         DiagnosticDeprecated = { sp = colors.red, strikethrough = true },
         DiagnosticUnnecessary = { link = "Comment" },
 
-        --
-        -- Treesitter highlights
-        --
-        -- Common
-        ["@comment"] = { link = "Comment" },
-        ["@error"] = { link = "Error" },
-        ["@none"] = { bg = "NONE", fg = "NONE" },
-        ["@preproc"] = { link = "PreProc" },
-        ["@define"] = { link = "Define" },
-        ["@operator"] = { link = "Operator" },
+        -- Treesitter highlights (:help treesitter-highlight-groups)
+        ["@variable"] = { link = "Identifier" },
+        ["@variable.builtin"] = { fg = colors.magenta },
+        ["@variable.parameter"] = { link = "Identifier" },
+        ["@variable.parameter.builtin"] = { fg = colors.magenta },
+        ["@variable.member"] = { link = "Identifier" },
 
-        -- Punctuation
-        ["@punctuation.bracket"] = { fg = colors.tx2 },
-        ["@punctuation.delimiter"] = { fg = colors.tx2 },
-        ["@punctuation.special"] = { fg = colors.tx2 },
+        ["@constant"] = { link = "Constant" },
+        ["@constant.builtin"] = { fg = colors.magenta },
+        ["@constant.macro"] = { link = "PreProc" },
 
-        -- Literals
+        ["@module"] = { link = "Structure" },
+        ["@module.builtin"] = { link = "Special" },
+        ["@label"] = { link = "Label" },
+
         ["@string"] = { link = "String" },
-        ["@string.escape"] = { fg = colors.orange },
-        ["@string.special"] = { fg = colors.orange },
-        ["@string.regex"] = { fg = colors.orange },
+        ["@string.documentation"] = { link = "String" },
+        ["@string.regexp"] = { link = "Special" },
+        ["@string.escape"] = { link = "Special" },
+        ["@string.special"] = { link = "SpecialChar" },
+        ["@string.special.symbol"] = { link = "Special" },
+        ["@string.special.path"] = { link = "Special" },
+        ["@string.special.url"] = { link = "Underlined" },
+
         ["@character"] = { link = "Character" },
-        ["@character.special"] = { fg = colors.orange },
+        ["@character.special"] = { link = "Special" },
+
         ["@boolean"] = { link = "Boolean" },
         ["@number"] = { link = "Number" },
         ["@float"] = { link = "Float" },
 
-        -- Functions
-        ["@function"] = { link = "Function" },
-        ["@function.call"] = { fg = colors.orange },
-        ["@function.builtin"] = { fg = colors.orange },
-        ["@function.macro"] = { fg = colors.magenta },
-        ["@method"] = { fg = colors.orange },
-        ["@method.call"] = { fg = colors.orange },
-        ["@constructor"] = { fg = colors.orange },
-        ["@parameter"] = { fg = colors.blue },
+        ["@type"] = { link = "Type" },
+        ["@type.builtin"] = { link = "Special" },
+        ["@type.definition"] = { link = "Type" },
 
-        -- Keywords
+        ["@attribute"] = { link = "Macro" },
+        ["@attribute.builtin"] = { link = "Special" },
+        ["@property"] = { link = "Identifier" },
+
+        ["@function"] = { link = "Function" },
+        ["@function.builtin"] = { link = "Function" },
+        ["@function.call"] = { link = "Function" },
+        ["@function.macro"] = { link = "Function" },
+
+        ["@function.method"] = { link = "Function" },
+        ["@function.method.call"] = { link = "Function" },
+
+        ["@constructor"] = { link = "Special" },
+        ["@operator"] = { link = "Operator" },
+
         ["@keyword"] = { link = "Keyword" },
-        ["@keyword.function"] = { fg = colors.green },
-        ["@keyword.return"] = { fg = colors.green },
-        ["@keyword.operator"] = { fg = colors.green },
+        ["@keyword.coroutine"] = { link = "Keyword" },
+        ["@keyword.function"] = { link = "Keyword" },
+        ["@keyword.operator"] = { link = "Keyword" },
         ["@keyword.import"] = { fg = colors.red },
-        ["@keyword.directive.preprocessor"] = { fg = colors.magenta },
-        ["@keyword.directive"] = { fg = colors.magenta },
-        ["@keyword.conditional"] = { link = "Conditional" },
-        ["@keyword.conditional.ternary"] = { fg = colors.green },
+        ["@keyword.type"] = { link = "Type" },
+        ["@keyword.modifier"] = { link = "Keyword" },
         ["@keyword.repeat"] = { link = "Repeat" },
-        ["@keyword.debug"] = { fg = colors.magenta },
+        ["@keyword.return"] = { link = "Keyword" },
+        ["@keyword.debug"] = { link = "Debug" },
         ["@keyword.exception"] = { link = "Exception" },
 
-        -- Types
-        ["@type"] = { link = "Type" },
-        ["@type.builtin"] = { fg = colors.yellow },
-        ["@type.definition"] = { fg = colors.yellow },
-        ["@type.qualifier"] = { fg = colors.green },
-        ["@type.annotation"] = { fg = colors.blue },
-        ["@attribute"] = { fg = colors.blue },
-        ["@property"] = { fg = colors.blue },
+        ["@keyword.conditional"] = { link = "Conditional" },
+        ["@keyword.conditional.ternary"] = { link = "Conditional" },
 
-        -- Identifiers
-        ["@variable"] = { fg = colors.blue },
-        ["@variable.builtin"] = { fg = colors.magenta },
-        ["@constant"] = { fg = colors.yellow },
-        ["@constant.builtin"] = { fg = colors.purple },
-        ["@constant.macro"] = { fg = colors.magenta },
-        ["@namespace"] = { fg = colors.blue },
-        ["@symbol"] = { fg = colors.purple },
+        ["@keyword.directive"] = { link = "PreProc" },
+        ["@keyword.directive.define"] = { link = "PreProc" },
 
-        -- Text
-        ["@text"] = { fg = colors.tx },
-        ["@text.strong"] = { fg = colors.tx, bold = true },
-        ["@text.emphasis"] = { fg = colors.tx, italic = true },
-        ["@text.underline"] = { fg = colors.tx, underline = true },
-        ["@text.strike"] = { fg = colors.tx, strikethrough = true },
-        ["@text.title"] = { link = "Title" },
-        ["@text.literal"] = { fg = colors.cyan },
-        ["@text.uri"] = { fg = colors.cyan, underline = true },
-        ["@text.math"] = { fg = colors.purple },
-        ["@text.environment"] = { fg = colors.orange },
-        ["@text.environment.name"] = { fg = colors.yellow },
-        ["@text.reference"] = { fg = colors.cyan },
-        ["@text.todo"] = { fg = colors.yellow, bold = true },
-        ["@text.todo.checked"] = { fg = colors.green },
-        ["@text.todo.unchecked"] = { fg = colors.yellow },
-        ["@text.note"] = { fg = colors.blue, bold = true },
-        ["@text.warning"] = { fg = colors.orange, bold = true },
-        ["@text.danger"] = { fg = colors.red, bold = true },
-        ["@text.diff.add"] = { link = "DiffAdd" },
-        ["@text.diff.delete"] = { link = "DiffDelete" },
+        ["@punctuation.delimiter"] = { fg = colors.tx2 },
+        ["@punctuation.bracket"] = { fg = colors.tx2 },
+        ["@punctuation.special"] = { link = "Special" },
+
+        ["@comment"] = { link = "Comment" },
+        ["@comment.documentaion"] = { link = "Comment" },
+
+        ["@comment.error"] = { link = "DiagnosticError" },
+        ["@comment.warning"] = { link = "DiagnosticWarn" },
+        ["@comment.todo"] = { link = "Todo" },
+        ["@comment.note"] = { link = "DiagnosticInfo" },
+
+        ["@markup.strong"] = { bold = true },
+        ["@markup.italic"] = { italic = true },
+        ["@markup.strikethrough"] = { strikethrough = true },
+        ["@markup.underline"] = { underline = true },
+
+        ["@markup.heading"] = { link = "Title" },
+        ["@markup.heading.1"] = { link = "Title" },
+        ["@markup.heading.2"] = { link = "Title" },
+        ["@markup.heading.3"] = { link = "Title" },
+        ["@markup.heading.4"] = { link = "Title" },
+        ["@markup.heading.5"] = { link = "Title" },
+        ["@markup.heading.6"] = { link = "Title" },
+
+        ["@markup.quote"] = { italic = true },
+        ["@markup.math"] = { link = "Special" },
+
+        ["@markup.link"] = { fg = colors.cyan, underline = true },
+        ["@markup.link.label"] = { link = "@markup.link" },
+        ["@markup.link.url"] = { link = "@markup.link" },
+
+        ["@markup.raw"] = { bg = colors.bg2 },
+        ["@markup.raw.block"] = { link = "@markup.raw" },
+
+        ["@markup.list"] = { fg = colors.tx2 },
+        ["@markup.list.checked"] = { bg = colors.cyan3 },
+        ["@markup.list.unchecked"] = { bg = colors.ui },
+
+        ["@diff.plus"] = { link = "Added" },
+        ["@diff.minus"] = { link = "Removed" },
+        ["@diff.delta"] = { link = "Changed" },
+
+        ["@tag"] = { fg = colors.tx2 },
+        ["@tag.builtin"] = { link = "@tag" },
+        ["@tag.attribute"] = { fg = colors.orange },
+        ["@tag.delimiter"] = { link = "@tag" },
 
         --
         -- LSP semantic token highlights
