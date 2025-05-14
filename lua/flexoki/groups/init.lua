@@ -128,26 +128,31 @@ return function(colors, config)
         DiagnosticInfo = { fg = colors.blue },
         DiagnosticHint = { fg = colors.cyan },
         DiagnosticOk = { fg = colors.green },
+
         DiagnosticVirtualTextError = { link = "DiagnosticError" },
         DiagnosticVirtualTextWarn = { link = "DiagnosticWarn" },
         DiagnosticVirtualTextInfo = { link = "DiagnosticInfo" },
         DiagnosticVirtualTextHint = { link = "DiagnosticHint" },
         DiagnosticVirtualTextOk = { link = "DiagnosticOk" },
+
         DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
         DiagnosticUnderlineWarn = { sp = colors.orange, undercurl = true },
         DiagnosticUnderlineInfo = { sp = colors.blue, undercurl = true },
         DiagnosticUnderlineHint = { sp = colors.cyan, undercurl = true },
         DiagnosticUnderlineOk = { sp = colors.green, undercurl = true },
+
         DiagnosticFloatingError = { link = "DiagnosticError" },
         DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
         DiagnosticFloatingInfo = { link = "DiagnosticInfo" },
         DiagnosticFloatingHint = { link = "DiagnosticHint" },
         DiagnosticFloatingOk = { link = "DiagnosticOk" },
+
         DiagnosticSignError = { link = "DiagnosticError" },
         DiagnosticSignWarn = { link = "DiagnosticWarn" },
         DiagnosticSignInfo = { link = "DiagnosticInfo" },
         DiagnosticSignHint = { link = "DiagnosticHint" },
         DiagnosticSignOk = { link = "DiagnosticOk" },
+
         DiagnosticDeprecated = { sp = colors.red, strikethrough = true },
         DiagnosticUnnecessary = { link = "Comment" },
 
