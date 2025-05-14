@@ -90,8 +90,10 @@ return function(colors, config)
         Number = { fg = colors.purple },
         Boolean = { link = "Constant" },
         Float = { link = "Number" },
+
         Identifier = { fg = colors.blue },
         Function = { fg = colors.orange },
+
         Statement = { link = "Keyword" },
         Conditional = { link = "Keyword" },
         Repeat = { link = "Keyword" },
@@ -99,25 +101,30 @@ return function(colors, config)
         Operator = { fg = colors.tx2 },
         Keyword = { fg = colors.green },
         Exception = { link = "Keyword" },
+
         PreProc = { fg = colors.orange },
         Include = { link = "PreProc" },
         Define = { link = "PreProc" },
         Macro = { link = "PreProc" },
         PreCondit = { link = "PreProc" },
+
         Type = { fg = colors.green },
         StorageClass = { link = "Type" },
         Structure = { link = "Type" },
         Typedef = { link = "Type" },
+
         Special = { fg = colors.orange },
         SpecialChar = { link = "Special" },
         Tag = { link = "Special" },
         Delimiter = { link = "Special" },
         SpecialComment = { link = "Special" },
         Debug = { link = "Special" },
+
         Underlined = { underline = true },
         Ignore = { fg = colors.tx3 },
         Error = { fg = colors.red },
         Todo = { fg = colors.cyan, bold = true },
+
         Added = { fg = colors.green },
         Changed = { fg = colors.yellow },
         Removed = { fg = colors.red },
