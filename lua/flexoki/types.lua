@@ -1,6 +1,9 @@
 ---@alias flexoki.HighlightGroups table<string, vim.api.keyset.highlight>
 ---@alias flexoki.Theme "light" | "dark"
----@alias flexoki.Plugin "gitsigns" | "which_key"
+---@alias flexoki.Plugin
+---| '"gitsigns"'
+---| '"nvim_treesitter_context"'
+---| '"which_key"'
 
 ---@class flexoki.Config
 ---@field plugins flexoki.Plugin[] List of plugin names to enable
