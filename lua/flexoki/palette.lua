@@ -75,7 +75,7 @@ return function(theme)
         ui = colors.base100,
         ui2 = colors.base150,
         ui3 = colors.base200,
-        tx = colors.black,
+        tx = colors.base800,
         tx2 = colors.base600,
         tx3 = colors.base300,
 

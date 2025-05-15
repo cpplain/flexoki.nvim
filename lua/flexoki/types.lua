@@ -6,11 +6,11 @@
 ---@field plugins flexoki.Plugin[] List of plugin names to enable
 
 ---@class flexoki.Colors
----@field black string Light tx, Dark bg color
+---@field black string Dark bg color
 ---@field base950 string Dark bg-2 color
 ---@field base900 string Dark ui color
 ---@field base850 string Dark ui-2 color
----@field base800 string Dark ui-3 color
+---@field base800 string Light tx, Dark ui-3 color
 ---@field base700 string Dark tx-3 color
 ---@field base600 string Light tx-2 color
 ---@field base500 string Dark tx-2 color
