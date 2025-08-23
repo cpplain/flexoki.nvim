@@ -1,6 +1,8 @@
+M = {}
+
 ---@param theme flexoki.Theme
 ---@return flexoki.ThemeColors
-return function(theme)
+function M.get(theme)
     ---Base color values
     ---@type flexoki.Colors
     local colors = {
@@ -145,3 +147,5 @@ return function(theme)
 
     return theme == "dark" and dark or light
 end
+
+return M

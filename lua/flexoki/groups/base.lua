@@ -1,9 +1,8 @@
 M = {}
 
----@param colors flexoki.ThemeColors The color palette
----@return flexoki.HighlightGroups # Highlight groups for Neovim
+---@param colors flexoki.ThemeColors
+---@return flexoki.HighlightGroups
 function M.get(colors)
-    ---Define neovim default highlights
     ---@type flexoki.HighlightGroups
     return {
         -- Editor highlights (:help highlight-groups)
