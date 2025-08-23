@@ -1,10 +1,11 @@
----@param colors flexoki.ThemeColors The color palette to use for highlighting groups
----@param config flexoki.Config The user configuration
+M = {}
+
+---@param colors flexoki.ThemeColors The color palette
 ---@return flexoki.HighlightGroups # Highlight groups for Neovim
-return function(colors, config)
-    ---Define neovim default groups
+function M.get(colors)
+    ---Define neovim default highlights
     ---@type flexoki.HighlightGroups
-    local groups = {
+    return {
         -- Editor highlights (:help highlight-groups)
         ColorColumn = { bg = colors.bg2 },
         Conceal = { fg = colors.tx3 },
@@ -304,12 +305,6 @@ return function(colors, config)
         ["@lsp.type.function"] = { link = "@function" },
         ["@lsp.type.class"] = { link = "@type" },
     }
-
-    -- Add plugin-specific groups
-    for _, plugin in ipairs(config.plugins) do
-        local plugin_groups = require("flexoki.groups." .. plugin)(colors)
-        groups = vim.tbl_extend("force", groups, plugin_groups)
-    end
-
-    return groups
 end
+
+return M

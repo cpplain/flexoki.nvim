@@ -10,7 +10,7 @@ local M = {
     ---@diagnostic disable-next-line: missing-fields
     colors = {},
     config = {
-        plugins = {},
+        groups = { base = true },
     },
 }
 
@@ -26,9 +26,13 @@ function M.load()
 
     M.colors = require("flexoki.palette")(vim.o.background)
 
-    local groups = require("flexoki.groups")(M.colors, M.config)
-    for name, val in pairs(groups) do
-        vim.api.nvim_set_hl(0, name, val)
+    for group, enable in pairs(M.config.groups) do
+        if enable then
+            local highlights = require("flexoki.groups." .. group).get(M.colors)
+            for name, val in pairs(highlights) do
+                vim.api.nvim_set_hl(0, name, val)
+            end
+        end
     end
 end
 
