@@ -12,7 +12,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Base Colors
 
 | Color                                                     | Name     | Hex       |
-| --------------------------------------------------------- | -------- | --------- |
+| :-------------------------------------------------------- | :------- | :-------- |
 | <img src="../assets/paper.png" width="64" height="32">    | paper    | `#FFFCF0` |
 | <img src="../assets/base-50.png" width="64" height="32">  | base-50  | `#F2F0E5` |
 | <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` |
@@ -32,7 +32,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Red
 
 | Color                                                    | Name    | Hex       |
-| -------------------------------------------------------- | ------- | --------- |
+| :------------------------------------------------------- | :------ | :-------- |
 | <img src="../assets/red-50.png" width="64" height="32">  | red-50  | `#FFE1D5` |
 | <img src="../assets/red-100.png" width="64" height="32"> | red-100 | `#FFCABB` |
 | <img src="../assets/red-150.png" width="64" height="32"> | red-150 | `#FDB2A2` |
@@ -50,7 +50,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Orange
 
 | Color                                                       | Name       | Hex       |
-| ----------------------------------------------------------- | ---------- | --------- |
+| :---------------------------------------------------------- | :--------- | :-------- |
 | <img src="../assets/orange-50.png" width="64" height="32">  | orange-50  | `#FFE7CE` |
 | <img src="../assets/orange-100.png" width="64" height="32"> | orange-100 | `#FED3AF` |
 | <img src="../assets/orange-150.png" width="64" height="32"> | orange-150 | `#FCC192` |
@@ -68,7 +68,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Yellow
 
 | Color                                                       | Name       | Hex       |
-| ----------------------------------------------------------- | ---------- | --------- |
+| :---------------------------------------------------------- | :--------- | :-------- |
 | <img src="../assets/yellow-50.png" width="64" height="32">  | yellow-50  | `#FAEEC6` |
 | <img src="../assets/yellow-100.png" width="64" height="32"> | yellow-100 | `#F6E2A0` |
 | <img src="../assets/yellow-150.png" width="64" height="32"> | yellow-150 | `#F1D67E` |
@@ -86,7 +86,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Green
 
 | Color                                                      | Name      | Hex       |
-| ---------------------------------------------------------- | --------- | --------- |
+| :--------------------------------------------------------- | :-------- | :-------- |
 | <img src="../assets/green-50.png" width="64" height="32">  | green-50  | `#EDEECF` |
 | <img src="../assets/green-100.png" width="64" height="32"> | green-100 | `#DDE2B2` |
 | <img src="../assets/green-150.png" width="64" height="32"> | green-150 | `#CDD597` |
@@ -104,7 +104,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Cyan
 
 | Color                                                     | Name     | Hex       |
-| --------------------------------------------------------- | -------- | --------- |
+| :-------------------------------------------------------- | :------- | :-------- |
 | <img src="../assets/cyan-50.png" width="64" height="32">  | cyan-50  | `#DDF1E4` |
 | <img src="../assets/cyan-100.png" width="64" height="32"> | cyan-100 | `#BFE8D9` |
 | <img src="../assets/cyan-150.png" width="64" height="32"> | cyan-150 | `#A2DECE` |
@@ -122,7 +122,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Blue
 
 | Color                                                     | Name     | Hex       |
-| --------------------------------------------------------- | -------- | --------- |
+| :-------------------------------------------------------- | :------- | :-------- |
 | <img src="../assets/blue-50.png" width="64" height="32">  | blue-50  | `#E1ECEB` |
 | <img src="../assets/blue-100.png" width="64" height="32"> | blue-100 | `#C6DDE8` |
 | <img src="../assets/blue-150.png" width="64" height="32"> | blue-150 | `#ABCFE2` |
@@ -140,7 +140,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Purple
 
 | Color                                                       | Name       | Hex       |
-| ----------------------------------------------------------- | ---------- | --------- |
+| :---------------------------------------------------------- | :--------- | :-------- |
 | <img src="../assets/purple-50.png" width="64" height="32">  | purple-50  | `#F0EAEC` |
 | <img src="../assets/purple-100.png" width="64" height="32"> | purple-100 | `#E2D9E9` |
 | <img src="../assets/purple-150.png" width="64" height="32"> | purple-150 | `#D3CAE6` |
@@ -158,7 +158,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 ### Magenta
 
 | Color                                                        | Name        | Hex       |
-| ------------------------------------------------------------ | ----------- | --------- |
+| :----------------------------------------------------------- | :---------- | :-------- |
 | <img src="../assets/magenta-50.png" width="64" height="32">  | magenta-50  | `#FEE4E5` |
 | <img src="../assets/magenta-100.png" width="64" height="32"> | magenta-100 | `#FCCFDA` |
 | <img src="../assets/magenta-150.png" width="64" height="32"> | magenta-150 | `#F9B9CF` |
@@ -182,7 +182,7 @@ Flexoki uses semantic color variables that automatically map to appropriate valu
 #### Base Color Mappings
 
 | Variable | Light Theme | Dark Theme | Usage                |
-| -------- | ----------- | ---------- | -------------------- |
+| :------- | :---------- | :--------- | :------------------- |
 | `bg`     | paper       | black      | Main background      |
 | `bg2`    | base-50     | base-950   | Secondary background |
 | `ui`     | base-100    | base-900   | Borders              |
@@ -195,7 +195,7 @@ Flexoki uses semantic color variables that automatically map to appropriate valu
 #### Accent Color Mappings
 
 | Variable  | Light Theme | Dark Theme  | UI Usage             | Syntax Usage          |
-| --------- | ----------- | ----------- | -------------------- | --------------------- |
+| :-------- | :---------- | :---------- | :------------------- | :-------------------- |
 | `red`     | red-600     | red-400     | Error text           | Errors                |
 | `orange`  | orange-600  | orange-400  | Warning text         | Numbers               |
 | `yellow`  | yellow-600  | yellow-400  | Attention text       | Constants             |
@@ -219,7 +219,7 @@ Research-based color assignments aligned with industry conventions and accessibi
 > Text colors are guidelines. Legibility always comes first. Adjust colors when they don't provide sufficient contrast in your specific environment.
 
 | Element                | Color   | Usage                              |
-| ---------------------- | ------- | ---------------------------------- |
+| :--------------------- | :------ | :--------------------------------- |
 | Comments               | tx3     | Faint text for code comments       |
 | Keywords               | magenta | Language keywords (if, for, class) |
 | Strings                | green   | String literals and text           |
@@ -241,7 +241,7 @@ Technical rationale for color assignments:
 #### Industry-Standard Assignments
 
 | Color Family | Programming Context        | Technical Rationale                                                            |
-| ------------ | -------------------------- | ------------------------------------------------------------------------------ |
+| :----------- | :------------------------- | :----------------------------------------------------------------------------- |
 | **Magenta**  | Keywords & control flow    | Purple/magenta universally signals "special language constructs" (90%+ themes) |
 | **Green**    | String literals            | Green represents literal text content within code structure                    |
 | **Blue**     | Functions & methods        | Blue indicates callable/executable code blocks                                 |
@@ -271,7 +271,7 @@ Generic syntax highlighting recommendations applicable to any highlighting syste
 #### Core Language Elements
 
 | Element Category         | Color   | Rationale                                          |
-| ------------------------ | ------- | -------------------------------------------------- |
+| :----------------------- | :------ | :------------------------------------------------- |
 | Comments & Documentation | tx3     | Subdued to not interfere with active code content  |
 | Keywords                 | magenta | Magenta follows universal convention (90%+ themes) |
 | Control Flow             | magenta | Consistent with keywords for cognitive grouping    |
@@ -280,7 +280,7 @@ Generic syntax highlighting recommendations applicable to any highlighting syste
 #### Literal Values & Constants
 
 | Element Category   | Color  | Rationale                                        |
-| ------------------ | ------ | ------------------------------------------------ |
+| :----------------- | :----- | :----------------------------------------------- |
 | String Literals    | green  | Green aligns with "natural" content metaphor     |
 | String Escapes     | purple | Purple for special/meta sequences within strings |
 | Numbers            | orange | Orange for attention-drawing literal values      |
@@ -291,7 +291,7 @@ Generic syntax highlighting recommendations applicable to any highlighting syste
 #### Functions & Identifiers
 
 | Element Category     | Color | Rationale                                            |
-| -------------------- | ----- | ---------------------------------------------------- |
+| :------------------- | :---- | :--------------------------------------------------- |
 | Function Definitions | blue  | Blue conveys stability and trustworthiness           |
 | Function Calls       | blue  | Consistent with definitions for easy recognition     |
 | Variables            | tx    | Default text for user-defined content                |
@@ -301,7 +301,7 @@ Generic syntax highlighting recommendations applicable to any highlighting syste
 #### Types & Structure
 
 | Element Category | Color | Rationale                                        |
-| ---------------- | ----- | ------------------------------------------------ |
+| :--------------- | :---- | :----------------------------------------------- |
 | Type Definitions | cyan  | Cyan for systematic, architectural elements      |
 | Built-in Types   | cyan  | Consistent treatment of type system concepts     |
 | Operators        | tx    | Default text for better visibility of operations |
@@ -314,7 +314,7 @@ Advanced syntax highlighting for modern programming constructs:
 #### Scoping & Organization
 
 | Element Category | Color | Rationale                                      |
-| ---------------- | ----- | ---------------------------------------------- |
+| :--------------- | :---- | :--------------------------------------------- |
 | Namespaces       | cyan  | Cyan for organizational/architectural concepts |
 | Modules          | cyan  | Consistent with namespace-level organization   |
 | Packages         | cyan  | High-level structural elements                 |
@@ -322,7 +322,7 @@ Advanced syntax highlighting for modern programming constructs:
 #### Object-Oriented Constructs
 
 | Element Category      | Color | Rationale                                       |
-| --------------------- | ----- | ----------------------------------------------- |
+| :-------------------- | :---- | :---------------------------------------------- |
 | Class Definitions     | cyan  | Cyan for type system and structural definitions |
 | Interface Definitions | cyan  | Consistent with other type-defining constructs  |
 | Enum Definitions      | cyan  | Part of type system architecture                |
@@ -332,7 +332,7 @@ Advanced syntax highlighting for modern programming constructs:
 #### Functional & Meta Elements
 
 | Element Category    | Color  | Rationale                                          |
-| ------------------- | ------ | -------------------------------------------------- |
+| :------------------ | :----- | :------------------------------------------------- |
 | Local Variables     | tx     | Default text for scope-local user content          |
 | Function Parameters | tx2    | Muted to distinguish parameter context             |
 | Macros              | purple | Purple for meta-programming and special processing |
@@ -346,7 +346,7 @@ Advanced syntax highlighting for modern programming constructs:
 Flexoki organizes UI elements into distinct layers for consistent visual hierarchy:
 
 | Layer      | Light Theme | Dark Theme | Z-Index | Usage                  |
-| ---------- | ----------- | ---------- | ------- | ---------------------- |
+| :--------- | :---------- | :--------- | :------ | :--------------------- |
 | Background | paper       | black      | 0       | Main editor background |
 | Secondary  | base-50     | base-950   | 1       | Sidebars, panels       |
 | Surface 0  | base-100    | base-900   | 2       | Cards, dropdowns       |
@@ -362,7 +362,7 @@ Flexoki organizes UI elements into distinct layers for consistent visual hierarc
 ### Editor Interface Elements
 
 | Element              | Color  | Usage                              |
-| -------------------- | ------ | ---------------------------------- |
+| :------------------- | :----- | :--------------------------------- |
 | Line numbers         | tx3    | Subtle reference information       |
 | Current line number  | tx2    | Slightly emphasized                |
 | Cursor               | tx     | Primary text color for visibility  |
@@ -380,7 +380,7 @@ Flexoki uses specific palette colors to provide subtle visual feedback for UI st
 > These colors are selected from the Flexoki palette to provide subtle visual feedback without using opacity.
 
 | Element        | Light Theme | Dark Theme | Usage                    |
-| -------------- | ----------- | ---------- | ------------------------ |
+| :------------- | :---------- | :--------- | :----------------------- |
 | Selection BG   | blue-100    | blue-900   | Selected text background |
 | Cursor Line BG | base-50     | base-950   | Current line highlight   |
 | Search Match   | yellow-100  | yellow-900 | Find results             |
@@ -397,7 +397,7 @@ Flexoki uses specific palette colors to provide subtle visual feedback for UI st
 Flexoki defines specific colors for interactive UI elements and their various states:
 
 | Element                | State        | Light Theme | Dark Theme | Notes                  |
-| ---------------------- | ------------ | ----------- | ---------- | ---------------------- |
+| :--------------------- | :----------- | :---------- | :--------- | :--------------------- |
 | **Borders**            |
 | Border                 | Active       | blue-400    | blue-600   | Current focus          |
 | Border                 | Inactive     | base-200    | base-800   | Default state          |
@@ -431,7 +431,7 @@ Flexoki defines specific colors for interactive UI elements and their various st
 Flexoki provides comprehensive colors for version control visualization:
 
 | Element                 | Light Theme | Dark Theme | Usage                  |
-| ----------------------- | ----------- | ---------- | ---------------------- |
+| :---------------------- | :---------- | :--------- | :--------------------- |
 | **Headers**             |
 | Diff Header             | blue-600    | blue-400   | File comparison header |
 | Hunk Header             | orange-600  | orange-400 | @@ line markers        |
@@ -462,7 +462,7 @@ Flexoki provides comprehensive colors for version control visualization:
 ### Diagnostic and Debug Colors
 
 | Element             | Color  | Usage                             |
-| ------------------- | ------ | --------------------------------- |
+| :------------------ | :----- | :-------------------------------- |
 | Error diagnostics   | red    | Red for errors                    |
 | Warning diagnostics | orange | Orange for warnings               |
 | Info diagnostics    | blue   | Blue for information              |
@@ -480,7 +480,7 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 #### Standard 16-Color Palette
 
 | ANSI | Name           | Light Theme | Dark Theme  | Usage               |
-| ---- | -------------- | ----------- | ----------- | ------------------- |
+| :--- | :------------- | :---------- | :---------- | :------------------ |
 | 0    | Black          | black       | black       | Standard black      |
 | 1    | Red            | red-600     | red-400     | Errors, alerts      |
 | 2    | Green          | green-600   | green-400   | Success, additions  |
@@ -501,7 +501,7 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 #### Terminal Window Colors
 
 | Element         | Light Theme | Dark Theme | Usage                    |
-| --------------- | ----------- | ---------- | ------------------------ |
+| :-------------- | :---------- | :--------- | :----------------------- |
 | Cursor          | red-400     | red-400    | Terminal cursor          |
 | Cursor Text     | paper       | black      | Text under cursor        |
 | Selection       | blue-100    | blue-900   | Selected text background |
