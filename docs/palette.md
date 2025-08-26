@@ -2,10 +2,7 @@
 
 An inky color scheme for prose and code, designed for reading and writing on digital screens. Inspired by analog inks and warm shades of paper.
 
-> **Source**: This documentation is based on the Flexoki color scheme by [Steph Ango](https://stephango.com/flexoki).
-> For the complete original specification and additional resources, visit [stephango.com/flexoki](https://stephango.com/flexoki).
-
-**Note**: This implementation includes research-based improvements and deviations from the original Flexoki specification to better align with modern syntax highlighting conventions. For the original color mappings, please refer to [stephango.com/flexoki](https://stephango.com/flexoki).
+**Note**: This documentation is based on the Flexoki color scheme by [Steph Ango](https://stephango.com/flexoki). This implementation includes research-based deviations from the original Flexoki specification to align with a majority of the current popular color schemes. For the complete original specification and additional resources, visit [stephango.com/flexoki](https://stephango.com/flexoki).
 
 ## Design Philosophy
 
