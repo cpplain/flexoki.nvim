@@ -488,7 +488,7 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 | 4    | Blue           | blue-600    | blue-400    | Information         |
 | 5    | Magenta        | magenta-600 | magenta-400 | Special items       |
 | 6    | Cyan           | cyan-600    | cyan-400    | Links, emphasis     |
-| 7    | White          | base-200    | base-200    | Standard white/gray |
+| 7    | White          | base-50     | base-400    | Standard white/gray |
 | 8    | Bright Black   | base-600    | base-500    | Dimmed/secondary    |
 | 9    | Bright Red     | red-500     | red-300     | Bright errors       |
 | 10   | Bright Green   | green-500   | green-300   | Bright success      |
@@ -502,7 +502,7 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 
 | Element         | Light Theme | Dark Theme | Usage                    |
 | :-------------- | :---------- | :--------- | :----------------------- |
-| Cursor          | red-400     | red-400    | Terminal cursor          |
+| Cursor          | base-850    | base-200   | Terminal cursor          |
 | Cursor Text     | paper       | black      | Text under cursor        |
 | Selection       | blue-100    | blue-900   | Selected text background |
 | Active Border   | blue-400    | blue-600   | Active window border     |
