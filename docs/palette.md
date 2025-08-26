@@ -51,16 +51,14 @@ Flexoki organizes UI elements into distinct layers for consistent visual hierarc
 | Overlay 2  | base-500    | base-500   | 7       | Shadows, borders       |
 
 > [!NOTE]
-> The Z-Index values are suggestions for visual hierarchy. Actual implementation
-> may vary based on your editor or application's layout system.
+> The Z-Index values are suggestions for visual hierarchy. Actual implementation may vary based on your editor or application's layout system.
 
 ## Syntax Highlighting
 
 Research-based color assignments aligned with industry conventions and accessibility standards.
 
 > [!IMPORTANT]
-> Text colors are guidelines. Legibility always comes first.
-> Adjust colors when they don't provide sufficient contrast in your specific environment.
+> Text colors are guidelines. Legibility always comes first. Adjust colors when they don't provide sufficient contrast in your specific environment.
 
 | Element                | Color   | Usage                              |
 | ---------------------- | ------- | ---------------------------------- |
@@ -201,8 +199,7 @@ Advanced syntax highlighting for modern programming constructs:
 Flexoki uses specific palette colors to provide subtle visual feedback for UI states:
 
 > [!NOTE]
-> These colors are selected from the Flexoki palette to provide
-> subtle visual feedback without using opacity.
+> These colors are selected from the Flexoki palette to provide subtle visual feedback without using opacity.
 
 | Element        | Light Theme | Dark Theme | Usage                    |
 | -------------- | ----------- | ---------- | ------------------------ |
@@ -298,8 +295,7 @@ Flexoki provides comprehensive colors for version control visualization:
 Flexoki provides a complete 16-color ANSI palette that conforms to standard terminal color expectations while maintaining the Flexoki aesthetic:
 
 > [!NOTE]
-> This palette follows traditional ANSI color standards for maximum compatibility.
-> Colors are optimized for both light and dark terminal themes.
+> This palette follows traditional ANSI color standards for maximum compatibility. Colors are optimized for both light and dark terminal themes.
 
 #### Standard 16-Color Palette
 
@@ -519,8 +515,7 @@ The complete Flexoki color palette includes base colors and accent colors with e
 4. **Progressive Enhancement**: Basic Vim groups provide fallback, Tree-sitter adds precision, LSP adds context
 
 > [!TIP]
-> Use the semantic variables (tx, bg, ui) instead of direct
-> color values for better theme consistency and easier maintenance.
+> Use the semantic variables (tx, bg, ui) instead of direct color values for better theme consistency and easier maintenance.
 
 ### Implementation Approach
 
