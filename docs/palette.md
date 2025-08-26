@@ -11,167 +11,167 @@ The complete Flexoki color palette includes base colors and accent colors with e
 
 ### Base Colors
 
-| Color                                                     | Name     | Hex       |
-| :-------------------------------------------------------- | :------- | :-------- |
-| <img src="../assets/paper.png" width="64" height="32">    | paper    | `#FFFCF0` |
-| <img src="../assets/base-50.png" width="64" height="32">  | base-50  | `#F2F0E5` |
-| <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` |
-| <img src="../assets/base-150.png" width="64" height="32"> | base-150 | `#DAD8CE` |
-| <img src="../assets/base-200.png" width="64" height="32"> | base-200 | `#CECDC3` |
-| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` |
-| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` |
-| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` |
-| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` |
-| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` |
-| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` |
-| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` |
-| <img src="../assets/base-900.png" width="64" height="32"> | base-900 | `#282726` |
-| <img src="../assets/base-950.png" width="64" height="32"> | base-950 | `#1C1B1A` |
-| <img src="../assets/black.png" width="64" height="32">    | black    | `#100F0F` |
+| Color                                                     | Name     | Hex       | Light Theme    | Dark Theme        |
+| :-------------------------------------------------------- | :------- | :-------- | :------------- | :---------------- |
+| <img src="../assets/paper.png" width="64" height="32">    | paper    | `#FFFCF0` | `bg`           | -                 |
+| <img src="../assets/base-50.png" width="64" height="32">  | base-50  | `#F2F0E5` | `bg2`          | -                 |
+| <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` | `ui`           | -                 |
+| <img src="../assets/base-150.png" width="64" height="32"> | base-150 | `#DAD8CE` | `ui2`          | -                 |
+| <img src="../assets/base-200.png" width="64" height="32"> | base-200 | `#CECDC3` | `ui3`          | `tx`              |
+| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` | `txWhitespace` | -                 |
+| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` | `txDisabled`   | -                 |
+| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` | `tx3`          | `tx2`             |
+| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` | `tx2`          | `tx3, txDisabled` |
+| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` | -              | `txWhitespace`    |
+| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` | -              | `ui3`             |
+| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` | `tx`           | `ui2`             |
+| <img src="../assets/base-900.png" width="64" height="32"> | base-900 | `#282726` | -              | `ui`              |
+| <img src="../assets/base-950.png" width="64" height="32"> | base-950 | `#1C1B1A` | -              | `bg2`             |
+| <img src="../assets/black.png" width="64" height="32">    | black    | `#100F0F` | -              | `bg`              |
 
 ### Red
 
-| Color                                                    | Name    | Hex       |
-| :------------------------------------------------------- | :------ | :-------- |
-| <img src="../assets/red-50.png" width="64" height="32">  | red-50  | `#FFE1D5` |
-| <img src="../assets/red-100.png" width="64" height="32"> | red-100 | `#FFCABB` |
-| <img src="../assets/red-150.png" width="64" height="32"> | red-150 | `#FDB2A2` |
-| <img src="../assets/red-200.png" width="64" height="32"> | red-200 | `#F89A8A` |
-| <img src="../assets/red-300.png" width="64" height="32"> | red-300 | `#E8705F` |
-| <img src="../assets/red-400.png" width="64" height="32"> | red-400 | `#D14D41` |
-| <img src="../assets/red-500.png" width="64" height="32"> | red-500 | `#C03E35` |
-| <img src="../assets/red-600.png" width="64" height="32"> | red-600 | `#AF3029` |
-| <img src="../assets/red-700.png" width="64" height="32"> | red-700 | `#942822` |
-| <img src="../assets/red-800.png" width="64" height="32"> | red-800 | `#6C201C` |
-| <img src="../assets/red-850.png" width="64" height="32"> | red-850 | `#551B18` |
-| <img src="../assets/red-900.png" width="64" height="32"> | red-900 | `#3E1715` |
-| <img src="../assets/red-950.png" width="64" height="32"> | red-950 | `#261312` |
+| Color                                                    | Name    | Hex       | Light Theme | Dark Theme |
+| :------------------------------------------------------- | :------ | :-------- | :---------- | :--------- |
+| <img src="../assets/red-50.png" width="64" height="32">  | red-50  | `#FFE1D5` | `red4`      | -          |
+| <img src="../assets/red-100.png" width="64" height="32"> | red-100 | `#FFCABB` | `red3`      | -          |
+| <img src="../assets/red-150.png" width="64" height="32"> | red-150 | `#FDB2A2` | -           | -          |
+| <img src="../assets/red-200.png" width="64" height="32"> | red-200 | `#F89A8A` | -           | -          |
+| <img src="../assets/red-300.png" width="64" height="32"> | red-300 | `#E8705F` | -           | -          |
+| <img src="../assets/red-400.png" width="64" height="32"> | red-400 | `#D14D41` | `red2`      | `red`      |
+| <img src="../assets/red-500.png" width="64" height="32"> | red-500 | `#C03E35` | -           | -          |
+| <img src="../assets/red-600.png" width="64" height="32"> | red-600 | `#AF3029` | `red`       | `red2`     |
+| <img src="../assets/red-700.png" width="64" height="32"> | red-700 | `#942822` | -           | -          |
+| <img src="../assets/red-800.png" width="64" height="32"> | red-800 | `#6C201C` | -           | -          |
+| <img src="../assets/red-850.png" width="64" height="32"> | red-850 | `#551B18` | -           | -          |
+| <img src="../assets/red-900.png" width="64" height="32"> | red-900 | `#3E1715` | -           | `red3`     |
+| <img src="../assets/red-950.png" width="64" height="32"> | red-950 | `#261312` | -           | `red4`     |
 
 ### Orange
 
-| Color                                                       | Name       | Hex       |
-| :---------------------------------------------------------- | :--------- | :-------- |
-| <img src="../assets/orange-50.png" width="64" height="32">  | orange-50  | `#FFE7CE` |
-| <img src="../assets/orange-100.png" width="64" height="32"> | orange-100 | `#FED3AF` |
-| <img src="../assets/orange-150.png" width="64" height="32"> | orange-150 | `#FCC192` |
-| <img src="../assets/orange-200.png" width="64" height="32"> | orange-200 | `#F9AE77` |
-| <img src="../assets/orange-300.png" width="64" height="32"> | orange-300 | `#EC8B49` |
-| <img src="../assets/orange-400.png" width="64" height="32"> | orange-400 | `#DA702C` |
-| <img src="../assets/orange-500.png" width="64" height="32"> | orange-500 | `#CB6120` |
-| <img src="../assets/orange-600.png" width="64" height="32"> | orange-600 | `#BC5215` |
-| <img src="../assets/orange-700.png" width="64" height="32"> | orange-700 | `#9D4310` |
-| <img src="../assets/orange-800.png" width="64" height="32"> | orange-800 | `#71320D` |
-| <img src="../assets/orange-850.png" width="64" height="32"> | orange-850 | `#59290D` |
-| <img src="../assets/orange-900.png" width="64" height="32"> | orange-900 | `#40200D` |
-| <img src="../assets/orange-950.png" width="64" height="32"> | orange-950 | `#27180E` |
+| Color                                                       | Name       | Hex       | Light Theme                | Dark Theme                 |
+| :---------------------------------------------------------- | :--------- | :-------- | :------------------------- | :------------------------- |
+| <img src="../assets/orange-50.png" width="64" height="32">  | orange-50  | `#FFE7CE` | `orange4`                  | -                          |
+| <img src="../assets/orange-100.png" width="64" height="32"> | orange-100 | `#FED3AF` | `orange3, searchCurrentBg` | -                          |
+| <img src="../assets/orange-150.png" width="64" height="32"> | orange-150 | `#FCC192` | -                          | -                          |
+| <img src="../assets/orange-200.png" width="64" height="32"> | orange-200 | `#F9AE77` | -                          | -                          |
+| <img src="../assets/orange-300.png" width="64" height="32"> | orange-300 | `#EC8B49` | -                          | -                          |
+| <img src="../assets/orange-400.png" width="64" height="32"> | orange-400 | `#DA702C` | `orange2`                  | `orange`                   |
+| <img src="../assets/orange-500.png" width="64" height="32"> | orange-500 | `#CB6120` | -                          | -                          |
+| <img src="../assets/orange-600.png" width="64" height="32"> | orange-600 | `#BC5215` | `orange`                   | `orange2`                  |
+| <img src="../assets/orange-700.png" width="64" height="32"> | orange-700 | `#9D4310` | -                          | -                          |
+| <img src="../assets/orange-800.png" width="64" height="32"> | orange-800 | `#71320D` | -                          | -                          |
+| <img src="../assets/orange-850.png" width="64" height="32"> | orange-850 | `#59290D` | -                          | -                          |
+| <img src="../assets/orange-900.png" width="64" height="32"> | orange-900 | `#40200D` | -                          | `orange3, searchCurrentBg` |
+| <img src="../assets/orange-950.png" width="64" height="32"> | orange-950 | `#27180E` | -                          | `orange4`                  |
 
 ### Yellow
 
-| Color                                                       | Name       | Hex       |
-| :---------------------------------------------------------- | :--------- | :-------- |
-| <img src="../assets/yellow-50.png" width="64" height="32">  | yellow-50  | `#FAEEC6` |
-| <img src="../assets/yellow-100.png" width="64" height="32"> | yellow-100 | `#F6E2A0` |
-| <img src="../assets/yellow-150.png" width="64" height="32"> | yellow-150 | `#F1D67E` |
-| <img src="../assets/yellow-200.png" width="64" height="32"> | yellow-200 | `#ECCB60` |
-| <img src="../assets/yellow-300.png" width="64" height="32"> | yellow-300 | `#DFB431` |
-| <img src="../assets/yellow-400.png" width="64" height="32"> | yellow-400 | `#D0A215` |
-| <img src="../assets/yellow-500.png" width="64" height="32"> | yellow-500 | `#BE9207` |
-| <img src="../assets/yellow-600.png" width="64" height="32"> | yellow-600 | `#AD8301` |
-| <img src="../assets/yellow-700.png" width="64" height="32"> | yellow-700 | `#8E6B01` |
-| <img src="../assets/yellow-800.png" width="64" height="32"> | yellow-800 | `#664D01` |
-| <img src="../assets/yellow-850.png" width="64" height="32"> | yellow-850 | `#503D02` |
-| <img src="../assets/yellow-900.png" width="64" height="32"> | yellow-900 | `#3A2D04` |
-| <img src="../assets/yellow-950.png" width="64" height="32"> | yellow-950 | `#241E08` |
+| Color                                                       | Name       | Hex       | Light Theme              | Dark Theme               |
+| :---------------------------------------------------------- | :--------- | :-------- | :----------------------- | :----------------------- |
+| <img src="../assets/yellow-50.png" width="64" height="32">  | yellow-50  | `#FAEEC6` | `yellow4`                | -                        |
+| <img src="../assets/yellow-100.png" width="64" height="32"> | yellow-100 | `#F6E2A0` | `yellow3, searchMatchBg` | -                        |
+| <img src="../assets/yellow-150.png" width="64" height="32"> | yellow-150 | `#F1D67E` | -                        | -                        |
+| <img src="../assets/yellow-200.png" width="64" height="32"> | yellow-200 | `#ECCB60` | -                        | -                        |
+| <img src="../assets/yellow-300.png" width="64" height="32"> | yellow-300 | `#DFB431` | -                        | -                        |
+| <img src="../assets/yellow-400.png" width="64" height="32"> | yellow-400 | `#D0A215` | `yellow2`                | `yellow`                 |
+| <img src="../assets/yellow-500.png" width="64" height="32"> | yellow-500 | `#BE9207` | -                        | -                        |
+| <img src="../assets/yellow-600.png" width="64" height="32"> | yellow-600 | `#AD8301` | `yellow`                 | `yellow2`                |
+| <img src="../assets/yellow-700.png" width="64" height="32"> | yellow-700 | `#8E6B01` | -                        | -                        |
+| <img src="../assets/yellow-800.png" width="64" height="32"> | yellow-800 | `#664D01` | -                        | -                        |
+| <img src="../assets/yellow-850.png" width="64" height="32"> | yellow-850 | `#503D02` | -                        | -                        |
+| <img src="../assets/yellow-900.png" width="64" height="32"> | yellow-900 | `#3A2D04` | -                        | `yellow3, searchMatchBg` |
+| <img src="../assets/yellow-950.png" width="64" height="32"> | yellow-950 | `#241E08` | -                        | `yellow4`                |
 
 ### Green
 
-| Color                                                      | Name      | Hex       |
-| :--------------------------------------------------------- | :-------- | :-------- |
-| <img src="../assets/green-50.png" width="64" height="32">  | green-50  | `#EDEECF` |
-| <img src="../assets/green-100.png" width="64" height="32"> | green-100 | `#DDE2B2` |
-| <img src="../assets/green-150.png" width="64" height="32"> | green-150 | `#CDD597` |
-| <img src="../assets/green-200.png" width="64" height="32"> | green-200 | `#BEC97E` |
-| <img src="../assets/green-300.png" width="64" height="32"> | green-300 | `#A0AF54` |
-| <img src="../assets/green-400.png" width="64" height="32"> | green-400 | `#879A39` |
-| <img src="../assets/green-500.png" width="64" height="32"> | green-500 | `#768D21` |
-| <img src="../assets/green-600.png" width="64" height="32"> | green-600 | `#66800B` |
-| <img src="../assets/green-700.png" width="64" height="32"> | green-700 | `#536907` |
-| <img src="../assets/green-800.png" width="64" height="32"> | green-800 | `#3D4C07` |
-| <img src="../assets/green-850.png" width="64" height="32"> | green-850 | `#313D07` |
-| <img src="../assets/green-900.png" width="64" height="32"> | green-900 | `#252D09` |
-| <img src="../assets/green-950.png" width="64" height="32"> | green-950 | `#1A1E0C` |
+| Color                                                      | Name      | Hex       | Light Theme | Dark Theme |
+| :--------------------------------------------------------- | :-------- | :-------- | :---------- | :--------- |
+| <img src="../assets/green-50.png" width="64" height="32">  | green-50  | `#EDEECF` | `green4`    | -          |
+| <img src="../assets/green-100.png" width="64" height="32"> | green-100 | `#DDE2B2` | `green3`    | -          |
+| <img src="../assets/green-150.png" width="64" height="32"> | green-150 | `#CDD597` | -           | -          |
+| <img src="../assets/green-200.png" width="64" height="32"> | green-200 | `#BEC97E` | -           | -          |
+| <img src="../assets/green-300.png" width="64" height="32"> | green-300 | `#A0AF54` | -           | -          |
+| <img src="../assets/green-400.png" width="64" height="32"> | green-400 | `#879A39` | `green2`    | `green`    |
+| <img src="../assets/green-500.png" width="64" height="32"> | green-500 | `#768D21` | -           | -          |
+| <img src="../assets/green-600.png" width="64" height="32"> | green-600 | `#66800B` | `green`     | `green2`   |
+| <img src="../assets/green-700.png" width="64" height="32"> | green-700 | `#536907` | -           | -          |
+| <img src="../assets/green-800.png" width="64" height="32"> | green-800 | `#3D4C07` | -           | -          |
+| <img src="../assets/green-850.png" width="64" height="32"> | green-850 | `#313D07` | -           | -          |
+| <img src="../assets/green-900.png" width="64" height="32"> | green-900 | `#252D09` | -           | `green3`   |
+| <img src="../assets/green-950.png" width="64" height="32"> | green-950 | `#1A1E0C` | -           | `green4`   |
 
 ### Cyan
 
-| Color                                                     | Name     | Hex       |
-| :-------------------------------------------------------- | :------- | :-------- |
-| <img src="../assets/cyan-50.png" width="64" height="32">  | cyan-50  | `#DDF1E4` |
-| <img src="../assets/cyan-100.png" width="64" height="32"> | cyan-100 | `#BFE8D9` |
-| <img src="../assets/cyan-150.png" width="64" height="32"> | cyan-150 | `#A2DECE` |
-| <img src="../assets/cyan-200.png" width="64" height="32"> | cyan-200 | `#87D3C3` |
-| <img src="../assets/cyan-300.png" width="64" height="32"> | cyan-300 | `#5ABDAC` |
-| <img src="../assets/cyan-400.png" width="64" height="32"> | cyan-400 | `#3AA99F` |
-| <img src="../assets/cyan-500.png" width="64" height="32"> | cyan-500 | `#2F968D` |
-| <img src="../assets/cyan-600.png" width="64" height="32"> | cyan-600 | `#24837B` |
-| <img src="../assets/cyan-700.png" width="64" height="32"> | cyan-700 | `#1C6C66` |
-| <img src="../assets/cyan-800.png" width="64" height="32"> | cyan-800 | `#164F4A` |
-| <img src="../assets/cyan-850.png" width="64" height="32"> | cyan-850 | `#143F3C` |
-| <img src="../assets/cyan-900.png" width="64" height="32"> | cyan-900 | `#122F2C` |
-| <img src="../assets/cyan-950.png" width="64" height="32"> | cyan-950 | `#101F1D` |
+| Color                                                     | Name     | Hex       | Light Theme | Dark Theme |
+| :-------------------------------------------------------- | :------- | :-------- | :---------- | :--------- |
+| <img src="../assets/cyan-50.png" width="64" height="32">  | cyan-50  | `#DDF1E4` | `cyan4`     | -          |
+| <img src="../assets/cyan-100.png" width="64" height="32"> | cyan-100 | `#BFE8D9` | `cyan3`     | -          |
+| <img src="../assets/cyan-150.png" width="64" height="32"> | cyan-150 | `#A2DECE` | -           | -          |
+| <img src="../assets/cyan-200.png" width="64" height="32"> | cyan-200 | `#87D3C3` | -           | -          |
+| <img src="../assets/cyan-300.png" width="64" height="32"> | cyan-300 | `#5ABDAC` | -           | -          |
+| <img src="../assets/cyan-400.png" width="64" height="32"> | cyan-400 | `#3AA99F` | `cyan2`     | `cyan`     |
+| <img src="../assets/cyan-500.png" width="64" height="32"> | cyan-500 | `#2F968D` | -           | -          |
+| <img src="../assets/cyan-600.png" width="64" height="32"> | cyan-600 | `#24837B` | `cyan`      | `cyan2`    |
+| <img src="../assets/cyan-700.png" width="64" height="32"> | cyan-700 | `#1C6C66` | -           | -          |
+| <img src="../assets/cyan-800.png" width="64" height="32"> | cyan-800 | `#164F4A` | -           | -          |
+| <img src="../assets/cyan-850.png" width="64" height="32"> | cyan-850 | `#143F3C` | -           | -          |
+| <img src="../assets/cyan-900.png" width="64" height="32"> | cyan-900 | `#122F2C` | -           | `cyan3`    |
+| <img src="../assets/cyan-950.png" width="64" height="32"> | cyan-950 | `#101F1D` | -           | `cyan4`    |
 
 ### Blue
 
-| Color                                                     | Name     | Hex       |
-| :-------------------------------------------------------- | :------- | :-------- |
-| <img src="../assets/blue-50.png" width="64" height="32">  | blue-50  | `#E1ECEB` |
-| <img src="../assets/blue-100.png" width="64" height="32"> | blue-100 | `#C6DDE8` |
-| <img src="../assets/blue-150.png" width="64" height="32"> | blue-150 | `#ABCFE2` |
-| <img src="../assets/blue-200.png" width="64" height="32"> | blue-200 | `#92BFDB` |
-| <img src="../assets/blue-300.png" width="64" height="32"> | blue-300 | `#66A0C8` |
-| <img src="../assets/blue-400.png" width="64" height="32"> | blue-400 | `#4385BE` |
-| <img src="../assets/blue-500.png" width="64" height="32"> | blue-500 | `#3171B2` |
-| <img src="../assets/blue-600.png" width="64" height="32"> | blue-600 | `#205EA6` |
-| <img src="../assets/blue-700.png" width="64" height="32"> | blue-700 | `#1A4F8C` |
-| <img src="../assets/blue-800.png" width="64" height="32"> | blue-800 | `#163B66` |
-| <img src="../assets/blue-850.png" width="64" height="32"> | blue-850 | `#133051` |
-| <img src="../assets/blue-900.png" width="64" height="32"> | blue-900 | `#12253B` |
-| <img src="../assets/blue-950.png" width="64" height="32"> | blue-950 | `#101A24` |
+| Color                                                     | Name     | Hex       | Light Theme          | Dark Theme           |
+| :-------------------------------------------------------- | :------- | :-------- | :------------------- | :------------------- |
+| <img src="../assets/blue-50.png" width="64" height="32">  | blue-50  | `#E1ECEB` | `blue4`              | -                    |
+| <img src="../assets/blue-100.png" width="64" height="32"> | blue-100 | `#C6DDE8` | `blue3, selectionBg` | -                    |
+| <img src="../assets/blue-150.png" width="64" height="32"> | blue-150 | `#ABCFE2` | -                    | -                    |
+| <img src="../assets/blue-200.png" width="64" height="32"> | blue-200 | `#92BFDB` | -                    | -                    |
+| <img src="../assets/blue-300.png" width="64" height="32"> | blue-300 | `#66A0C8` | `focusRing`          | -                    |
+| <img src="../assets/blue-400.png" width="64" height="32"> | blue-400 | `#4385BE` | `blue2`              | `blue`               |
+| <img src="../assets/blue-500.png" width="64" height="32"> | blue-500 | `#3171B2` | -                    | -                    |
+| <img src="../assets/blue-600.png" width="64" height="32"> | blue-600 | `#205EA6` | `blue`               | `blue2`              |
+| <img src="../assets/blue-700.png" width="64" height="32"> | blue-700 | `#1A4F8C` | -                    | `focusRing`          |
+| <img src="../assets/blue-800.png" width="64" height="32"> | blue-800 | `#163B66` | -                    | -                    |
+| <img src="../assets/blue-850.png" width="64" height="32"> | blue-850 | `#133051` | -                    | -                    |
+| <img src="../assets/blue-900.png" width="64" height="32"> | blue-900 | `#12253B` | -                    | `blue3, selectionBg` |
+| <img src="../assets/blue-950.png" width="64" height="32"> | blue-950 | `#101A24` | -                    | `blue4`              |
 
 ### Purple
 
-| Color                                                       | Name       | Hex       |
-| :---------------------------------------------------------- | :--------- | :-------- |
-| <img src="../assets/purple-50.png" width="64" height="32">  | purple-50  | `#F0EAEC` |
-| <img src="../assets/purple-100.png" width="64" height="32"> | purple-100 | `#E2D9E9` |
-| <img src="../assets/purple-150.png" width="64" height="32"> | purple-150 | `#D3CAE6` |
-| <img src="../assets/purple-200.png" width="64" height="32"> | purple-200 | `#C4B9E0` |
-| <img src="../assets/purple-300.png" width="64" height="32"> | purple-300 | `#A699D0` |
-| <img src="../assets/purple-400.png" width="64" height="32"> | purple-400 | `#8B7EC8` |
-| <img src="../assets/purple-500.png" width="64" height="32"> | purple-500 | `#735EB5` |
-| <img src="../assets/purple-600.png" width="64" height="32"> | purple-600 | `#5E409D` |
-| <img src="../assets/purple-700.png" width="64" height="32"> | purple-700 | `#4F3685` |
-| <img src="../assets/purple-800.png" width="64" height="32"> | purple-800 | `#3C2A62` |
-| <img src="../assets/purple-850.png" width="64" height="32"> | purple-850 | `#31234E` |
-| <img src="../assets/purple-900.png" width="64" height="32"> | purple-900 | `#261C39` |
-| <img src="../assets/purple-950.png" width="64" height="32"> | purple-950 | `#1A1623` |
+| Color                                                       | Name       | Hex       | Light Theme | Dark Theme |
+| :---------------------------------------------------------- | :--------- | :-------- | :---------- | :--------- |
+| <img src="../assets/purple-50.png" width="64" height="32">  | purple-50  | `#F0EAEC` | `purple4`   | -          |
+| <img src="../assets/purple-100.png" width="64" height="32"> | purple-100 | `#E2D9E9` | `purple3`   | -          |
+| <img src="../assets/purple-150.png" width="64" height="32"> | purple-150 | `#D3CAE6` | -           | -          |
+| <img src="../assets/purple-200.png" width="64" height="32"> | purple-200 | `#C4B9E0` | -           | -          |
+| <img src="../assets/purple-300.png" width="64" height="32"> | purple-300 | `#A699D0` | -           | -          |
+| <img src="../assets/purple-400.png" width="64" height="32"> | purple-400 | `#8B7EC8` | `purple2`   | `purple`   |
+| <img src="../assets/purple-500.png" width="64" height="32"> | purple-500 | `#735EB5` | -           | -          |
+| <img src="../assets/purple-600.png" width="64" height="32"> | purple-600 | `#5E409D` | `purple`    | `purple2`  |
+| <img src="../assets/purple-700.png" width="64" height="32"> | purple-700 | `#4F3685` | -           | -          |
+| <img src="../assets/purple-800.png" width="64" height="32"> | purple-800 | `#3C2A62` | -           | -          |
+| <img src="../assets/purple-850.png" width="64" height="32"> | purple-850 | `#31234E` | -           | -          |
+| <img src="../assets/purple-900.png" width="64" height="32"> | purple-900 | `#261C39` | -           | `purple3`  |
+| <img src="../assets/purple-950.png" width="64" height="32"> | purple-950 | `#1A1623` | -           | `purple4`  |
 
 ### Magenta
 
-| Color                                                        | Name        | Hex       |
-| :----------------------------------------------------------- | :---------- | :-------- |
-| <img src="../assets/magenta-50.png" width="64" height="32">  | magenta-50  | `#FEE4E5` |
-| <img src="../assets/magenta-100.png" width="64" height="32"> | magenta-100 | `#FCCFDA` |
-| <img src="../assets/magenta-150.png" width="64" height="32"> | magenta-150 | `#F9B9CF` |
-| <img src="../assets/magenta-200.png" width="64" height="32"> | magenta-200 | `#F4A4C2` |
-| <img src="../assets/magenta-300.png" width="64" height="32"> | magenta-300 | `#E47DA8` |
-| <img src="../assets/magenta-400.png" width="64" height="32"> | magenta-400 | `#CE5D97` |
-| <img src="../assets/magenta-500.png" width="64" height="32"> | magenta-500 | `#B74583` |
-| <img src="../assets/magenta-600.png" width="64" height="32"> | magenta-600 | `#A02F6F` |
-| <img src="../assets/magenta-700.png" width="64" height="32"> | magenta-700 | `#87285E` |
-| <img src="../assets/magenta-800.png" width="64" height="32"> | magenta-800 | `#641F46` |
-| <img src="../assets/magenta-850.png" width="64" height="32"> | magenta-850 | `#4F1B39` |
-| <img src="../assets/magenta-900.png" width="64" height="32"> | magenta-900 | `#39172B` |
-| <img src="../assets/magenta-950.png" width="64" height="32"> | magenta-950 | `#24131D` |
+| Color                                                        | Name        | Hex       | Light Theme | Dark Theme |
+| :----------------------------------------------------------- | :---------- | :-------- | :---------- | :--------- |
+| <img src="../assets/magenta-50.png" width="64" height="32">  | magenta-50  | `#FEE4E5` | `magenta4`  | -          |
+| <img src="../assets/magenta-100.png" width="64" height="32"> | magenta-100 | `#FCCFDA` | `magenta3`  | -          |
+| <img src="../assets/magenta-150.png" width="64" height="32"> | magenta-150 | `#F9B9CF` | -           | -          |
+| <img src="../assets/magenta-200.png" width="64" height="32"> | magenta-200 | `#F4A4C2` | -           | -          |
+| <img src="../assets/magenta-300.png" width="64" height="32"> | magenta-300 | `#E47DA8` | -           | -          |
+| <img src="../assets/magenta-400.png" width="64" height="32"> | magenta-400 | `#CE5D97` | `magenta2`  | `magenta`  |
+| <img src="../assets/magenta-500.png" width="64" height="32"> | magenta-500 | `#B74583` | -           | -          |
+| <img src="../assets/magenta-600.png" width="64" height="32"> | magenta-600 | `#A02F6F` | `magenta`   | `magenta2` |
+| <img src="../assets/magenta-700.png" width="64" height="32"> | magenta-700 | `#87285E` | -           | -          |
+| <img src="../assets/magenta-800.png" width="64" height="32"> | magenta-800 | `#641F46` | -           | -          |
+| <img src="../assets/magenta-850.png" width="64" height="32"> | magenta-850 | `#4F1B39` | -           | -          |
+| <img src="../assets/magenta-900.png" width="64" height="32"> | magenta-900 | `#39172B` | -           | `magenta3` |
+| <img src="../assets/magenta-950.png" width="64" height="32"> | magenta-950 | `#24131D` | -           | `magenta4` |
 
 ## Theme System
 
@@ -181,18 +181,31 @@ Flexoki uses semantic color variables that automatically map to appropriate valu
 
 #### Base Color Mappings
 
-| Variable | Light Theme | Dark Theme | Usage                |
-| :------- | :---------- | :--------- | :------------------- |
-| `bg`     | paper       | black      | Main background      |
-| `bg2`    | base-50     | base-950   | Secondary background |
-| `ui`     | base-100    | base-900   | Borders              |
-| `ui2`    | base-150    | base-850   | Hovered borders      |
-| `ui3`    | base-200    | base-800   | Active borders       |
-| `tx`     | base-850    | base-200   | Primary text         |
-| `tx2`    | base-600    | base-500   | Muted text           |
-| `tx3`    | base-500    | base-600   | Faint text           |
+| Variable       | Light Theme | Dark Theme | Usage                |
+| :------------- | :---------- | :--------- | :------------------- |
+| `bg`           | paper       | black      | Main background      |
+| `bg2`          | base-50     | base-950   | Secondary background |
+| `ui`           | base-100    | base-900   | Borders              |
+| `ui2`          | base-150    | base-850   | Hovered borders      |
+| `ui3`          | base-200    | base-800   | Active borders       |
+| `tx`           | base-850    | base-200   | Primary text         |
+| `tx2`          | base-600    | base-500   | Muted text           |
+| `tx3`          | base-500    | base-600   | Faint text           |
+| `txDisabled`   | base-400    | base-600   | Disabled elements    |
+| `txWhitespace` | base-300    | base-700   | Visible whitespace   |
 
 #### Accent Color Mappings
+
+Flexoki provides four semantic layers for each accent color:
+
+| Layer    | Purpose                | Light Theme | Dark Theme | Example Usage        |
+| :------- | :--------------------- | :---------- | :--------- | :------------------- |
+| `color`  | Primary accent         | 600         | 400        | Text, borders, icons |
+| `color2` | Secondary accent       | 400         | 600        | Alternative states   |
+| `color3` | Background accent      | 100         | 900        | Subtle backgrounds   |
+| `color4` | Very subtle background | 50          | 950        | Diff backgrounds     |
+
+**Primary Layer (color)**
 
 | Variable  | Light Theme | Dark Theme  | UI Usage             | Syntax Usage          |
 | :-------- | :---------- | :---------- | :------------------- | :-------------------- |
@@ -204,6 +217,17 @@ Flexoki uses semantic color variables that automatically map to appropriate valu
 | `blue`    | blue-600    | blue-400    | Information text     | Functions, attributes |
 | `purple`  | purple-600  | purple-400  | Accent text          | Language features     |
 | `magenta` | magenta-600 | magenta-400 | Highlight text       | Keywords              |
+
+**All accent colors also have `color2`, `color3`, and `color4` variants following the pattern above.**
+
+#### Special Purpose Variables
+
+| Variable          | Light Theme | Dark Theme | Usage                     |
+| :---------------- | :---------- | :--------- | :------------------------ |
+| `focusRing`       | blue-300    | blue-700   | Keyboard focus indicators |
+| `selectionBg`     | blue-100    | blue-900   | Text selection background |
+| `searchMatchBg`   | yellow-100  | yellow-900 | Search result highlights  |
+| `searchCurrentBg` | orange-100  | orange-900 | Active search result      |
 
 ### Theme Selection
 
@@ -379,50 +403,50 @@ Flexoki uses specific palette colors to provide subtle visual feedback for UI st
 > [!NOTE]
 > These colors are selected from the Flexoki palette to provide subtle visual feedback without using opacity.
 
-| Element        | Light Theme | Dark Theme | Usage                    |
-| :------------- | :---------- | :--------- | :----------------------- |
-| Selection BG   | blue-100    | blue-900   | Selected text background |
-| Cursor Line BG | base-50     | base-950   | Current line highlight   |
-| Search Match   | yellow-100  | yellow-900 | Find results             |
-| Current Search | orange-100  | orange-900 | Active search result     |
-| Hover Surface  | base-100    | base-900   | Interactive hover states |
-| Disabled Text  | base-400    | base-600   | Disabled elements        |
-| Drop Target    | cyan-50     | cyan-950   | Drag and drop zones      |
-| Focus Ring     | blue-300    | blue-700   | Keyboard focus indicator |
-| Indent Guide   | base-200    | base-800   | Indentation lines        |
-| Whitespace     | base-300    | base-700   | Visible whitespace chars |
+| Element        | Semantic Variable | Light Theme | Dark Theme | Usage                    |
+| :------------- | :---------------- | :---------- | :--------- | :----------------------- |
+| Selection BG   | `selectionBg`     | blue-100    | blue-900   | Selected text background |
+| Cursor Line BG | `bg2`             | base-50     | base-950   | Current line highlight   |
+| Search Match   | `searchMatchBg`   | yellow-100  | yellow-900 | Find results             |
+| Current Search | `searchCurrentBg` | orange-100  | orange-900 | Active search result     |
+| Hover Surface  | `ui`              | base-100    | base-900   | Interactive hover states |
+| Disabled Text  | `txDisabled`      | base-400    | base-600   | Disabled elements        |
+| Drop Target    | `cyan4`           | cyan-50     | cyan-950   | Drag and drop zones      |
+| Focus Ring     | `focusRing`       | blue-300    | blue-700   | Keyboard focus indicator |
+| Indent Guide   | `ui3`             | base-200    | base-800   | Indentation lines        |
+| Whitespace     | `txWhitespace`    | base-300    | base-700   | Visible whitespace chars |
 
 ### Special UI States
 
 Flexoki defines specific colors for interactive UI elements and their various states:
 
-| Element                | State        | Light Theme | Dark Theme | Notes                  |
-| :--------------------- | :----------- | :---------- | :--------- | :--------------------- |
+| Element                | State        | Semantic Variable | Light Theme | Dark Theme | Notes                  |
+| :--------------------- | :----------- | :---------------- | :---------- | :--------- | :--------------------- |
 | **Borders**            |
-| Border                 | Active       | blue-400    | blue-600   | Current focus          |
-| Border                 | Inactive     | base-200    | base-800   | Default state          |
-| Border                 | Error        | red-400     | red-600    | Validation error       |
-| Border                 | Success      | green-400   | green-600  | Valid state            |
+| Border                 | Active       | `blue2`           | blue-400    | blue-600   | Current focus          |
+| Border                 | Inactive     | `ui3`             | base-200    | base-800   | Default state          |
+| Border                 | Error        | `red2`            | red-400     | red-600    | Validation error       |
+| Border                 | Success      | `green2`          | green-400   | green-600  | Valid state            |
 | **Links**              |
-| Link                   | Normal       | cyan-600    | cyan-400   | Unvisited              |
-| Link                   | Visited      | purple-600  | purple-400 | Previously visited     |
-| Link                   | Hover        | blue-600    | blue-400   | Mouse over             |
-| Link                   | Active       | green-600   | green-400  | Being clicked          |
+| Link                   | Normal       | `cyan`            | cyan-600    | cyan-400   | Unvisited              |
+| Link                   | Visited      | `purple`          | purple-600  | purple-400 | Previously visited     |
+| Link                   | Hover        | `blue`            | blue-600    | blue-400   | Mouse over             |
+| Link                   | Active       | `green`           | green-600   | green-400  | Being clicked          |
 | **Badges & Pills**     |
-| Badge BG               | Info         | blue-100    | blue-900   | Information            |
-| Badge BG               | Success      | green-100   | green-900  | Completed              |
-| Badge BG               | Warning      | yellow-100  | yellow-900 | Attention              |
-| Badge BG               | Error        | red-100     | red-900    | Problem                |
-| Badge FG               | All States   | tx          | tx         | Badge text             |
+| Badge BG               | Info         | `blue3`           | blue-100    | blue-900   | Information            |
+| Badge BG               | Success      | `green3`          | green-100   | green-900  | Completed              |
+| Badge BG               | Warning      | `yellow3`         | yellow-100  | yellow-900 | Attention              |
+| Badge BG               | Error        | `red3`            | red-100     | red-900    | Problem                |
+| Badge FG               | All States   | `tx`              | tx          | tx         | Badge text             |
 | **Buttons**            |
-| Button                 | Primary BG   | blue-600    | blue-400   | Primary action         |
-| Button                 | Secondary BG | base-200    | base-800   | Secondary action       |
-| Button                 | Danger BG    | red-600     | red-400    | Destructive action     |
-| Button                 | Hover        | +100 level  | -100 level | Hover state modifier   |
+| Button                 | Primary BG   | `blue`            | blue-600    | blue-400   | Primary action         |
+| Button                 | Secondary BG | `ui3`             | base-200    | base-800   | Secondary action       |
+| Button                 | Danger BG    | `red`             | red-600     | red-400    | Destructive action     |
+| Button                 | Hover        | Use `color2`      | +100 level  | -100 level | Hover state modifier   |
 | **Marks & Highlights** |
-| Mark 1                 | Background   | purple-100  | purple-900 | First highlight color  |
-| Mark 2                 | Background   | cyan-100    | cyan-900   | Second highlight color |
-| Mark 3                 | Background   | yellow-100  | yellow-900 | Third highlight color  |
+| Mark 1                 | Background   | `purple3`         | purple-100  | purple-900 | First highlight color  |
+| Mark 2                 | Background   | `cyan3`           | cyan-100    | cyan-900   | Second highlight color |
+| Mark 3                 | Background   | `yellow3`         | yellow-100  | yellow-900 | Third highlight color  |
 
 ## Specialized Colors
 
@@ -430,34 +454,34 @@ Flexoki defines specific colors for interactive UI elements and their various st
 
 Flexoki provides comprehensive colors for version control visualization:
 
-| Element                 | Light Theme | Dark Theme | Usage                  |
-| :---------------------- | :---------- | :--------- | :--------------------- |
+| Element                 | Semantic Variable | Light Theme | Dark Theme | Usage                  |
+| :---------------------- | :---------------- | :---------- | :--------- | :--------------------- |
 | **Headers**             |
-| Diff Header             | blue-600    | blue-400   | File comparison header |
-| Hunk Header             | orange-600  | orange-400 | @@ line markers        |
-| File Path               | purple-600  | purple-400 | a/file.txt b/file.txt  |
-| Metadata                | base-400    | base-600   | Index, mode info       |
+| Diff Header             | `blue`            | blue-600    | blue-400   | File comparison header |
+| Hunk Header             | `orange`          | orange-600  | orange-400 | @@ line markers        |
+| File Path               | `purple`          | purple-600  | purple-400 | a/file.txt b/file.txt  |
+| Metadata                | `txDisabled`      | base-400    | base-600   | Index, mode info       |
 | **Line Backgrounds**    |
-| Added Line BG           | green-50    | green-950  | New lines              |
-| Removed Line BG         | red-50      | red-950    | Deleted lines          |
-| Modified Line BG        | yellow-50   | yellow-950 | Changed lines          |
+| Added Line BG           | `green4`          | green-50    | green-950  | New lines              |
+| Removed Line BG         | `red4`            | red-50      | red-950    | Deleted lines          |
+| Modified Line BG        | `yellow4`         | yellow-50   | yellow-950 | Changed lines          |
 | **Word/Character Diff** |
-| Added Word BG           | green-100   | green-900  | Inline additions       |
-| Removed Word BG         | red-100     | red-900    | Inline deletions       |
-| Modified Word BG        | yellow-100  | yellow-900 | Inline changes         |
+| Added Word BG           | `green3`          | green-100   | green-900  | Inline additions       |
+| Removed Word BG         | `red3`            | red-100     | red-900    | Inline deletions       |
+| Modified Word BG        | `yellow3`         | yellow-100  | yellow-900 | Inline changes         |
 | **Merge Conflicts**     |
-| Current BG              | cyan-50     | cyan-950   | HEAD changes           |
-| Incoming BG             | blue-50     | blue-950   | Branch changes         |
-| Ancestor BG             | purple-50   | purple-950 | Base version           |
+| Current BG              | `cyan4`           | cyan-50     | cyan-950   | HEAD changes           |
+| Incoming BG             | `blue4`           | blue-50     | blue-950   | Branch changes         |
+| Ancestor BG             | `purple4`         | purple-50   | purple-950 | Base version           |
 | **Gutter Icons**        |
-| Added                   | green-600   | green-400  | + symbol               |
-| Removed                 | red-600     | red-400    | - symbol               |
-| Modified                | yellow-600  | yellow-400 | ~ symbol               |
+| Added                   | `green`           | green-600   | green-400  | + symbol               |
+| Removed                 | `red`             | red-600     | red-400    | - symbol               |
+| Modified                | `yellow`          | yellow-600  | yellow-400 | ~ symbol               |
 | **Git Status**          |
-| Untracked               | base-400    | base-600   | New untracked files    |
-| Ignored                 | base-300    | base-700   | Ignored files          |
-| Conflicted              | red-600     | red-400    | Merge conflicts        |
-| Staged                  | green-600   | green-400  | Staged changes         |
+| Untracked               | `txDisabled`      | base-400    | base-600   | New untracked files    |
+| Ignored                 | `txWhitespace`    | base-300    | base-700   | Ignored files          |
+| Conflicted              | `red`             | red-600     | red-400    | Merge conflicts        |
+| Staged                  | `green`           | green-600   | green-400  | Staged changes         |
 
 ### Diagnostic and Debug Colors
 
