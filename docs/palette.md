@@ -9,6 +9,8 @@ An inky color scheme for prose and code, designed for reading and writing on dig
 
 The complete Flexoki color palette includes base colors and accent colors with exponentially increasing intensity as colors get lighter or darker, emulating pigment on paper.
 
+This section maps each color to semantic variables These semantic variables (like `bg`, `tx`, `red`) abstract the actual color values, allowing automatic theme switching between light and dark modes. The tables below show which variables are assigned to each palette color in both light and dark themes.
+
 ### Base Colors
 
 | Color                                                     | Name     | Hex       | Light Theme    | Dark Theme        |
@@ -173,333 +175,198 @@ The complete Flexoki color palette includes base colors and accent colors with e
 | <img src="../assets/magenta-900.png" width="64" height="32"> | magenta-900 | `#39172B` | -           | `magenta3` |
 | <img src="../assets/magenta-950.png" width="64" height="32"> | magenta-950 | `#24131D` | -           | `magenta4` |
 
-## Theme System
-
-### Theme Variables
-
-Flexoki uses semantic color variables that automatically map to appropriate values based on theme selection:
-
-#### Base Color Mappings
-
-| Variable       | Light Theme | Dark Theme | Usage                |
-| :------------- | :---------- | :--------- | :------------------- |
-| `bg`           | paper       | black      | Main background      |
-| `bg2`          | base-50     | base-950   | Secondary background |
-| `ui`           | base-100    | base-900   | Borders              |
-| `ui2`          | base-150    | base-850   | Hovered borders      |
-| `ui3`          | base-200    | base-800   | Active borders       |
-| `tx`           | base-850    | base-200   | Primary text         |
-| `tx2`          | base-600    | base-500   | Muted text           |
-| `tx3`          | base-500    | base-600   | Faint text           |
-| `txDisabled`   | base-400    | base-600   | Disabled elements    |
-| `txWhitespace` | base-300    | base-700   | Visible whitespace   |
-
-#### Accent Color Mappings
-
-Flexoki provides four semantic layers for each accent color:
-
-| Layer    | Purpose                | Light Theme | Dark Theme | Example Usage        |
-| :------- | :--------------------- | :---------- | :--------- | :------------------- |
-| `color`  | Primary accent         | 600         | 400        | Text, borders, icons |
-| `color2` | Secondary accent       | 400         | 600        | Alternative states   |
-| `color3` | Background accent      | 100         | 900        | Subtle backgrounds   |
-| `color4` | Very subtle background | 50          | 950        | Diff backgrounds     |
-
-**Primary Layer (color)**
-
-| Variable  | Light Theme | Dark Theme  | UI Usage             | Syntax Usage          |
-| :-------- | :---------- | :---------- | :------------------- | :-------------------- |
-| `red`     | red-600     | red-400     | Error text           | Errors                |
-| `orange`  | orange-600  | orange-400  | Warning text         | Numbers               |
-| `yellow`  | yellow-600  | yellow-400  | Attention text       | Constants             |
-| `green`   | green-600   | green-400   | Success text         | Strings               |
-| `cyan`    | cyan-600    | cyan-400    | Links, active states | Types                 |
-| `blue`    | blue-600    | blue-400    | Information text     | Functions, attributes |
-| `purple`  | purple-600  | purple-400  | Accent text          | Language features     |
-| `magenta` | magenta-600 | magenta-400 | Highlight text       | Keywords              |
-
-**All accent colors also have `color2`, `color3`, and `color4` variants following the pattern above.**
-
-#### Special Purpose Variables
-
-| Variable          | Light Theme | Dark Theme | Usage                     |
-| :---------------- | :---------- | :--------- | :------------------------ |
-| `focusRing`       | blue-300    | blue-700   | Keyboard focus indicators |
-| `selectionBg`     | blue-100    | blue-900   | Text selection background |
-| `searchMatchBg`   | yellow-100  | yellow-900 | Search result highlights  |
-| `searchCurrentBg` | orange-100  | orange-900 | Active search result      |
-
-### Theme Selection
-
-- **Light themes**: Use 600-level accent colors for syntax highlighting
-- **Dark themes**: Use 400-level accent colors for syntax highlighting
-- **Base colors**: Automatically mapped based on theme selection
-
-## Syntax Highlighting
-
-Research-based color assignments aligned with industry conventions and accessibility standards.
-
-> [!IMPORTANT]
-> Text colors are guidelines. Legibility always comes first. Adjust colors when they don't provide sufficient contrast in your specific environment.
-
-| Element                | Color   | Usage                              |
-| :--------------------- | :------ | :--------------------------------- |
-| Comments               | tx3     | Faint text for code comments       |
-| Keywords               | magenta | Language keywords (if, for, class) |
-| Strings                | green   | String literals and text           |
-| Functions              | blue    | Function names and calls           |
-| Constants              | yellow  | Constants and literals             |
-| Numbers                | orange  | Numeric values                     |
-| Types                  | cyan    | Data types and type annotations    |
-| Variables              | tx      | Variable names and identifiers     |
-| Attributes             | tx      | Object properties and attributes   |
-| Built-in functions     | purple  | Built-in functions and macros      |
-| Punctuation, operators | tx      | Mathematical and logical operators |
-| Errors                 | red     | Syntax errors and invalid code     |
-| Imports                | cyan    | Import/include statements          |
-
-### Color Rationale
-
-Technical rationale for color assignments:
-
-#### Industry-Standard Assignments
-
-| Color Family | Programming Context        | Technical Rationale                                                            |
-| :----------- | :------------------------- | :----------------------------------------------------------------------------- |
-| **Magenta**  | Keywords & control flow    | Purple/magenta universally signals "special language constructs" (90%+ themes) |
-| **Green**    | String literals            | Green represents literal text content within code structure                    |
-| **Blue**     | Functions & methods        | Blue indicates callable/executable code blocks                                 |
-| **Orange**   | Numbers & literals         | Orange draws attention to literal values without alarm (yellow = warning)      |
-| **Cyan**     | Types & architecture       | Cyan indicates type definitions and structural elements                        |
-| **Yellow**   | Constants                  | Yellow indicates immutable values and compile-time constants                   |
-| **Purple**   | Language features & macros | Purple for meta-programming elements that transform or extend language         |
-| **Red**      | Errors                     | Universal error indicator for syntax errors and problems                       |
-
-#### Visual Hierarchy Principles
-
-1. **Foreground Priority**: Variables and user content use default text color - they're the primary focus
-2. **Accent Hierarchy**: Language constructs get distinctive colors, user content remains neutral
-3. **Attention Balance**: Bright colors (orange, yellow) reserved for values requiring attention
-4. **Cognitive Grouping**: Related concepts share colors (all functions blue, all types cyan)
-
-#### Accessibility Considerations
-
-- **Contrast Ratios**: All color combinations maintain WCAG AA compliance (4.5:1 minimum)
-- **Color Blindness**: Multiple visual cues beyond color (brightness, context) aid comprehension
-- **Perceptual Balance**: Colors chosen using Oklab color space for consistent perceived intensity
-
-### Semantic Element Categories
-
-Generic syntax highlighting recommendations applicable to any highlighting system:
-
-#### Core Language Elements
-
-| Element Category         | Color   | Rationale                                          |
-| :----------------------- | :------ | :------------------------------------------------- |
-| Comments & Documentation | tx3     | Subdued to not interfere with active code content  |
-| Keywords                 | magenta | Magenta follows universal convention (90%+ themes) |
-| Control Flow             | magenta | Consistent with keywords for cognitive grouping    |
-| Function Keywords        | magenta | Language constructs treated uniformly              |
-
-#### Literal Values & Constants
-
-| Element Category   | Color  | Rationale                                        |
-| :----------------- | :----- | :----------------------------------------------- |
-| String Literals    | green  | Green aligns with "natural" content metaphor     |
-| String Escapes     | purple | Purple for special/meta sequences within strings |
-| Numbers            | orange | Orange for attention-drawing literal values      |
-| Booleans           | orange | Consistent with other primitive literals         |
-| Constants          | yellow | Yellow for permanent/immutable values            |
-| Built-in Constants | orange | Orange distinguishes language-provided constants |
-
-#### Functions & Identifiers
-
-| Element Category     | Color | Rationale                                            |
-| :------------------- | :---- | :--------------------------------------------------- |
-| Function Definitions | blue  | Blue conveys stability and trustworthiness           |
-| Function Calls       | blue  | Consistent with definitions for easy recognition     |
-| Variables            | tx    | Default text for user-defined content                |
-| Parameters           | tx2   | Slightly muted to distinguish from regular variables |
-| Object Properties    | tx    | Default text for property access                     |
-
-#### Types & Structure
-
-| Element Category | Color | Rationale                                        |
-| :--------------- | :---- | :----------------------------------------------- |
-| Type Definitions | cyan  | Cyan for systematic, architectural elements      |
-| Built-in Types   | cyan  | Consistent treatment of type system concepts     |
-| Operators        | tx    | Default text for better visibility of operations |
-| Punctuation      | tx2   | Subtle treatment of structural syntax elements   |
-
-### Extended Semantic Elements
-
-Advanced syntax highlighting for modern programming constructs:
-
-#### Scoping & Organization
-
-| Element Category | Color | Rationale                                      |
-| :--------------- | :---- | :--------------------------------------------- |
-| Namespaces       | cyan  | Cyan for organizational/architectural concepts |
-| Modules          | cyan  | Consistent with namespace-level organization   |
-| Packages         | cyan  | High-level structural elements                 |
-
-#### Object-Oriented Constructs
-
-| Element Category      | Color | Rationale                                       |
-| :-------------------- | :---- | :---------------------------------------------- |
-| Class Definitions     | cyan  | Cyan for type system and structural definitions |
-| Interface Definitions | cyan  | Consistent with other type-defining constructs  |
-| Enum Definitions      | cyan  | Part of type system architecture                |
-| Methods               | blue  | Blue consistent with function treatment         |
-| Properties            | tx    | Default text for property access patterns       |
-
-#### Functional & Meta Elements
-
-| Element Category    | Color  | Rationale                                          |
-| :------------------ | :----- | :------------------------------------------------- |
-| Local Variables     | tx     | Default text for scope-local user content          |
-| Function Parameters | tx2    | Muted to distinguish parameter context             |
-| Macros              | purple | Purple for meta-programming and special processing |
-| Annotations         | tx2    | Muted for metadata that supplements main content   |
-| Imports/Includes    | cyan   | Cyan for module organization and dependencies      |
-
-## UI Elements
-
-### UI Layer System
-
-Flexoki organizes UI elements into distinct layers for consistent visual hierarchy:
-
-| Layer      | Light Theme | Dark Theme | Z-Index | Usage                  |
-| :--------- | :---------- | :--------- | :------ | :--------------------- |
-| Background | paper       | black      | 0       | Main editor background |
-| Secondary  | base-50     | base-950   | 1       | Sidebars, panels       |
-| Surface 0  | base-100    | base-900   | 2       | Cards, dropdowns       |
-| Surface 1  | base-150    | base-850   | 3       | Hover states           |
-| Surface 2  | base-200    | base-800   | 4       | Active/selected        |
-| Overlay 0  | base-300    | base-700   | 5       | Tooltips, popovers     |
-| Overlay 1  | base-400    | base-600   | 6       | Modal backgrounds      |
-| Overlay 2  | base-500    | base-500   | 7       | Shadows, borders       |
-
-> [!NOTE]
-> The Z-Index values are suggestions for visual hierarchy. Actual implementation may vary based on your editor or application's layout system.
-
-### Editor Interface Elements
-
-| Element              | Color  | Usage                              |
-| :------------------- | :----- | :--------------------------------- |
-| Line numbers         | tx3    | Subtle reference information       |
-| Current line number  | tx2    | Slightly emphasized                |
-| Cursor               | tx     | Primary text color for visibility  |
-| Selection background | ui2    | Secondary UI color                 |
-| Search matches       | yellow | Yellow for high visibility         |
-| Current search       | orange | Orange for active search result    |
-| Visual selection     | ui3    | Active border color                |
-| Matching brackets    | tx2    | Muted to not distract from content |
-
-### UI State Colors
-
-Flexoki uses specific palette colors to provide subtle visual feedback for UI states:
-
-> [!NOTE]
-> These colors are selected from the Flexoki palette to provide subtle visual feedback without using opacity.
-
-| Element        | Semantic Variable | Light Theme | Dark Theme | Usage                    |
-| :------------- | :---------------- | :---------- | :--------- | :----------------------- |
-| Selection BG   | `selectionBg`     | blue-100    | blue-900   | Selected text background |
-| Cursor Line BG | `bg2`             | base-50     | base-950   | Current line highlight   |
-| Search Match   | `searchMatchBg`   | yellow-100  | yellow-900 | Find results             |
-| Current Search | `searchCurrentBg` | orange-100  | orange-900 | Active search result     |
-| Hover Surface  | `ui`              | base-100    | base-900   | Interactive hover states |
-| Disabled Text  | `txDisabled`      | base-400    | base-600   | Disabled elements        |
-| Drop Target    | `cyan4`           | cyan-50     | cyan-950   | Drag and drop zones      |
-| Focus Ring     | `focusRing`       | blue-300    | blue-700   | Keyboard focus indicator |
-| Indent Guide   | `ui3`             | base-200    | base-800   | Indentation lines        |
-| Whitespace     | `txWhitespace`    | base-300    | base-700   | Visible whitespace chars |
-
-### Special UI States
-
-Flexoki defines specific colors for interactive UI elements and their various states:
-
-| Element                | State        | Semantic Variable | Light Theme | Dark Theme | Notes                  |
-| :--------------------- | :----------- | :---------------- | :---------- | :--------- | :--------------------- |
-| **Borders**            |
-| Border                 | Active       | `blue2`           | blue-400    | blue-600   | Current focus          |
-| Border                 | Inactive     | `ui3`             | base-200    | base-800   | Default state          |
-| Border                 | Error        | `red2`            | red-400     | red-600    | Validation error       |
-| Border                 | Success      | `green2`          | green-400   | green-600  | Valid state            |
-| **Links**              |
-| Link                   | Normal       | `cyan`            | cyan-600    | cyan-400   | Unvisited              |
-| Link                   | Visited      | `purple`          | purple-600  | purple-400 | Previously visited     |
-| Link                   | Hover        | `blue`            | blue-600    | blue-400   | Mouse over             |
-| Link                   | Active       | `green`           | green-600   | green-400  | Being clicked          |
-| **Badges & Pills**     |
-| Badge BG               | Info         | `blue3`           | blue-100    | blue-900   | Information            |
-| Badge BG               | Success      | `green3`          | green-100   | green-900  | Completed              |
-| Badge BG               | Warning      | `yellow3`         | yellow-100  | yellow-900 | Attention              |
-| Badge BG               | Error        | `red3`            | red-100     | red-900    | Problem                |
-| Badge FG               | All States   | `tx`              | tx          | tx         | Badge text             |
-| **Buttons**            |
-| Button                 | Primary BG   | `blue`            | blue-600    | blue-400   | Primary action         |
-| Button                 | Secondary BG | `ui3`             | base-200    | base-800   | Secondary action       |
-| Button                 | Danger BG    | `red`             | red-600     | red-400    | Destructive action     |
-| Button                 | Hover        | Use `color2`      | +100 level  | -100 level | Hover state modifier   |
-| **Marks & Highlights** |
-| Mark 1                 | Background   | `purple3`         | purple-100  | purple-900 | First highlight color  |
-| Mark 2                 | Background   | `cyan3`           | cyan-100    | cyan-900   | Second highlight color |
-| Mark 3                 | Background   | `yellow3`         | yellow-100  | yellow-900 | Third highlight color  |
-
-## Specialized Colors
-
-### Git and Diff Highlighting
-
-Flexoki provides comprehensive colors for version control visualization:
-
-| Element                 | Semantic Variable | Light Theme | Dark Theme | Usage                  |
-| :---------------------- | :---------------- | :---------- | :--------- | :--------------------- |
-| **Headers**             |
-| Diff Header             | `blue`            | blue-600    | blue-400   | File comparison header |
-| Hunk Header             | `orange`          | orange-600  | orange-400 | @@ line markers        |
-| File Path               | `purple`          | purple-600  | purple-400 | a/file.txt b/file.txt  |
-| Metadata                | `txDisabled`      | base-400    | base-600   | Index, mode info       |
-| **Line Backgrounds**    |
-| Added Line BG           | `green4`          | green-50    | green-950  | New lines              |
-| Removed Line BG         | `red4`            | red-50      | red-950    | Deleted lines          |
-| Modified Line BG        | `yellow4`         | yellow-50   | yellow-950 | Changed lines          |
-| **Word/Character Diff** |
-| Added Word BG           | `green3`          | green-100   | green-900  | Inline additions       |
-| Removed Word BG         | `red3`            | red-100     | red-900    | Inline deletions       |
-| Modified Word BG        | `yellow3`         | yellow-100  | yellow-900 | Inline changes         |
-| **Merge Conflicts**     |
-| Current BG              | `cyan4`           | cyan-50     | cyan-950   | HEAD changes           |
-| Incoming BG             | `blue4`           | blue-50     | blue-950   | Branch changes         |
-| Ancestor BG             | `purple4`         | purple-50   | purple-950 | Base version           |
-| **Gutter Icons**        |
-| Added                   | `green`           | green-600   | green-400  | + symbol               |
-| Removed                 | `red`             | red-600     | red-400    | - symbol               |
-| Modified                | `yellow`          | yellow-600  | yellow-400 | ~ symbol               |
-| **Git Status**          |
-| Untracked               | `txDisabled`      | base-400    | base-600   | New untracked files    |
-| Ignored                 | `txWhitespace`    | base-300    | base-700   | Ignored files          |
-| Conflicted              | `red`             | red-600     | red-400    | Merge conflicts        |
-| Staged                  | `green`           | green-600   | green-400  | Staged changes         |
-
-### Diagnostic and Debug Colors
-
-| Element             | Color  | Usage                             |
-| :------------------ | :----- | :-------------------------------- |
-| Error diagnostics   | red    | Red for errors                    |
-| Warning diagnostics | orange | Orange for warnings               |
-| Info diagnostics    | blue   | Blue for information              |
-| Hint diagnostics    | tx2    | Muted for subtle suggestions      |
-| Breakpoints         | red    | Red for debug breakpoints         |
-| Debug highlights    | yellow | Yellow for execution highlighting |
+## Semantic Variable Usage Tables
+
+This section maps semantic variables to specific UI elements and syntax highlighting categories. Use these tables as a reference when implementing Flexoki to ensure consistent color usage across different contexts. Each table shows which semantic variable should be used for each UI element or syntax construct.
+
+### Base Color Variables
+
+| Variable       | Usage                                     |
+| :------------- | :---------------------------------------- |
+| `bg`           | Main background                           |
+| `bg2`          | Secondary background (sidebars, panels)   |
+| `ui`           | Borders, hover surfaces                   |
+| `ui2`          | Hovered borders, cursor line background   |
+| `ui3`          | Active borders, indent guides             |
+| `tx`           | Primary text, cursor, variables           |
+| `tx2`          | Muted text, parameters, matching brackets |
+| `tx3`          | Faint text, comments, line numbers        |
+| `txDisabled`   | Disabled elements, ignored files          |
+| `txWhitespace` | Visible whitespace characters             |
+
+### Accent Color Variables
+
+Each accent color has four semantic layers for different use cases:
+
+| Layer    | Usage                                     |
+| :------- | :---------------------------------------- |
+| `color`  | Primary accent - text, borders, icons     |
+| `color2` | Secondary accent - alternative states     |
+| `color3` | Background accent - subtle backgrounds    |
+| `color4` | Very subtle background - diff backgrounds |
+
+### Special Purpose Variables
+
+| Variable          | Usage                                   |
+| :---------------- | :-------------------------------------- |
+| `focusRing`       | Keyboard focus indicators               |
+| `selectionBg`     | Text selection background               |
+| `searchMatchBg`   | Search result highlights                |
+| `searchCurrentBg` | Active/current search result background |
+
+### Syntax Highlighting Assignments
+
+| Element            | Variable  | Description                              |
+| :----------------- | :-------- | :--------------------------------------- |
+| Comments           | `tx3`     | Code comments and documentation          |
+| Keywords           | `magenta` | Language keywords (if, for, class, etc.) |
+| Control Flow       | `magenta` | Control flow statements                  |
+| Strings            | `green`   | String literals and text                 |
+| String Escapes     | `purple`  | Escape sequences within strings          |
+| Functions          | `blue`    | Function names and calls                 |
+| Methods            | `blue`    | Method names and calls                   |
+| Constants          | `yellow`  | Constants and compile-time values        |
+| Built-in Constants | `orange`  | Language-provided constants              |
+| Numbers            | `orange`  | Numeric values and literals              |
+| Booleans           | `orange`  | Boolean values (true/false)              |
+| Types              | `cyan`    | Data types and type annotations          |
+| Classes            | `cyan`    | Class definitions                        |
+| Interfaces         | `cyan`    | Interface definitions                    |
+| Namespaces         | `cyan`    | Namespace declarations                   |
+| Variables          | `tx`      | Variable names and identifiers           |
+| Parameters         | `tx2`     | Function parameters                      |
+| Properties         | `tx`      | Object properties and attributes         |
+| Built-in Functions | `purple`  | Built-in functions and macros            |
+| Macros             | `purple`  | Macro definitions                        |
+| Operators          | `tx`      | Mathematical and logical operators       |
+| Punctuation        | `tx2`     | Brackets, semicolons, etc.               |
+| Errors             | `red`     | Syntax errors and invalid code           |
+| Imports            | `cyan`    | Import/include statements                |
+| Annotations        | `tx2`     | Decorators and annotations               |
+
+### UI Element Assignments
+
+#### Text States
+
+| Element          | Variable  | Description         |
+| :--------------- | :-------- | :------------------ |
+| Error text       | `red`     | Error messages      |
+| Warning text     | `orange`  | Warning messages    |
+| Success text     | `green`   | Success indicators  |
+| Information text | `blue`    | Informational notes |
+| Attention text   | `yellow`  | Important notices   |
+| Link text        | `cyan`    | Clickable links     |
+| Visited link     | `purple`  | Previously visited  |
+| Hover link       | `blue`    | Link hover state    |
+| Active link      | `green`   | Link being clicked  |
+| Highlight text   | `magenta` | Highlighted content |
+
+#### Editor Interface
+
+| Element              | Variable          | Description                 |
+| :------------------- | :---------------- | :-------------------------- |
+| Line numbers         | `tx3`             | Line gutter numbers         |
+| Current line number  | `tx2`             | Active line number          |
+| Cursor               | `tx`              | Text cursor                 |
+| Selection background | `selectionBg`     | Selected text background    |
+| Current line bg      | `bg2`             | Current line highlight      |
+| Search matches       | `searchMatchBg`   | Find results                |
+| Current search       | `searchCurrentBg` | Active search result        |
+| Visual selection     | `ui3`             | Visual mode selection       |
+| Matching brackets    | `tx2`             | Paired bracket highlighting |
+| Indent guides        | `ui3`             | Indentation lines           |
+| Whitespace chars     | `txWhitespace`    | Visible spaces/tabs         |
+| Fold markers         | `tx3`             | Code folding indicators     |
+
+#### UI Components
+
+| Element          | Variable     | Description         |
+| :--------------- | :----------- | :------------------ |
+| Border default   | `ui`         | Standard borders    |
+| Border hover     | `ui2`        | Hovered borders     |
+| Border active    | `ui3`        | Active/selected     |
+| Border focus     | `blue2`      | Focused element     |
+| Border error     | `red2`       | Error state         |
+| Border success   | `green2`     | Success state       |
+| Hover surface    | `ui`         | Interactive hover   |
+| Drop target      | `cyan4`      | Drag and drop zones |
+| Focus ring       | `focusRing`  | Keyboard focus      |
+| Disabled element | `txDisabled` | Disabled state      |
+
+#### Buttons
+
+| Element              | Variable | Description          |
+| :------------------- | :------- | :------------------- |
+| Primary button bg    | `blue`   | Primary actions      |
+| Primary button hover | `blue2`  | Primary hover        |
+| Secondary button bg  | `ui3`    | Secondary actions    |
+| Danger button bg     | `red`    | Destructive actions  |
+| Danger button hover  | `red2`   | Danger hover         |
+| Success button bg    | `green`  | Confirmation actions |
+| Button text          | `bg`     | Button foreground    |
+
+#### Status Badges
+
+| Element          | Variable  | Description             |
+| :--------------- | :-------- | :---------------------- |
+| Info badge bg    | `blue3`   | Information badges      |
+| Info badge fg    | `tx`      | Information badge text  |
+| Success badge bg | `green3`  | Success/complete badges |
+| Success badge fg | `tx`      | Success badge text      |
+| Warning badge bg | `yellow3` | Warning badges          |
+| Warning badge fg | `tx`      | Warning badge text      |
+| Error badge bg   | `red3`    | Error/critical badges   |
+| Error badge fg   | `tx`      | Error badge text        |
+
+#### Diagnostics
+
+| Element            | Variable | Description          |
+| :----------------- | :------- | :------------------- |
+| Error diagnostic   | `red`    | Error indicators     |
+| Warning diagnostic | `orange` | Warning indicators   |
+| Info diagnostic    | `blue`   | Information markers  |
+| Hint diagnostic    | `tx2`    | Subtle suggestions   |
+| Breakpoints        | `red`    | Debug breakpoints    |
+| Debug highlights   | `yellow` | Execution highlights |
+
+### Git & Version Control
+
+#### Diff View
+
+| Element          | Variable     | Description              |
+| :--------------- | :----------- | :----------------------- |
+| Diff header      | `blue`       | File comparison header   |
+| Hunk header      | `orange`     | @@ line markers          |
+| File path        | `purple`     | a/file.txt b/file.txt    |
+| Metadata         | `txDisabled` | Index, mode info         |
+| Added line bg    | `green4`     | New lines background     |
+| Removed line bg  | `red4`       | Deleted lines background |
+| Modified line bg | `yellow4`    | Changed lines background |
+| Added word bg    | `green3`     | Inline additions         |
+| Removed word bg  | `red3`       | Inline deletions         |
+| Modified word bg | `yellow3`    | Inline changes           |
+
+#### Merge Conflicts
+
+| Element     | Variable  | Description    |
+| :---------- | :-------- | :------------- |
+| Current bg  | `cyan4`   | HEAD changes   |
+| Incoming bg | `blue4`   | Branch changes |
+| Ancestor bg | `purple4` | Base version   |
+
+#### Git Status
+
+| Element    | Variable       | Description     |
+| :--------- | :------------- | :-------------- |
+| Added      | `green`        | New files       |
+| Modified   | `yellow`       | Changed files   |
+| Removed    | `red`          | Deleted files   |
+| Untracked  | `txDisabled`   | Untracked files |
+| Ignored    | `txWhitespace` | Ignored files   |
+| Conflicted | `red`          | Merge conflicts |
+| Staged     | `green`        | Staged changes  |
 
 ### Terminal & ANSI Colors
-
-Flexoki provides a complete 16-color ANSI palette that conforms to standard terminal color expectations while maintaining the Flexoki aesthetic:
-
-> [!NOTE]
-> This palette follows traditional ANSI color standards for maximum compatibility. Colors are optimized for both light and dark terminal themes.
 
 #### Standard 16-Color Palette
 
@@ -533,7 +400,17 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 | Inactive Border | base-200    | base-800   | Inactive window border   |
 | Bell Border     | yellow-400  | yellow-600 | Visual bell indicator    |
 
-## Implementation Guidelines
+## Guidelines and Explanations
+
+### Theme System
+
+Flexoki uses semantic color variables that automatically map to appropriate values based on theme selection:
+
+- **Light themes**: Use 600-level accent colors for primary usage
+- **Dark themes**: Use 400-level accent colors for primary usage
+- **Base colors**: Automatically mapped based on theme selection
+
+The theme system is designed with four semantic layers for each accent color (defined in the usage tables above).
 
 ### Design Principles
 
@@ -542,8 +419,33 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 3. **Context Sensitivity**: Same colors serve different purposes in UI vs. syntax contexts
 4. **Progressive Enhancement**: Basic Vim groups provide fallback, Tree-sitter adds precision, LSP adds context
 
-> [!TIP]
-> Use the semantic variables (tx, bg, ui) instead of direct color values for better theme consistency and easier maintenance.
+### Color Rationale
+
+#### Industry-Standard Assignments
+
+The color choices align with conventions used in 90%+ of modern themes:
+
+- **Magenta**: Keywords & control flow - universally signals "special language constructs"
+- **Green**: String literals - represents literal text content within code
+- **Blue**: Functions & methods - indicates callable/executable code blocks
+- **Orange**: Numbers & literals - draws attention to values without alarm
+- **Cyan**: Types & architecture - indicates type definitions and structural elements
+- **Yellow**: Constants - indicates immutable values and compile-time constants
+- **Purple**: Language features & macros - meta-programming elements
+- **Red**: Errors - universal error indicator
+
+#### Visual Hierarchy Principles
+
+1. **Foreground Priority**: Variables and user content use default text color as primary focus
+2. **Accent Hierarchy**: Language constructs get distinctive colors, user content remains neutral
+3. **Attention Balance**: Bright colors (orange, yellow) reserved for values requiring attention
+4. **Cognitive Grouping**: Related concepts share colors (all functions blue, all types cyan)
+
+#### Accessibility Considerations
+
+- **Contrast Ratios**: All color combinations maintain WCAG AA compliance (4.5:1 minimum)
+- **Color Blindness**: Designed with multiple visual cues beyond color alone
+- **Perceptual Balance**: Colors chosen using Oklab color space for consistent perceived intensity
 
 ### Implementation Approach
 
@@ -569,15 +471,9 @@ Flexoki provides a complete 16-color ANSI palette that conforms to standard term
 
 1. **Foreground Colors**: Use semantic variables (`tx`, `red`, `green`, etc.) rather than direct palette colors
 2. **Background Usage**: Apply base colors (`bg`, `bg2`, `ui`, etc.) with appropriate opacity for overlays
-3. **Contrast Ratios**: Maintain WCAG AA compliance (4.5:1) for text on background
-4. **Theme Consistency**: Ensure light/dark theme variants use appropriate color levels (600 vs 400)
 
-### Testing Recommendations
-
-1. **Cross-Language Testing**: Verify highlighting consistency across multiple programming languages
-2. **Accessibility Testing**: Test with color blindness simulators and contrast checking tools
-3. **Context Testing**: Ensure colors work well in different editor contexts (diff views, search results, etc.)
-4. **Performance Testing**: Validate that complex highlight rules don't impact editor performance
+> [!IMPORTANT]
+> Text colors are guidelines. Legibility always comes first. Adjust colors when they don't provide sufficient contrast in your specific environment.
 
 ## Attribution
 
