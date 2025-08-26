@@ -4,22 +4,6 @@ An inky color scheme for prose and code, designed for reading and writing on dig
 
 **Note**: This documentation is based on the Flexoki color scheme by [Steph Ango](https://stephango.com/flexoki). This implementation includes research-based deviations from the original Flexoki specification to align with a majority of the current popular color schemes. For the complete original specification and additional resources, visit [stephango.com/flexoki](https://stephango.com/flexoki).
 
-## Design Philosophy
-
-Flexoki emulates the feeling of pigment on paper by exponentially increasing intensity as colors get lighter or darker. This creates vibrant, warm colors that feel like watercolor inks on digital screens.
-
-**Core principles:**
-
-- Warm monochromatic base colors that blend black with paper values
-- Perceptually balanced colors using Oklab color space
-- High contrast ratios maintained across light and dark themes
-- Distinctive colors for effective syntax highlighting
-- Colors feel vibrant and warm, like watercolor inks
-
-> [!IMPORTANT]
-> Text colors are guidelines. Legibility always comes first.
-> Adjust colors when they don't provide sufficient contrast in your specific environment.
-
 ## Theme Variables
 
 Flexoki uses semantic color variables that automatically map to appropriate values based on theme selection:
@@ -72,6 +56,10 @@ Flexoki organizes UI elements into distinct layers for consistent visual hierarc
 ## Syntax Highlighting
 
 Research-based color assignments aligned with industry conventions and accessibility standards.
+
+> [!IMPORTANT]
+> Text colors are guidelines. Legibility always comes first.
+> Adjust colors when they don't provide sufficient contrast in your specific environment.
 
 | Element                | Color   | Usage                              |
 | ---------------------- | ------- | ---------------------------------- |
@@ -519,16 +507,6 @@ The complete Flexoki color palette includes base colors and accent colors with e
 - **Light themes**: Use 600-level accent colors for syntax highlighting
 - **Dark themes**: Use 400-level accent colors for syntax highlighting
 - **Base colors**: Automatically mapped based on theme selection
-
-### Color Philosophy
-
-Flexoki maintains vibrant, warm colors that feel like watercolor inks on digital screens through careful perceptual balance and exponential intensity curves.
-
-### Accessibility
-
-- High contrast ratios maintained across light and dark themes
-- Perceptually balanced colors using Oklab color space
-- Distinctive colors for effective syntax highlighting
 
 ## Implementation Guidelines
 
