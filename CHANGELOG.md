@@ -12,6 +12,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation for color palette reference (`docs/palette.md`)
 - Documentation for syntax highlighting research and decisions (`docs/syntax-highlighting-research.md`)
 
+### Fixed
+
+- Aligned syntax highlighting colors with documented guidelines in `palette.md`:
+  - Keywords now use magenta (was green)
+  - Strings now use green (was cyan)
+  - Functions now use blue (was orange)
+  - Numbers now use orange (was purple)
+  - Types now use cyan (was green)
+  - Built-in constants now use orange (was magenta)
+
 ## [0.1.0] - 2025-01-23
 
 ### Added

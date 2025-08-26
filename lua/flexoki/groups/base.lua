@@ -85,30 +85,30 @@ function M.get(colors)
         -- Syntax highlights (:help group-name)
         Comment = { fg = colors.tx3 },
         Constant = { fg = colors.yellow },
-        String = { fg = colors.cyan },
+        String = { fg = colors.green },
         Character = { fg = colors.orange },
-        Number = { fg = colors.purple },
+        Number = { fg = colors.orange },
         Boolean = { link = "Constant" },
         Float = { link = "Number" },
 
         Identifier = { fg = colors.blue },
-        Function = { fg = colors.orange },
+        Function = { fg = colors.blue },
 
         Statement = { link = "Keyword" },
         Conditional = { link = "Keyword" },
         Repeat = { link = "Keyword" },
         Label = { link = "Keyword" },
-        Operator = { fg = colors.tx2 },
-        Keyword = { fg = colors.green },
+        Operator = { fg = colors.tx },
+        Keyword = { fg = colors.magenta },
         Exception = { link = "Keyword" },
 
         PreProc = { fg = colors.orange },
-        Include = { link = "PreProc" },
+        Include = { fg = colors.cyan },
         Define = { link = "PreProc" },
         Macro = { link = "PreProc" },
         PreCondit = { link = "PreProc" },
 
-        Type = { fg = colors.green },
+        Type = { fg = colors.cyan },
         StorageClass = { link = "Type" },
         Structure = { link = "Type" },
         Typedef = { link = "Type" },
@@ -168,10 +168,10 @@ function M.get(colors)
         ["@variable.builtin"] = { fg = colors.magenta },
         ["@variable.parameter"] = { link = "Identifier" },
         ["@variable.parameter.builtin"] = { fg = colors.magenta },
-        ["@variable.member"] = { link = "Identifier" },
+        ["@variable.member"] = { fg = colors.tx },
 
         ["@constant"] = { link = "Constant" },
-        ["@constant.builtin"] = { fg = colors.magenta },
+        ["@constant.builtin"] = { fg = colors.orange },
         ["@constant.macro"] = { link = "PreProc" },
 
         ["@module"] = { link = "Structure" },
@@ -200,7 +200,7 @@ function M.get(colors)
 
         ["@attribute"] = { link = "Macro" },
         ["@attribute.builtin"] = { link = "Special" },
-        ["@property"] = { link = "Identifier" },
+        ["@property"] = { fg = colors.tx },
 
         ["@function"] = { link = "Function" },
         ["@function.builtin"] = { link = "Function" },
@@ -217,7 +217,7 @@ function M.get(colors)
         ["@keyword.coroutine"] = { link = "Keyword" },
         ["@keyword.function"] = { link = "Keyword" },
         ["@keyword.operator"] = { link = "Keyword" },
-        ["@keyword.import"] = { fg = colors.red },
+        ["@keyword.import"] = { fg = colors.cyan },
         ["@keyword.type"] = { link = "Type" },
         ["@keyword.modifier"] = { link = "Keyword" },
         ["@keyword.repeat"] = { link = "Repeat" },
@@ -231,8 +231,8 @@ function M.get(colors)
         ["@keyword.directive"] = { link = "PreProc" },
         ["@keyword.directive.define"] = { link = "PreProc" },
 
-        ["@punctuation.delimiter"] = { fg = colors.tx2 },
-        ["@punctuation.bracket"] = { fg = colors.tx2 },
+        ["@punctuation.delimiter"] = { fg = colors.tx },
+        ["@punctuation.bracket"] = { fg = colors.tx },
         ["@punctuation.special"] = { link = "Special" },
 
         ["@comment"] = { link = "Comment" },
