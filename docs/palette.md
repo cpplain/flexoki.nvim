@@ -92,22 +92,22 @@ Research-based color assignments aligned with industry conventions and accessibi
 | Errors                 | red     | Syntax errors and invalid code     |
 | Imports                | cyan    | Import/include statements          |
 
-### Color Psychology & Rationale
+### Color Rationale
 
-Understanding why these color assignments work well for code comprehension:
+Technical rationale for color assignments:
 
-#### Research-Backed Assignments
+#### Industry-Standard Assignments
 
-| Color Family | Psychological Association      | Programming Context        | Rationale                                                                      |
-| ------------ | ------------------------------ | -------------------------- | ------------------------------------------------------------------------------ |
-| **Magenta**  | Special, unique, magical       | Keywords & control flow    | Purple/magenta universally signals "special language constructs" (90%+ themes) |
-| **Green**    | Natural, growth, success       | String literals            | Green represents "natural language" content within code structure              |
-| **Blue**     | Stability, trust, reliability  | Functions & methods        | Blue conveys dependability - functions are stable, reusable building blocks    |
-| **Orange**   | Energy, attention, warmth      | Numbers & literals         | Orange draws attention to literal values without alarm (yellow = warning)      |
-| **Cyan**     | Systematic, structured, cool   | Types & architecture       | Cyan suggests systematic organization and structural elements                  |
-| **Yellow**   | Permanence, highlight, caution | Constants                  | Yellow indicates "fixed/permanent" values and important immutable data         |
-| **Purple**   | Mystical, meta, transformation | Language features & macros | Purple for "meta" elements that transform or extend language behavior          |
-| **Red**      | Danger, error, stop            | Errors                     | Universal danger/warning color for syntax errors and problems                  |
+| Color Family | Programming Context        | Technical Rationale                                                            |
+| ------------ | -------------------------- | ------------------------------------------------------------------------------ |
+| **Magenta**  | Keywords & control flow    | Purple/magenta universally signals "special language constructs" (90%+ themes) |
+| **Green**    | String literals            | Green represents literal text content within code structure                    |
+| **Blue**     | Functions & methods        | Blue indicates callable/executable code blocks                                 |
+| **Orange**   | Numbers & literals         | Orange draws attention to literal values without alarm (yellow = warning)      |
+| **Cyan**     | Types & architecture       | Cyan indicates type definitions and structural elements                        |
+| **Yellow**   | Constants                  | Yellow indicates immutable values and compile-time constants                   |
+| **Purple**   | Language features & macros | Purple for meta-programming elements that transform or extend language         |
+| **Red**      | Errors                     | Universal error indicator for syntax errors and problems                       |
 
 #### Visual Hierarchy Principles
 
