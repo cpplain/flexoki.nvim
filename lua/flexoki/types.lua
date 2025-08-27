@@ -19,36 +19,62 @@
 ---@field base100 string Light ui color
 ---@field base50 string Light bg-2 color
 ---@field paper string Light bg color
+---@field red950 string Dark re-4 color
 ---@field red900 string Dark re-3 color
 ---@field red600 string Light re, Dark re-2 color
 ---@field red400 string Light re-2, Dark re color
+---@field red150 string Light re-2.5 color
 ---@field red100 string Light re-3
+---@field red50 string Light re-4 color
+---@field orange950 string Dark or-4 color
 ---@field orange900 string Dark or-3 color
 ---@field orange600 string Light or, Dark or-2 color
 ---@field orange400 string Light or-2, Dark or color
+---@field orange150 string Light or-2.5 color
 ---@field orange100 string Light or-3
+---@field orange50 string Light or-4 color
+---@field yellow950 string Dark ye-4 color
 ---@field yellow900 string Dark ye-3 color
 ---@field yellow600 string Light ye, Dark ye-2 color
 ---@field yellow400 string Light ye-2, Dark ye color
+---@field yellow150 string Light ye-2.5 color
 ---@field yellow100 string Light ye-3
+---@field yellow50 string Light ye-4 color
+---@field green950 string Dark gr-4 color
 ---@field green900 string Dark gr-3 color
 ---@field green600 string Light gr, Dark gr-2 color
 ---@field green400 string Light gr-2, Dark gr color
+---@field green150 string Light gr-2.5 color
 ---@field green100 string Light gr-3
+---@field green50 string Light gr-4 color
+---@field cyan950 string Dark cy-4 color
 ---@field cyan900 string Dark cy-3 color
 ---@field cyan600 string Light cy, Dark cy-2 color
 ---@field cyan400 string Light cy-2, Dark cy color
+---@field cyan150 string Light cy-2.5 color
 ---@field cyan100 string Light cy-3
+---@field cyan50 string Light cy-4 color
+---@field blue950 string Dark bl-4 color
 ---@field blue900 string Dark bl-3 color
 ---@field blue600 string Light bl, Dark bl-2 color
 ---@field blue400 string Light bl-2, Dark bl color
+---@field blue150 string Light bl-2.5 color
 ---@field blue100 string Light bl-3
+---@field blue50 string Light bl-4 color
+---@field purple950 string Dark pu-4 color
+---@field purple900 string Dark pu-3 color
 ---@field purple600 string Light pu, Dark pu-2 color
 ---@field purple400 string Light pu-2, Dark pu color
+---@field purple150 string Light pu-2.5 color
+---@field purple100 string Light pu-3 color
+---@field purple50 string Light pu-4 color
+---@field magenta950 string Dark ma-4 color
 ---@field magenta900 string Dark ma-3 color
 ---@field magenta600 string Light ma, Dark ma-2 color
 ---@field magenta400 string Light ma-2, Dark ma color
+---@field magenta150 string Light ma-2.5 color
 ---@field magenta100 string Light ma-3
+---@field magenta50 string Light ma-4 color
 
 ---@class flexoki.ThemeColors
 ---@field bg string Main background color
@@ -59,26 +85,36 @@
 ---@field tx string Primary text color
 ---@field tx2 string Secondary (muted) text color
 ---@field tx3 string Tertiary (faint) text color
+---@field tx4 string Very faint text color
 ---@field red string Primary red accent
 ---@field red2 string Secondary red accent
 ---@field red3 string Tertiary red accent (active highlight)
+---@field red4 string Very subtle red background (diff backgrounds)
 ---@field orange string Primary orange accent
 ---@field orange2 string Secondary orange accent
 ---@field orange3 string Tertiary orange accent (active highlight)
+---@field orange4 string Very subtle orange background
 ---@field yellow string Primary yellow accent
 ---@field yellow2 string Secondary yellow accent
 ---@field yellow3 string Tertiary yellow accent (search highlight)
+---@field yellow4 string Very subtle yellow background
 ---@field green string Primary green accent
 ---@field green2 string Secondary green accent
 ---@field green3 string Tertiary green accent (active highlight)
+---@field green4 string Very subtle green background
 ---@field cyan string Primary cyan accent
 ---@field cyan2 string Secondary cyan accent
 ---@field cyan3 string Tertiary cyan accent (active highlight)
+---@field cyan4 string Very subtle cyan background
 ---@field blue string Primary blue accent
 ---@field blue2 string Secondary blue accent
 ---@field blue3 string Tertiary blue accent (active highlight)
+---@field blue4 string Very subtle blue background
 ---@field purple string Primary purple accent
 ---@field purple2 string Secondary purple accent
+---@field purple3 string Tertiary purple accent
+---@field purple4 string Very subtle purple background
 ---@field magenta string Primary magenta accent
 ---@field magenta2 string Secondary magenta accent
 ---@field magenta3 string Tertiary magenta accent (active highlight)
+---@field magenta4 string Very subtle magenta background
