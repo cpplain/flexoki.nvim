@@ -8,7 +8,7 @@ function M.get(colors)
         -- Editor highlights (:help highlight-groups)
         ColorColumn = { bg = colors.bg2 },
         Conceal = { fg = colors.tx3 },
-        CurSearch = { fg = colors.bg, bg = colors.orange3 },
+        CurSearch = { fg = colors.tx, bg = colors.orange3 },
         Cursor = { fg = colors.bg, bg = colors.tx },
         lCursor = { link = "Cursor" },
         CursorIM = { link = "Cursor" },
@@ -59,7 +59,7 @@ function M.get(colors)
         ComplMatchIns = {},
         Question = { fg = colors.blue },
         QuickFixLine = { fg = colors.cyan },
-        Search = { fg = colors.bg, bg = colors.yellow3 },
+        Search = { fg = colors.tx, bg = colors.yellow3 },
         SnippetTabstop = { link = "Visual" },
         SpecialKey = { fg = colors.tx3 },
         SpellBad = { sp = colors.red, undercurl = true },
