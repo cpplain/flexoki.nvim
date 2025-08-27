@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Documentation for color palette reference (`docs/palette.md`)
 - Documentation for syntax highlighting research and decisions (`docs/syntax-highlighting-research.md`)
+- Extended palette with subtle background colors (level 4) for improved visual hierarchy
+- Additional text color level (`tx4`) for very faint UI elements
 
 ### Fixed
 
@@ -21,6 +23,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Numbers now use orange (was purple)
   - Types now use cyan (was green)
   - Built-in constants now use orange (was magenta)
+
+### Changed
+
+- Improved semantic consistency across highlight groups:
+  - Enhanced diff highlighting with color-matched backgrounds
+  - Unified search highlighting appearance between normal and current search
+  - Improved visual hierarchy for punctuation, brackets, and delimiters
+  - Better distinction between different variable types and scopes
+  - More semantic color usage for built-in functions, macros, and attributes
+  - Cleaner window separators without background interference
+  - Enhanced list item styling with appropriate color-coded backgrounds
+  - Fixed typo in documentation comment treesitter group
+  - Improved LSP semantic token alignment with treesitter highlights
 
 ## [0.1.0] - 2025-01-23
 
