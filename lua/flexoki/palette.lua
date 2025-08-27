@@ -152,10 +152,9 @@ function M.get(theme)
         ui = colors.base100,
         ui2 = colors.base150,
         ui3 = colors.base200,
-        tx = colors.base850,
-        tx2 = colors.base600,
-        tx3 = colors.base500,
-        tx4 = colors.base400,
+        tx = colors.base800,
+        tx2 = colors.base500,
+        tx3 = colors.base300,
 
         -- Accent colors
         red = colors.red600,
@@ -202,8 +201,7 @@ function M.get(theme)
         ui3 = colors.base800,
         tx = colors.base200,
         tx2 = colors.base500,
-        tx3 = colors.base600,
-        tx4 = colors.base700,
+        tx3 = colors.base700,
 
         -- Accent colors
         red = colors.red400,

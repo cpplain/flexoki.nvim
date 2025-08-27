@@ -12,7 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation for color palette reference (`docs/palette.md`)
 - Documentation for syntax highlighting research and decisions (`docs/syntax-highlighting-research.md`)
 - Extended palette with subtle background colors (level 4) for improved visual hierarchy
-- Additional text color level (`tx4`) for very faint UI elements
 
 ### Fixed
 
