@@ -69,21 +69,21 @@ This section maps each color to semantic variables These semantic variables (lik
 
 ### Yellow
 
-| Color                                                       | Name       | Hex       | Light Theme              | Dark Theme               |
-| :---------------------------------------------------------- | :--------- | :-------- | :----------------------- | :----------------------- |
-| <img src="../assets/yellow-50.png" width="64" height="32">  | yellow-50  | `#FAEEC6` | `yellow4`                | -                        |
-| <img src="../assets/yellow-100.png" width="64" height="32"> | yellow-100 | `#F6E2A0` | `yellow3, searchMatchBg` | -                        |
-| <img src="../assets/yellow-150.png" width="64" height="32"> | yellow-150 | `#F1D67E` | -                        | -                        |
-| <img src="../assets/yellow-200.png" width="64" height="32"> | yellow-200 | `#ECCB60` | -                        | -                        |
-| <img src="../assets/yellow-300.png" width="64" height="32"> | yellow-300 | `#DFB431` | -                        | -                        |
-| <img src="../assets/yellow-400.png" width="64" height="32"> | yellow-400 | `#D0A215` | `yellow2`                | `yellow`                 |
-| <img src="../assets/yellow-500.png" width="64" height="32"> | yellow-500 | `#BE9207` | -                        | -                        |
-| <img src="../assets/yellow-600.png" width="64" height="32"> | yellow-600 | `#AD8301` | `yellow`                 | `yellow2`                |
-| <img src="../assets/yellow-700.png" width="64" height="32"> | yellow-700 | `#8E6B01` | -                        | -                        |
-| <img src="../assets/yellow-800.png" width="64" height="32"> | yellow-800 | `#664D01` | -                        | -                        |
-| <img src="../assets/yellow-850.png" width="64" height="32"> | yellow-850 | `#503D02` | -                        | -                        |
-| <img src="../assets/yellow-900.png" width="64" height="32"> | yellow-900 | `#3A2D04` | -                        | `yellow3, searchMatchBg` |
-| <img src="../assets/yellow-950.png" width="64" height="32"> | yellow-950 | `#241E08` | -                        | `yellow4`                |
+| Color                                                       | Name       | Hex       | Light Theme | Dark Theme |
+| :---------------------------------------------------------- | :--------- | :-------- | :---------- | :--------- |
+| <img src="../assets/yellow-50.png" width="64" height="32">  | yellow-50  | `#FAEEC6` | `yellow4`   | -          |
+| <img src="../assets/yellow-100.png" width="64" height="32"> | yellow-100 | `#F6E2A0` | `yellow3`   | -          |
+| <img src="../assets/yellow-150.png" width="64" height="32"> | yellow-150 | `#F1D67E` | -           | -          |
+| <img src="../assets/yellow-200.png" width="64" height="32"> | yellow-200 | `#ECCB60` | -           | -          |
+| <img src="../assets/yellow-300.png" width="64" height="32"> | yellow-300 | `#DFB431` | -           | -          |
+| <img src="../assets/yellow-400.png" width="64" height="32"> | yellow-400 | `#D0A215` | `yellow2`   | `yellow`   |
+| <img src="../assets/yellow-500.png" width="64" height="32"> | yellow-500 | `#BE9207` | -           | -          |
+| <img src="../assets/yellow-600.png" width="64" height="32"> | yellow-600 | `#AD8301` | `yellow`    | `yellow2`  |
+| <img src="../assets/yellow-700.png" width="64" height="32"> | yellow-700 | `#8E6B01` | -           | -          |
+| <img src="../assets/yellow-800.png" width="64" height="32"> | yellow-800 | `#664D01` | -           | -          |
+| <img src="../assets/yellow-850.png" width="64" height="32"> | yellow-850 | `#503D02` | -           | -          |
+| <img src="../assets/yellow-900.png" width="64" height="32"> | yellow-900 | `#3A2D04` | -           | `yellow3`  |
+| <img src="../assets/yellow-950.png" width="64" height="32"> | yellow-950 | `#241E08` | -           | `yellow4`  |
 
 ### Green
 
@@ -206,11 +206,10 @@ Each accent color has four semantic layers for different use cases:
 
 ### Special Purpose Variables
 
-| Variable        | Usage                     |
-| :-------------- | :------------------------ |
-| `focusRing`     | Keyboard focus indicators |
-| `selectionBg`   | Text selection background |
-| `searchMatchBg` | Search result highlights  |
+| Variable      | Usage                     |
+| :------------ | :------------------------ |
+| `focusRing`   | Keyboard focus indicators |
+| `selectionBg` | Text selection background |
 
 ### Syntax Highlighting Assignments
 
@@ -261,20 +260,20 @@ Each accent color has four semantic layers for different use cases:
 
 #### Editor Interface
 
-| Element              | Variable        | Description                 |
-| :------------------- | :-------------- | :-------------------------- |
-| Line numbers         | `tx3`           | Line gutter numbers         |
-| Current line number  | `tx2`           | Active line number          |
-| Cursor               | `tx`            | Text cursor                 |
-| Selection background | `selectionBg`   | Selected text background    |
-| Current line bg      | `bg2`           | Current line highlight      |
-| Search matches       | `searchMatchBg` | Find results                |
-| Current search       | `orange3`       | Active search result        |
-| Visual selection     | `ui3`           | Visual mode selection       |
-| Matching brackets    | `tx2`           | Paired bracket highlighting |
-| Indent guides        | `ui3`           | Indentation lines           |
-| Whitespace chars     | `tx4`           | Visible spaces/tabs         |
-| Fold markers         | `tx3`           | Code folding indicators     |
+| Element              | Variable      | Description                 |
+| :------------------- | :------------ | :-------------------------- |
+| Line numbers         | `tx3`         | Line gutter numbers         |
+| Current line number  | `tx2`         | Active line number          |
+| Cursor               | `tx`          | Text cursor                 |
+| Selection background | `selectionBg` | Selected text background    |
+| Current line bg      | `bg2`         | Current line highlight      |
+| Search matches       | `yellow3`     | Find results                |
+| Current search       | `orange3`     | Active search result        |
+| Visual selection     | `ui3`         | Visual mode selection       |
+| Matching brackets    | `tx2`         | Paired bracket highlighting |
+| Indent guides        | `ui3`         | Indentation lines           |
+| Whitespace chars     | `tx4`         | Visible spaces/tabs         |
+| Fold markers         | `tx3`         | Code folding indicators     |
 
 #### UI Components
 
