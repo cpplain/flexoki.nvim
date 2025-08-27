@@ -384,7 +384,7 @@ Each accent color has four semantic layers for different use cases:
 | :-------------- | :---------- | :--------- | :----------------------- |
 | Background      | paper       | black      | Terminal background      |
 | Foreground      | base-800    | base-200   | Terminal default text    |
-| Cursor          | base-850    | base-200   | Terminal cursor          |
+| Cursor          | base-800    | base-200   | Terminal cursor          |
 | Cursor Text     | paper       | black      | Text under cursor        |
 | Selection       | blue-100    | blue-900   | Selected text background |
 | Active Border   | blue-400    | blue-600   | Active window border     |
