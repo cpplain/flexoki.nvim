@@ -20,13 +20,13 @@ This section maps each color to semantic variables These semantic variables (lik
 | <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` | `ui`        | -          |
 | <img src="../assets/base-150.png" width="64" height="32"> | base-150 | `#DAD8CE` | `ui2`       | -          |
 | <img src="../assets/base-200.png" width="64" height="32"> | base-200 | `#CECDC3` | `ui3`       | `tx`       |
-| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` | -           | -          |
-| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` | `tx4`       | -          |
-| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` | `tx3`       | `tx2`      |
-| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` | `tx2`       | `tx3`      |
-| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` | -           | `tx4`      |
-| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` | -           | `ui3`      |
-| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` | `tx`        | `ui2`      |
+| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` | `tx3`       | -          |
+| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` | -           | -          |
+| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` | `tx2`       | `tx2`      |
+| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` | -           | -          |
+| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` | -           | `tx3`      |
+| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` | `tx`        | `ui3`      |
+| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` | -           | `ui2`      |
 | <img src="../assets/base-900.png" width="64" height="32"> | base-900 | `#282726` | -           | `ui`       |
 | <img src="../assets/base-950.png" width="64" height="32"> | base-950 | `#1C1B1A` | -           | `bg2`      |
 | <img src="../assets/black.png" width="64" height="32">    | black    | `#100F0F` | -           | `bg`       |
@@ -181,17 +181,16 @@ This section maps semantic variables to specific UI elements and syntax highligh
 
 ### Base Color Variables
 
-| Variable | Usage                                                 |
-| :------- | :---------------------------------------------------- |
-| `bg`     | Main background                                       |
-| `bg2`    | Secondary background (sidebars, panels)               |
-| `ui`     | Borders, hover surfaces                               |
-| `ui2`    | Hovered borders, cursor line background               |
-| `ui3`    | Active borders, indent guides                         |
-| `tx`     | Primary text, cursor, variables                       |
-| `tx2`    | Muted text, parameters, matching brackets             |
-| `tx3`    | Faint text, comments, line numbers, disabled elements |
-| `tx4`    | Very faint text, whitespace markers                   |
+| Variable | Usage                                                                     |
+| :------- | :------------------------------------------------------------------------ |
+| `bg`     | Main background                                                           |
+| `bg2`    | Secondary background (sidebars, panels)                                   |
+| `ui`     | Borders, hover surfaces                                                   |
+| `ui2`    | Hovered borders, cursor line background                                   |
+| `ui3`    | Active borders, indent guides                                             |
+| `tx`     | Primary text, cursor, variables                                           |
+| `tx2`    | Muted text, parameters, matching brackets                                 |
+| `tx3`    | Faint text, comments, line numbers, disabled elements, whitespace markers |
 
 ### Accent Color Variables
 
@@ -265,7 +264,7 @@ Each accent color has four semantic layers for different use cases:
 | Visual selection     | `ui3`     | Visual mode selection       |
 | Matching brackets    | `tx2`     | Paired bracket highlighting |
 | Indent guides        | `ui3`     | Indentation lines           |
-| Whitespace chars     | `tx4`     | Visible spaces/tabs         |
+| Whitespace chars     | `tx3`     | Visible spaces/tabs         |
 | Fold markers         | `tx3`     | Code folding indicators     |
 
 #### UI Components
@@ -352,7 +351,7 @@ Each accent color has four semantic layers for different use cases:
 | Modified   | `yellow` | Changed files   |
 | Removed    | `red`    | Deleted files   |
 | Untracked  | `tx3`    | Untracked files |
-| Ignored    | `tx4`    | Ignored files   |
+| Ignored    | `tx3`    | Ignored files   |
 | Conflicted | `red`    | Merge conflicts |
 | Staged     | `green`  | Staged changes  |
 

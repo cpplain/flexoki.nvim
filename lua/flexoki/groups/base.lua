@@ -61,7 +61,7 @@ function M.get(colors)
         QuickFixLine = { fg = colors.cyan },
         Search = { fg = colors.bg, bg = colors.yellow3 },
         SnippetTabstop = { link = "Visual" },
-        SpecialKey = { fg = colors.tx4 },
+        SpecialKey = { fg = colors.tx3 },
         SpellBad = { sp = colors.red, undercurl = true },
         SpellCap = { sp = colors.yellow, undercurl = true },
         SpellLocal = { sp = colors.cyan, undercurl = true },

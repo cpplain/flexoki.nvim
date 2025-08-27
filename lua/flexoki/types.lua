@@ -85,7 +85,6 @@
 ---@field tx string Primary text color
 ---@field tx2 string Secondary (muted) text color
 ---@field tx3 string Tertiary (faint) text color
----@field tx4 string Very faint text color
 ---@field red string Primary red accent
 ---@field red2 string Secondary red accent
 ---@field red3 string Tertiary red accent (active highlight)
