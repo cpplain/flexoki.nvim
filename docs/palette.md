@@ -51,21 +51,21 @@ This section maps each color to semantic variables These semantic variables (lik
 
 ### Orange
 
-| Color                                                       | Name       | Hex       | Light Theme                | Dark Theme                 |
-| :---------------------------------------------------------- | :--------- | :-------- | :------------------------- | :------------------------- |
-| <img src="../assets/orange-50.png" width="64" height="32">  | orange-50  | `#FFE7CE` | `orange4`                  | -                          |
-| <img src="../assets/orange-100.png" width="64" height="32"> | orange-100 | `#FED3AF` | `orange3, searchCurrentBg` | -                          |
-| <img src="../assets/orange-150.png" width="64" height="32"> | orange-150 | `#FCC192` | -                          | -                          |
-| <img src="../assets/orange-200.png" width="64" height="32"> | orange-200 | `#F9AE77` | -                          | -                          |
-| <img src="../assets/orange-300.png" width="64" height="32"> | orange-300 | `#EC8B49` | -                          | -                          |
-| <img src="../assets/orange-400.png" width="64" height="32"> | orange-400 | `#DA702C` | `orange2`                  | `orange`                   |
-| <img src="../assets/orange-500.png" width="64" height="32"> | orange-500 | `#CB6120` | -                          | -                          |
-| <img src="../assets/orange-600.png" width="64" height="32"> | orange-600 | `#BC5215` | `orange`                   | `orange2`                  |
-| <img src="../assets/orange-700.png" width="64" height="32"> | orange-700 | `#9D4310` | -                          | -                          |
-| <img src="../assets/orange-800.png" width="64" height="32"> | orange-800 | `#71320D` | -                          | -                          |
-| <img src="../assets/orange-850.png" width="64" height="32"> | orange-850 | `#59290D` | -                          | -                          |
-| <img src="../assets/orange-900.png" width="64" height="32"> | orange-900 | `#40200D` | -                          | `orange3, searchCurrentBg` |
-| <img src="../assets/orange-950.png" width="64" height="32"> | orange-950 | `#27180E` | -                          | `orange4`                  |
+| Color                                                       | Name       | Hex       | Light Theme | Dark Theme |
+| :---------------------------------------------------------- | :--------- | :-------- | :---------- | :--------- |
+| <img src="../assets/orange-50.png" width="64" height="32">  | orange-50  | `#FFE7CE` | `orange4`   | -          |
+| <img src="../assets/orange-100.png" width="64" height="32"> | orange-100 | `#FED3AF` | `orange3`   | -          |
+| <img src="../assets/orange-150.png" width="64" height="32"> | orange-150 | `#FCC192` | -           | -          |
+| <img src="../assets/orange-200.png" width="64" height="32"> | orange-200 | `#F9AE77` | -           | -          |
+| <img src="../assets/orange-300.png" width="64" height="32"> | orange-300 | `#EC8B49` | -           | -          |
+| <img src="../assets/orange-400.png" width="64" height="32"> | orange-400 | `#DA702C` | `orange2`   | `orange`   |
+| <img src="../assets/orange-500.png" width="64" height="32"> | orange-500 | `#CB6120` | -           | -          |
+| <img src="../assets/orange-600.png" width="64" height="32"> | orange-600 | `#BC5215` | `orange`    | `orange2`  |
+| <img src="../assets/orange-700.png" width="64" height="32"> | orange-700 | `#9D4310` | -           | -          |
+| <img src="../assets/orange-800.png" width="64" height="32"> | orange-800 | `#71320D` | -           | -          |
+| <img src="../assets/orange-850.png" width="64" height="32"> | orange-850 | `#59290D` | -           | -          |
+| <img src="../assets/orange-900.png" width="64" height="32"> | orange-900 | `#40200D` | -           | `orange3`  |
+| <img src="../assets/orange-950.png" width="64" height="32"> | orange-950 | `#27180E` | -           | `orange4`  |
 
 ### Yellow
 
@@ -206,12 +206,11 @@ Each accent color has four semantic layers for different use cases:
 
 ### Special Purpose Variables
 
-| Variable          | Usage                                   |
-| :---------------- | :-------------------------------------- |
-| `focusRing`       | Keyboard focus indicators               |
-| `selectionBg`     | Text selection background               |
-| `searchMatchBg`   | Search result highlights                |
-| `searchCurrentBg` | Active/current search result background |
+| Variable        | Usage                     |
+| :-------------- | :------------------------ |
+| `focusRing`     | Keyboard focus indicators |
+| `selectionBg`   | Text selection background |
+| `searchMatchBg` | Search result highlights  |
 
 ### Syntax Highlighting Assignments
 
@@ -262,20 +261,20 @@ Each accent color has four semantic layers for different use cases:
 
 #### Editor Interface
 
-| Element              | Variable          | Description                 |
-| :------------------- | :---------------- | :-------------------------- |
-| Line numbers         | `tx3`             | Line gutter numbers         |
-| Current line number  | `tx2`             | Active line number          |
-| Cursor               | `tx`              | Text cursor                 |
-| Selection background | `selectionBg`     | Selected text background    |
-| Current line bg      | `bg2`             | Current line highlight      |
-| Search matches       | `searchMatchBg`   | Find results                |
-| Current search       | `searchCurrentBg` | Active search result        |
-| Visual selection     | `ui3`             | Visual mode selection       |
-| Matching brackets    | `tx2`             | Paired bracket highlighting |
-| Indent guides        | `ui3`             | Indentation lines           |
-| Whitespace chars     | `tx4`             | Visible spaces/tabs         |
-| Fold markers         | `tx3`             | Code folding indicators     |
+| Element              | Variable        | Description                 |
+| :------------------- | :-------------- | :-------------------------- |
+| Line numbers         | `tx3`           | Line gutter numbers         |
+| Current line number  | `tx2`           | Active line number          |
+| Cursor               | `tx`            | Text cursor                 |
+| Selection background | `selectionBg`   | Selected text background    |
+| Current line bg      | `bg2`           | Current line highlight      |
+| Search matches       | `searchMatchBg` | Find results                |
+| Current search       | `orange3`       | Active search result        |
+| Visual selection     | `ui3`           | Visual mode selection       |
+| Matching brackets    | `tx2`           | Paired bracket highlighting |
+| Indent guides        | `ui3`           | Indentation lines           |
+| Whitespace chars     | `tx4`           | Visible spaces/tabs         |
+| Fold markers         | `tx3`           | Code folding indicators     |
 
 #### UI Components
 
