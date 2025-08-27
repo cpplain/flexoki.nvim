@@ -123,21 +123,21 @@ This section maps each color to semantic variables These semantic variables (lik
 
 ### Blue
 
-| Color                                                     | Name     | Hex       | Light Theme          | Dark Theme           |
-| :-------------------------------------------------------- | :------- | :-------- | :------------------- | :------------------- |
-| <img src="../assets/blue-50.png" width="64" height="32">  | blue-50  | `#E1ECEB` | `blue4`              | -                    |
-| <img src="../assets/blue-100.png" width="64" height="32"> | blue-100 | `#C6DDE8` | `blue3, selectionBg` | -                    |
-| <img src="../assets/blue-150.png" width="64" height="32"> | blue-150 | `#ABCFE2` | -                    | -                    |
-| <img src="../assets/blue-200.png" width="64" height="32"> | blue-200 | `#92BFDB` | -                    | -                    |
-| <img src="../assets/blue-300.png" width="64" height="32"> | blue-300 | `#66A0C8` | `focusRing`          | -                    |
-| <img src="../assets/blue-400.png" width="64" height="32"> | blue-400 | `#4385BE` | `blue2`              | `blue`               |
-| <img src="../assets/blue-500.png" width="64" height="32"> | blue-500 | `#3171B2` | -                    | -                    |
-| <img src="../assets/blue-600.png" width="64" height="32"> | blue-600 | `#205EA6` | `blue`               | `blue2`              |
-| <img src="../assets/blue-700.png" width="64" height="32"> | blue-700 | `#1A4F8C` | -                    | `focusRing`          |
-| <img src="../assets/blue-800.png" width="64" height="32"> | blue-800 | `#163B66` | -                    | -                    |
-| <img src="../assets/blue-850.png" width="64" height="32"> | blue-850 | `#133051` | -                    | -                    |
-| <img src="../assets/blue-900.png" width="64" height="32"> | blue-900 | `#12253B` | -                    | `blue3, selectionBg` |
-| <img src="../assets/blue-950.png" width="64" height="32"> | blue-950 | `#101A24` | -                    | `blue4`              |
+| Color                                                     | Name     | Hex       | Light Theme | Dark Theme  |
+| :-------------------------------------------------------- | :------- | :-------- | :---------- | :---------- |
+| <img src="../assets/blue-50.png" width="64" height="32">  | blue-50  | `#E1ECEB` | `blue4`     | -           |
+| <img src="../assets/blue-100.png" width="64" height="32"> | blue-100 | `#C6DDE8` | `blue3`     | -           |
+| <img src="../assets/blue-150.png" width="64" height="32"> | blue-150 | `#ABCFE2` | -           | -           |
+| <img src="../assets/blue-200.png" width="64" height="32"> | blue-200 | `#92BFDB` | -           | -           |
+| <img src="../assets/blue-300.png" width="64" height="32"> | blue-300 | `#66A0C8` | `focusRing` | -           |
+| <img src="../assets/blue-400.png" width="64" height="32"> | blue-400 | `#4385BE` | `blue2`     | `blue`      |
+| <img src="../assets/blue-500.png" width="64" height="32"> | blue-500 | `#3171B2` | -           | -           |
+| <img src="../assets/blue-600.png" width="64" height="32"> | blue-600 | `#205EA6` | `blue`      | `blue2`     |
+| <img src="../assets/blue-700.png" width="64" height="32"> | blue-700 | `#1A4F8C` | -           | `focusRing` |
+| <img src="../assets/blue-800.png" width="64" height="32"> | blue-800 | `#163B66` | -           | -           |
+| <img src="../assets/blue-850.png" width="64" height="32"> | blue-850 | `#133051` | -           | -           |
+| <img src="../assets/blue-900.png" width="64" height="32"> | blue-900 | `#12253B` | -           | `blue3`     |
+| <img src="../assets/blue-950.png" width="64" height="32"> | blue-950 | `#101A24` | -           | `blue4`     |
 
 ### Purple
 
@@ -206,10 +206,9 @@ Each accent color has four semantic layers for different use cases:
 
 ### Special Purpose Variables
 
-| Variable      | Usage                     |
-| :------------ | :------------------------ |
-| `focusRing`   | Keyboard focus indicators |
-| `selectionBg` | Text selection background |
+| Variable    | Usage                     |
+| :---------- | :------------------------ |
+| `focusRing` | Keyboard focus indicators |
 
 ### Syntax Highlighting Assignments
 
@@ -260,20 +259,20 @@ Each accent color has four semantic layers for different use cases:
 
 #### Editor Interface
 
-| Element              | Variable      | Description                 |
-| :------------------- | :------------ | :-------------------------- |
-| Line numbers         | `tx3`         | Line gutter numbers         |
-| Current line number  | `tx2`         | Active line number          |
-| Cursor               | `tx`          | Text cursor                 |
-| Selection background | `selectionBg` | Selected text background    |
-| Current line bg      | `bg2`         | Current line highlight      |
-| Search matches       | `yellow3`     | Find results                |
-| Current search       | `orange3`     | Active search result        |
-| Visual selection     | `ui3`         | Visual mode selection       |
-| Matching brackets    | `tx2`         | Paired bracket highlighting |
-| Indent guides        | `ui3`         | Indentation lines           |
-| Whitespace chars     | `tx4`         | Visible spaces/tabs         |
-| Fold markers         | `tx3`         | Code folding indicators     |
+| Element              | Variable  | Description                 |
+| :------------------- | :-------- | :-------------------------- |
+| Line numbers         | `tx3`     | Line gutter numbers         |
+| Current line number  | `tx2`     | Active line number          |
+| Cursor               | `tx`      | Text cursor                 |
+| Selection background | `blue3`   | Selected text background    |
+| Current line bg      | `bg2`     | Current line highlight      |
+| Search matches       | `yellow3` | Find results                |
+| Current search       | `orange3` | Active search result        |
+| Visual selection     | `ui3`     | Visual mode selection       |
+| Matching brackets    | `tx2`     | Paired bracket highlighting |
+| Indent guides        | `ui3`     | Indentation lines           |
+| Whitespace chars     | `tx4`     | Visible spaces/tabs         |
+| Fold markers         | `tx3`     | Code folding indicators     |
 
 #### UI Components
 
