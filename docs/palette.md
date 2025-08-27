@@ -13,23 +13,23 @@ This section maps each color to semantic variables These semantic variables (lik
 
 ### Base Colors
 
-| Color                                                     | Name     | Hex       | Light Theme    | Dark Theme        |
-| :-------------------------------------------------------- | :------- | :-------- | :------------- | :---------------- |
-| <img src="../assets/paper.png" width="64" height="32">    | paper    | `#FFFCF0` | `bg`           | -                 |
-| <img src="../assets/base-50.png" width="64" height="32">  | base-50  | `#F2F0E5` | `bg2`          | -                 |
-| <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` | `ui`           | -                 |
-| <img src="../assets/base-150.png" width="64" height="32"> | base-150 | `#DAD8CE` | `ui2`          | -                 |
-| <img src="../assets/base-200.png" width="64" height="32"> | base-200 | `#CECDC3` | `ui3`          | `tx`              |
-| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` | `txWhitespace` | -                 |
-| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` | `txDisabled`   | -                 |
-| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` | `tx3`          | `tx2`             |
-| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` | `tx2`          | `tx3, txDisabled` |
-| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` | -              | `txWhitespace`    |
-| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` | -              | `ui3`             |
-| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` | `tx`           | `ui2`             |
-| <img src="../assets/base-900.png" width="64" height="32"> | base-900 | `#282726` | -              | `ui`              |
-| <img src="../assets/base-950.png" width="64" height="32"> | base-950 | `#1C1B1A` | -              | `bg2`             |
-| <img src="../assets/black.png" width="64" height="32">    | black    | `#100F0F` | -              | `bg`              |
+| Color                                                     | Name     | Hex       | Light Theme | Dark Theme |
+| :-------------------------------------------------------- | :------- | :-------- | :---------- | :--------- |
+| <img src="../assets/paper.png" width="64" height="32">    | paper    | `#FFFCF0` | `bg`        | -          |
+| <img src="../assets/base-50.png" width="64" height="32">  | base-50  | `#F2F0E5` | `bg2`       | -          |
+| <img src="../assets/base-100.png" width="64" height="32"> | base-100 | `#E6E4D9` | `ui`        | -          |
+| <img src="../assets/base-150.png" width="64" height="32"> | base-150 | `#DAD8CE` | `ui2`       | -          |
+| <img src="../assets/base-200.png" width="64" height="32"> | base-200 | `#CECDC3` | `ui3`       | `tx`       |
+| <img src="../assets/base-300.png" width="64" height="32"> | base-300 | `#B7B5AC` | -           | -          |
+| <img src="../assets/base-400.png" width="64" height="32"> | base-400 | `#9F9D96` | `tx4`       | -          |
+| <img src="../assets/base-500.png" width="64" height="32"> | base-500 | `#878580` | `tx3`       | `tx2`      |
+| <img src="../assets/base-600.png" width="64" height="32"> | base-600 | `#6F6E69` | `tx2`       | `tx3`      |
+| <img src="../assets/base-700.png" width="64" height="32"> | base-700 | `#575653` | -           | `tx4`      |
+| <img src="../assets/base-800.png" width="64" height="32"> | base-800 | `#403E3C` | -           | `ui3`      |
+| <img src="../assets/base-850.png" width="64" height="32"> | base-850 | `#343331` | `tx`        | `ui2`      |
+| <img src="../assets/base-900.png" width="64" height="32"> | base-900 | `#282726` | -           | `ui`       |
+| <img src="../assets/base-950.png" width="64" height="32"> | base-950 | `#1C1B1A` | -           | `bg2`      |
+| <img src="../assets/black.png" width="64" height="32">    | black    | `#100F0F` | -           | `bg`       |
 
 ### Red
 
@@ -181,18 +181,17 @@ This section maps semantic variables to specific UI elements and syntax highligh
 
 ### Base Color Variables
 
-| Variable       | Usage                                     |
-| :------------- | :---------------------------------------- |
-| `bg`           | Main background                           |
-| `bg2`          | Secondary background (sidebars, panels)   |
-| `ui`           | Borders, hover surfaces                   |
-| `ui2`          | Hovered borders, cursor line background   |
-| `ui3`          | Active borders, indent guides             |
-| `tx`           | Primary text, cursor, variables           |
-| `tx2`          | Muted text, parameters, matching brackets |
-| `tx3`          | Faint text, comments, line numbers        |
-| `txDisabled`   | Disabled elements, ignored files          |
-| `txWhitespace` | Visible whitespace characters             |
+| Variable | Usage                                                 |
+| :------- | :---------------------------------------------------- |
+| `bg`     | Main background                                       |
+| `bg2`    | Secondary background (sidebars, panels)               |
+| `ui`     | Borders, hover surfaces                               |
+| `ui2`    | Hovered borders, cursor line background               |
+| `ui3`    | Active borders, indent guides                         |
+| `tx`     | Primary text, cursor, variables                       |
+| `tx2`    | Muted text, parameters, matching brackets             |
+| `tx3`    | Faint text, comments, line numbers, disabled elements |
+| `tx4`    | Very faint text, whitespace markers                   |
 
 ### Accent Color Variables
 
@@ -275,23 +274,23 @@ Each accent color has four semantic layers for different use cases:
 | Visual selection     | `ui3`             | Visual mode selection       |
 | Matching brackets    | `tx2`             | Paired bracket highlighting |
 | Indent guides        | `ui3`             | Indentation lines           |
-| Whitespace chars     | `txWhitespace`    | Visible spaces/tabs         |
+| Whitespace chars     | `tx4`             | Visible spaces/tabs         |
 | Fold markers         | `tx3`             | Code folding indicators     |
 
 #### UI Components
 
-| Element          | Variable     | Description         |
-| :--------------- | :----------- | :------------------ |
-| Border default   | `ui`         | Standard borders    |
-| Border hover     | `ui2`        | Hovered borders     |
-| Border active    | `ui3`        | Active/selected     |
-| Border focus     | `blue2`      | Focused element     |
-| Border error     | `red2`       | Error state         |
-| Border success   | `green2`     | Success state       |
-| Hover surface    | `ui`         | Interactive hover   |
-| Drop target      | `cyan4`      | Drag and drop zones |
-| Focus ring       | `focusRing`  | Keyboard focus      |
-| Disabled element | `txDisabled` | Disabled state      |
+| Element          | Variable    | Description         |
+| :--------------- | :---------- | :------------------ |
+| Border default   | `ui`        | Standard borders    |
+| Border hover     | `ui2`       | Hovered borders     |
+| Border active    | `ui3`       | Active/selected     |
+| Border focus     | `blue2`     | Focused element     |
+| Border error     | `red2`      | Error state         |
+| Border success   | `green2`    | Success state       |
+| Hover surface    | `ui`        | Interactive hover   |
+| Drop target      | `cyan4`     | Drag and drop zones |
+| Focus ring       | `focusRing` | Keyboard focus      |
+| Disabled element | `tx3`       | Disabled state      |
 
 #### Buttons
 
@@ -333,18 +332,18 @@ Each accent color has four semantic layers for different use cases:
 
 #### Diff View
 
-| Element          | Variable     | Description              |
-| :--------------- | :----------- | :----------------------- |
-| Diff header      | `blue`       | File comparison header   |
-| Hunk header      | `orange`     | @@ line markers          |
-| File path        | `purple`     | a/file.txt b/file.txt    |
-| Metadata         | `txDisabled` | Index, mode info         |
-| Added line bg    | `green4`     | New lines background     |
-| Removed line bg  | `red4`       | Deleted lines background |
-| Modified line bg | `yellow4`    | Changed lines background |
-| Added word bg    | `green3`     | Inline additions         |
-| Removed word bg  | `red3`       | Inline deletions         |
-| Modified word bg | `yellow3`    | Inline changes           |
+| Element          | Variable  | Description              |
+| :--------------- | :-------- | :----------------------- |
+| Diff header      | `blue`    | File comparison header   |
+| Hunk header      | `orange`  | @@ line markers          |
+| File path        | `purple`  | a/file.txt b/file.txt    |
+| Metadata         | `tx3`     | Index, mode info         |
+| Added line bg    | `green4`  | New lines background     |
+| Removed line bg  | `red4`    | Deleted lines background |
+| Modified line bg | `yellow4` | Changed lines background |
+| Added word bg    | `green3`  | Inline additions         |
+| Removed word bg  | `red3`    | Inline deletions         |
+| Modified word bg | `yellow3` | Inline changes           |
 
 #### Merge Conflicts
 
@@ -356,15 +355,15 @@ Each accent color has four semantic layers for different use cases:
 
 #### Git Status
 
-| Element    | Variable       | Description     |
-| :--------- | :------------- | :-------------- |
-| Added      | `green`        | New files       |
-| Modified   | `yellow`       | Changed files   |
-| Removed    | `red`          | Deleted files   |
-| Untracked  | `txDisabled`   | Untracked files |
-| Ignored    | `txWhitespace` | Ignored files   |
-| Conflicted | `red`          | Merge conflicts |
-| Staged     | `green`        | Staged changes  |
+| Element    | Variable | Description     |
+| :--------- | :------- | :-------------- |
+| Added      | `green`  | New files       |
+| Modified   | `yellow` | Changed files   |
+| Removed    | `red`    | Deleted files   |
+| Untracked  | `tx3`    | Untracked files |
+| Ignored    | `tx4`    | Ignored files   |
+| Conflicted | `red`    | Merge conflicts |
+| Staged     | `green`  | Staged changes  |
 
 ### Terminal & ANSI Colors
 
@@ -446,6 +445,7 @@ The color choices align with conventions used in 90%+ of modern themes:
 - **Contrast Ratios**: All color combinations maintain WCAG AA compliance (4.5:1 minimum)
 - **Color Blindness**: Designed with multiple visual cues beyond color alone
 - **Perceptual Balance**: Colors chosen using Oklab color space for consistent perceived intensity
+- **Text Hierarchy**: The tx1-4 progression uses Oklab perceptual modeling to ensure consistent contrast steps across light and dark themes
 
 ### Implementation Approach
 
