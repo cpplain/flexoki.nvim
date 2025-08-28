@@ -74,7 +74,7 @@ function M.get(colors)
         TabLineFill = { link = "TabLine" },
         TabLineSel = { fg = colors.tx, bold = true },
         Title = { fg = colors.tx, bold = true },
-        Visual = { bg = colors.blue3 },
+        Visual = { bg = colors.blue4 },
         VisualNOS = { link = "Visual" },
         WarningMsg = { fg = colors.orange },
         Whitespace = { link = "NonText" },
