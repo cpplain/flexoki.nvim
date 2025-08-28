@@ -2,8 +2,9 @@
 
 An inky color scheme for Neovim. Based on [stephango.com/flexoki](https://stephango.com/flexoki).
 
-<img width="1582" alt="Screenshot 2025-05-06 at 9 20 36 PM" src="https://github.com/user-attachments/assets/bd758367-e106-4d0d-9236-c9db5bc5e28f" />
-<img width="1582" alt="Screenshot 2025-05-06 at 9 20 11 PM" src="https://github.com/user-attachments/assets/d4a9fdfd-bd0d-4d77-b424-12a2c27bb91a" />
+<img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 17 58 PM" src="https://github.com/user-attachments/assets/610a76b1-f432-4df3-b319-dd7441d83910" />
+<img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 18 17 PM" src="https://github.com/user-attachments/assets/8f0dfe39-e988-4ed5-a737-f241461bb082" />
+
 
 ## Features
 
