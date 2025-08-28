@@ -1,4 +1,4 @@
-M = {}
+local M = {}
 
 ---@param colors flexoki.ThemeColors
 ---@return flexoki.HighlightGroups
