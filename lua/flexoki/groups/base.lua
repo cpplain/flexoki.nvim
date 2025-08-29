@@ -1,9 +1,10 @@
+---@alias flexoki.HighlightGroup table<string, vim.api.keyset.highlight>
+
 local M = {}
 
 ---@param colors flexoki.ThemeColors
----@return flexoki.HighlightGroups
+---@return flexoki.HighlightGroup
 function M.get(colors)
-    ---@type flexoki.HighlightGroups
     return {
         -- Editor highlights (:help highlight-groups)
         ColorColumn = { bg = colors.bg2 },

@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **BREAKING**: Renamed types for better clarity:
+  - `flexoki.HighlightGroups` → `flexoki.HighlightGroup` (singular for consistency)
+  - `flexoki.Colors` → `flexoki.PaletteColors` (more descriptive naming)
 - Improved semantic consistency across highlight groups:
   - Enhanced diff highlighting with color-matched backgrounds
   - Unified search highlighting appearance between normal and current search
@@ -35,6 +38,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Enhanced list item styling with appropriate color-coded backgrounds
   - Fixed typo in documentation comment treesitter group
   - Improved LSP semantic token alignment with treesitter highlights
+- Refactored type definitions from separate `types.lua` to inline definitions:
+  - Moved color-related types to `palette.lua` for better co-location
+  - Moved configuration types to `init.lua` where they are used
+  - Moved highlight group type to `groups/base.lua` for shared access
+  - Updated type comments to match authoritative `palette.md` documentation
+  - Fixed typo in Config field documentation (highlight vs hightlight)
 
 ## [0.1.0] - 2025-01-23
 
