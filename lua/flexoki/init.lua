@@ -3,6 +3,9 @@
 -- URL: https://stephango.com/flexoki
 -- License: MIT
 
+---@class flexoki.Config
+---@field groups string[] List of highlight group names to enable
+
 ---@class flexoki.Module
 ---@field colors flexoki.ThemeColors The current theme's color palette
 ---@field config flexoki.Config The current configuration

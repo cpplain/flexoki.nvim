@@ -1,10 +1,176 @@
+---@alias flexoki.Theme "light" | "dark"
+
+---All color values are hex strings (e.g. "#100F0F")
+---@class flexoki.PaletteColors
+---@field black string
+---@field base950 string
+---@field base900 string
+---@field base850 string
+---@field base800 string
+---@field base700 string
+---@field base600 string
+---@field base500 string
+---@field base400 string
+---@field base300 string
+---@field base200 string
+---@field base150 string
+---@field base100 string
+---@field base50 string
+---@field paper string
+---@field red950 string
+---@field red900 string
+---@field red850 string
+---@field red800 string
+---@field red700 string
+---@field red600 string
+---@field red500 string
+---@field red400 string
+---@field red300 string
+---@field red200 string
+---@field red150 string
+---@field red100 string
+---@field red50 string
+---@field orange950 string
+---@field orange900 string
+---@field orange850 string
+---@field orange800 string
+---@field orange700 string
+---@field orange600 string
+---@field orange500 string
+---@field orange400 string
+---@field orange300 string
+---@field orange200 string
+---@field orange150 string
+---@field orange100 string
+---@field orange50 string
+---@field yellow950 string
+---@field yellow900 string
+---@field yellow850 string
+---@field yellow800 string
+---@field yellow700 string
+---@field yellow600 string
+---@field yellow500 string
+---@field yellow400 string
+---@field yellow300 string
+---@field yellow200 string
+---@field yellow150 string
+---@field yellow100 string
+---@field yellow50 string
+---@field green950 string
+---@field green900 string
+---@field green850 string
+---@field green800 string
+---@field green700 string
+---@field green600 string
+---@field green500 string
+---@field green400 string
+---@field green300 string
+---@field green200 string
+---@field green150 string
+---@field green100 string
+---@field green50 string
+---@field cyan950 string
+---@field cyan900 string
+---@field cyan850 string
+---@field cyan800 string
+---@field cyan700 string
+---@field cyan600 string
+---@field cyan500 string
+---@field cyan400 string
+---@field cyan300 string
+---@field cyan200 string
+---@field cyan150 string
+---@field cyan100 string
+---@field cyan50 string
+---@field blue950 string
+---@field blue900 string
+---@field blue850 string
+---@field blue800 string
+---@field blue700 string
+---@field blue600 string
+---@field blue500 string
+---@field blue400 string
+---@field blue300 string
+---@field blue200 string
+---@field blue150 string
+---@field blue100 string
+---@field blue50 string
+---@field purple950 string
+---@field purple900 string
+---@field purple850 string
+---@field purple800 string
+---@field purple700 string
+---@field purple600 string
+---@field purple500 string
+---@field purple400 string
+---@field purple300 string
+---@field purple200 string
+---@field purple150 string
+---@field purple100 string
+---@field purple50 string
+---@field magenta950 string
+---@field magenta900 string
+---@field magenta850 string
+---@field magenta800 string
+---@field magenta700 string
+---@field magenta600 string
+---@field magenta500 string
+---@field magenta400 string
+---@field magenta300 string
+---@field magenta200 string
+---@field magenta150 string
+---@field magenta100 string
+---@field magenta50 string
+
+---@class flexoki.ThemeColors
+---@field bg string Main background
+---@field bg2 string Secondary background (sidebars, panels)
+---@field ui string Borders, hover surfaces
+---@field ui2 string Hovered borders, cursor line background
+---@field ui3 string Active borders, indent guides
+---@field tx string Primary text, cursor, variables
+---@field tx2 string Muted text, parameters, matching brackets
+---@field tx3 string Faint text, comments, line numbers, disabled elements, whitespace markers
+---@field red string Primary accent - text, borders, icons
+---@field red2 string Secondary accent - alternative states
+---@field red3 string Background accent - search highlighting, badges
+---@field red4 string Subtle background - selection, diff backgrounds
+---@field orange string Primary accent - text, borders, icons
+---@field orange2 string Secondary accent - alternative states
+---@field orange3 string Background accent - search highlighting, badges
+---@field orange4 string Subtle background - selection, diff backgrounds
+---@field yellow string Primary accent - text, borders, icons
+---@field yellow2 string Secondary accent - alternative states
+---@field yellow3 string Background accent - search highlighting, badges
+---@field yellow4 string Subtle background - selection, diff backgrounds
+---@field green string Primary accent - text, borders, icons
+---@field green2 string Secondary accent - alternative states
+---@field green3 string Background accent - search highlighting, badges
+---@field green4 string Subtle background - selection, diff backgrounds
+---@field cyan string Primary accent - text, borders, icons
+---@field cyan2 string Secondary accent - alternative states
+---@field cyan3 string Background accent - search highlighting, badges
+---@field cyan4 string Subtle background - selection, diff backgrounds
+---@field blue string Primary accent - text, borders, icons
+---@field blue2 string Secondary accent - alternative states
+---@field blue3 string Background accent - search highlighting, badges
+---@field blue4 string Subtle background - selection, diff backgrounds
+---@field purple string Primary accent - text, borders, icons
+---@field purple2 string Secondary accent - alternative states
+---@field purple3 string Background accent - search highlighting, badges
+---@field purple4 string Subtle background - selection, diff backgrounds
+---@field magenta string Primary accent - text, borders, icons
+---@field magenta2 string Secondary accent - alternative states
+---@field magenta3 string Background accent - search highlighting, badges
+---@field magenta4 string Subtle background - selection, diff backgrounds
+
 local M = {}
 
 ---@param theme flexoki.Theme
 ---@return flexoki.ThemeColors
 function M.get(theme)
     ---Base color values
-    ---@type flexoki.Colors
+    ---@type flexoki.PaletteColors
     local colors = {
         -- Base colors
         black = "#100F0F",
