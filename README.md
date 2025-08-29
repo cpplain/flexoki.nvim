@@ -33,14 +33,14 @@ lazy.nvim
 ### Load the color scheme
 
 ```lua
--- Basic setup and load color scheme
+-- Setup default and load color scheme
 require("flexoki").setup()
 vim.cmd.colorscheme("flexoki")
 ```
 
 ### Switch between dark and light themes
 
-The color scheme will automatically switch between dark and light themes based on the value of background (:help background).
+By default, the color scheme will automatically switch between dark and light themes based on the value of background (:help background).
 
 ```lua
 -- Switch to dark theme
@@ -49,6 +49,82 @@ vim.o.background = "dark"
 -- Switch to light theme
 vim.o.background = "light"
 ```
+
+## Customization
+
+Flexoki provides a comprehensive override system allowing you to customize every aspect of the theme. **All configuration options are optional** - use only what you need:
+
+```lua
+require("flexoki").setup({
+  -- Force theme (overrides vim.o.background)
+  -- "auto" (default) | "dark" | "light"
+  theme = "auto",
+
+  -- Override base palette colors
+  palette_override = {
+    red600 = "#ff0000",  -- Direct hex values
+    base950 = "#0a0a0a", -- Darker background
+  },
+
+  -- Customize dark theme semantic colors
+  dark_override = function(colors)
+    return {
+      bg = "#000000",      -- Direct hex value
+      tx = colors.base200, -- Or semantic color reference
+      blue = "#00aaff",    -- Custom blue accent
+    }
+  end,
+
+  -- Customize light theme semantic colors
+  light_override = function(colors)
+    return {
+      bg = colors.paper, -- Semantic reference
+      tx = "#1a1a1a",    -- Direct hex value
+    }
+  end,
+
+  -- Override specific highlight groups
+  highlight_override = function(colors)
+    return {
+      Comment = { fg = "#9966cc", italic = true },    -- Direct hex
+      Function = { fg = colors.yellow, bold = true }, -- Semantic reference
+      ["@keyword"] = { fg = "#ff6b9d" },              -- Direct hex
+    }
+  end,
+})
+```
+
+### Override Order
+
+Overrides are applied in this order:
+
+1. **Palette Override** → Modifies base Flexoki colors
+2. **Theme Override** → Adjusts semantic color mapping
+3. **Highlight Override** → Customizes final highlight groups
+
+### Available Colors
+
+**Palette Colors** (for palette overrides):
+
+- Base: `black`, `base950` through `base50`, `paper`
+- Colors: `red950` through `red50` (and similar for all accent colors)
+
+**Semantic Colors** (for theme overrides):
+
+- `bg`, `bg2` - Background colors
+- `ui`, `ui2`, `ui3` - UI element colors
+- `tx`, `tx2`, `tx3` - Text colors
+- `red`, `orange`, `yellow`, `green`, `cyan`, `blue`, `purple`, `magenta` - Accent colors
+- Each accent has variants: `red2`, `red3`, `red4` for different intensities
+
+See [docs/palette.md](docs/palette.md) for the complete color reference.
+
+### Color Values
+
+All override functions accept either:
+
+- **Hex strings**: `"#ff0000"`, `"#1a1a1a"`
+- **Semantic references**: `colors.red600`, `colors.base950`
 
 ## Integrations
 
