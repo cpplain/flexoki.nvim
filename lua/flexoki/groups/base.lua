@@ -1,5 +1,3 @@
----@alias flexoki.HighlightGroup table<string, vim.api.keyset.highlight>
-
 local M = {}
 
 ---@param colors flexoki.ThemeColors

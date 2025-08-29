@@ -167,7 +167,7 @@
 local M = {}
 
 ---@return flexoki.PaletteColors
-function M.all_colors()
+function M.all()
     return {
         -- Base colors
         black = "#100F0F",
@@ -310,7 +310,7 @@ end
 
 ---@param colors flexoki.PaletteColors
 ---@return flexoki.ThemeColors
-function M.dark_colors(colors)
+function M.dark(colors)
     return {
         bg = colors.black,
         bg2 = colors.base950,
@@ -359,7 +359,7 @@ end
 
 ---@param colors flexoki.PaletteColors
 ---@return flexoki.ThemeColors
-function M.light_colors(colors)
+function M.light(colors)
     return {
         bg = colors.paper,
         bg2 = colors.base50,
@@ -407,14 +407,16 @@ function M.light_colors(colors)
 end
 
 ---@param theme flexoki.Theme
+---@param config flexoki.Config
 ---@return flexoki.ThemeColors
-function M.get(theme)
-    local colors = M.all_colors()
+function M.get(theme, config)
+    local colors = M.all()
+    colors = vim.tbl_extend("force", colors, config.palette_override)
 
     if theme == "dark" then
-        return M.dark_colors(colors)
+        return vim.tbl_extend("force", M.dark(colors), config.dark_override(colors))
     else
-        return M.light_colors(colors)
+        return vim.tbl_extend("force", M.light(colors), config.light_override(colors))
     end
 end
 
