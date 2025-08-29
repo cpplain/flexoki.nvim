@@ -2,12 +2,12 @@
 
 An inky color scheme for Neovim. Based on [stephango.com/flexoki](https://stephango.com/flexoki).
 
-<img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 17 58 PM" src="https://github.com/user-attachments/assets/610a76b1-f432-4df3-b319-dd7441d83910" />
 <img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 18 17 PM" src="https://github.com/user-attachments/assets/8f0dfe39-e988-4ed5-a737-f241461bb082" />
+<img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 17 58 PM" src="https://github.com/user-attachments/assets/610a76b1-f432-4df3-b319-dd7441d83910" />
 
 ## Features
 
-- Complete light and dark themes that follow Flexoki color guidelines
+- Complete dark and light themes using the Flexoki color palette
 - Extensible integration system for community plugin support
 - Diagnostic colors
 - Treesitter support
@@ -38,16 +38,16 @@ require("flexoki").setup()
 vim.cmd.colorscheme("flexoki")
 ```
 
-### Switch between light and dark themes
+### Switch between dark and light themes
 
-The color scheme will automatically switch between light and dark themes based on the value of background (:help background).
+The color scheme will automatically switch between dark and light themes based on the value of background (:help background).
 
 ```lua
--- Switch to light theme
-vim.o.background = "light"
-
 -- Switch to dark theme
 vim.o.background = "dark"
+
+-- Switch to light theme
+vim.o.background = "light"
 ```
 
 ## Integrations
