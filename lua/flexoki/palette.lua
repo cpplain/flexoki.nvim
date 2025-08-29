@@ -1,4 +1,4 @@
----@alias flexoki.Theme "light" | "dark"
+---@alias flexoki.Theme "dark" | "light"
 
 ---All color values are hex strings (e.g. "#100F0F")
 ---@class flexoki.PaletteColors
@@ -166,12 +166,9 @@
 
 local M = {}
 
----@param theme flexoki.Theme
----@return flexoki.ThemeColors
-function M.get(theme)
-    ---Base color values
-    ---@type flexoki.PaletteColors
-    local colors = {
+---@return flexoki.PaletteColors
+function M.all_colors()
+    return {
         -- Base colors
         black = "#100F0F",
         base950 = "#1C1B1A",
@@ -309,57 +306,12 @@ function M.get(theme)
         magenta100 = "#FCCFDA",
         magenta50 = "#FEE4E5",
     }
+end
 
-    -- Light theme palette
-    ---@type flexoki.ThemeColors
-    local light = {
-        bg = colors.paper,
-        bg2 = colors.base50,
-        ui = colors.base100,
-        ui2 = colors.base150,
-        ui3 = colors.base200,
-        tx = colors.base800,
-        tx2 = colors.base500,
-        tx3 = colors.base300,
-
-        -- Accent colors
-        red = colors.red600,
-        red2 = colors.red400,
-        red3 = colors.red200,
-        red4 = colors.red100,
-        orange = colors.orange600,
-        orange2 = colors.orange400,
-        orange3 = colors.orange200,
-        orange4 = colors.orange100,
-        yellow = colors.yellow600,
-        yellow2 = colors.yellow400,
-        yellow3 = colors.yellow200,
-        yellow4 = colors.yellow100,
-        green = colors.green600,
-        green2 = colors.green400,
-        green3 = colors.green200,
-        green4 = colors.green100,
-        cyan = colors.cyan600,
-        cyan2 = colors.cyan400,
-        cyan3 = colors.cyan200,
-        cyan4 = colors.cyan100,
-        blue = colors.blue600,
-        blue2 = colors.blue400,
-        blue3 = colors.blue200,
-        blue4 = colors.blue100,
-        purple = colors.purple600,
-        purple2 = colors.purple400,
-        purple3 = colors.purple200,
-        purple4 = colors.purple100,
-        magenta = colors.magenta600,
-        magenta2 = colors.magenta400,
-        magenta3 = colors.magenta200,
-        magenta4 = colors.magenta100,
-    }
-
-    -- Dark theme palette
-    ---@type flexoki.ThemeColors
-    local dark = {
+---@param colors flexoki.PaletteColors
+---@return flexoki.ThemeColors
+function M.dark_colors(colors)
+    return {
         bg = colors.black,
         bg2 = colors.base950,
         ui = colors.base900,
@@ -403,8 +355,67 @@ function M.get(theme)
         magenta3 = colors.magenta800,
         magenta4 = colors.magenta900,
     }
+end
 
-    return theme == "dark" and dark or light
+---@param colors flexoki.PaletteColors
+---@return flexoki.ThemeColors
+function M.light_colors(colors)
+    return {
+        bg = colors.paper,
+        bg2 = colors.base50,
+        ui = colors.base100,
+        ui2 = colors.base150,
+        ui3 = colors.base200,
+        tx = colors.base800,
+        tx2 = colors.base500,
+        tx3 = colors.base300,
+
+        -- Accent colors
+        red = colors.red600,
+        red2 = colors.red400,
+        red3 = colors.red200,
+        red4 = colors.red100,
+        orange = colors.orange600,
+        orange2 = colors.orange400,
+        orange3 = colors.orange200,
+        orange4 = colors.orange100,
+        yellow = colors.yellow600,
+        yellow2 = colors.yellow400,
+        yellow3 = colors.yellow200,
+        yellow4 = colors.yellow100,
+        green = colors.green600,
+        green2 = colors.green400,
+        green3 = colors.green200,
+        green4 = colors.green100,
+        cyan = colors.cyan600,
+        cyan2 = colors.cyan400,
+        cyan3 = colors.cyan200,
+        cyan4 = colors.cyan100,
+        blue = colors.blue600,
+        blue2 = colors.blue400,
+        blue3 = colors.blue200,
+        blue4 = colors.blue100,
+        purple = colors.purple600,
+        purple2 = colors.purple400,
+        purple3 = colors.purple200,
+        purple4 = colors.purple100,
+        magenta = colors.magenta600,
+        magenta2 = colors.magenta400,
+        magenta3 = colors.magenta200,
+        magenta4 = colors.magenta100,
+    }
+end
+
+---@param theme flexoki.Theme
+---@return flexoki.ThemeColors
+function M.get(theme)
+    local colors = M.all_colors()
+
+    if theme == "dark" then
+        return M.dark_colors(colors)
+    else
+        return M.light_colors(colors)
+    end
 end
 
 return M
