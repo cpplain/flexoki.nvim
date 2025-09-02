@@ -254,7 +254,7 @@ Each accent color has four semantic layers for different use cases:
 
 | Element              | Variable  | Description                 |
 | :------------------- | :-------- | :-------------------------- |
-| Line numbers         | `tx2`     | Line gutter numbers         |
+| Line numbers         | `tx3`     | Line gutter numbers         |
 | Current line number  | `tx`      | Active line number          |
 | Cursor               | `tx`      | Text cursor                 |
 | Selection background | `blue4`   | Selected text background    |

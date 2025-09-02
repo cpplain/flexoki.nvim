@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **Improved Line Number Visibility**: Enhanced line number visibility by using `tx2` for line numbers and `tx` for current line number
+- **Improved Line Number Visibility**: Enhanced line number visibility by using `tx` for current line number
 - **Refined Current Line Styling**: Removed bold styling from current line number for a cleaner, more consistent appearance
 
 ### Deprecated

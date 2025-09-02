@@ -27,7 +27,7 @@ function M.get(colors)
         SignColumn = { fg = colors.tx3 },
         IncSearch = { link = "CurSearch" },
         Substitute = { link = "Search" },
-        LineNr = { fg = colors.tx2 },
+        LineNr = { fg = colors.tx3 },
         LineNrAbove = { link = "LineNr" },
         LineNrBelow = { link = "LineNr" },
         CursorLineNr = { fg = colors.tx, bg = colors.bg2 },
