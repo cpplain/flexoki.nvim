@@ -130,7 +130,7 @@
 ---@field ui3 string Active borders, indent guides
 ---@field tx string Primary text, cursor, variables
 ---@field tx2 string Muted text, parameters, matching brackets
----@field tx3 string Faint text, comments, line numbers, disabled elements, whitespace markers
+---@field tx3 string Faint text, comments, disabled elements, whitespace markers
 ---@field red string Primary accent - text, borders, icons
 ---@field red2 string Secondary accent - alternative states
 ---@field red3 string Background accent - search highlighting, badges
