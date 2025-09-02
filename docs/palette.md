@@ -181,16 +181,16 @@ This section maps semantic variables to specific UI elements and syntax highligh
 
 ### Base Color Variables
 
-| Variable | Usage                                                                     |
-| :------- | :------------------------------------------------------------------------ |
-| `bg`     | Main background                                                           |
-| `bg2`    | Secondary background (sidebars, panels)                                   |
-| `ui`     | Borders, hover surfaces                                                   |
-| `ui2`    | Hovered borders, cursor line background                                   |
-| `ui3`    | Active borders, indent guides                                             |
-| `tx`     | Primary text, cursor, variables                                           |
-| `tx2`    | Muted text, parameters, matching brackets                                 |
-| `tx3`    | Faint text, comments, line numbers, disabled elements, whitespace markers |
+| Variable | Usage                                                       |
+| :------- | :---------------------------------------------------------- |
+| `bg`     | Main background                                             |
+| `bg2`    | Secondary background (sidebars, panels)                     |
+| `ui`     | Borders, hover surfaces                                     |
+| `ui2`    | Hovered borders, cursor line background                     |
+| `ui3`    | Active borders, indent guides                               |
+| `tx`     | Primary text, cursor, variables                             |
+| `tx2`    | Muted text, parameters, matching brackets                   |
+| `tx3`    | Faint text, comments, disabled elements, whitespace markers |
 
 ### Accent Color Variables
 
@@ -254,8 +254,8 @@ Each accent color has four semantic layers for different use cases:
 
 | Element              | Variable  | Description                 |
 | :------------------- | :-------- | :-------------------------- |
-| Line numbers         | `tx3`     | Line gutter numbers         |
-| Current line number  | `tx2`     | Active line number          |
+| Line numbers         | `tx2`     | Line gutter numbers         |
+| Current line number  | `tx`      | Active line number          |
 | Cursor               | `tx`      | Text cursor                 |
 | Selection background | `blue4`   | Selected text background    |
 | Current line bg      | `bg2`     | Current line highlight      |
