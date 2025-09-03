@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Improved Line Number Visibility**: Enhanced line number visibility by using `tx` for current line number
 - **Refined Current Line Styling**: Removed bold styling from current line number for a cleaner, more consistent appearance
+- **Inactive Statusline Background**: Change inactive statusline background from `ui` to `bg2`
 
 ### Deprecated
 

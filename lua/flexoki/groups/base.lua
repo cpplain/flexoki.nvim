@@ -66,7 +66,7 @@ function M.get(colors)
         SpellLocal = { sp = colors.cyan, undercurl = true },
         SpellRare = { sp = colors.purple, undercurl = true },
         StatusLine = { fg = colors.tx, bg = colors.ui },
-        StatusLineNC = { fg = colors.tx3, bg = colors.ui },
+        StatusLineNC = { fg = colors.tx3, bg = colors.bg2 },
         StatusLineTerm = { link = "StatusLine" },
         StatusLineTermNC = { link = "StatusLineNC" },
         TabLine = { link = "StatusLineNC" },
