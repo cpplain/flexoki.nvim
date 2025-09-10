@@ -1,5 +1,8 @@
 # flexoki.nvim
 
+> [!CAUTION]
+> I moved all color scheme code directly into my dotfiles repo. This plugin is now archived.
+
 An inky color scheme for Neovim. Based on [stephango.com/flexoki](https://stephango.com/flexoki).
 
 <img width="1824" height="1175" alt="Screenshot 2025-08-27 at 5 18 17 PM" src="https://github.com/user-attachments/assets/8f0dfe39-e988-4ed5-a737-f241461bb082" />
